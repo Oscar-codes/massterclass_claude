@@ -1,0 +1,19 @@
+tabla,columna,tipo_dato,formato,valores_validos,nulos_permitidos,clave,descripcion,ejemplo
+ventas_semana,fecha,DATE,YYYY-MM-DD,2025-04-21 a 2025-04-27,No,No,Fecha en que se registró la transacción de venta.,2025-04-23
+ventas_semana,id_transaccion,VARCHAR,TC-YYYY-NNNNN,TC-2025-10001 a TC-2025-10999,No,Primaria,Identificador único de cada transacción de venta en el sistema CRM de Think Company.,TC-2025-10045
+ventas_semana,dia_semana,VARCHAR,Texto en inglés,"Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",No,No,Nombre del día de la semana en que ocurrió la transacción.,Wednesday
+ventas_semana,categoria_servicio,VARCHAR,Texto,Consultoría de Datos | Implementación BI | Análisis Predictivo | Capacitación Tech | Soporte & Mantenimiento,No,No,Línea de negocio principal de Think Company a la que pertenece el servicio vendido.,Implementación BI
+ventas_semana,producto_servicio,VARCHAR,Texto,25 productos activos en catálogo,No,No,Nombre específico del producto o servicio contratado por el cliente.,Power BI Enterprise
+ventas_semana,canal_venta,VARCHAR,Texto,Directo | Partner | Digital | Referidos,No,No,Canal comercial a través del cual se originó y cerró la venta. Directo: equipo interno. Partner: socio comercial certificado. Digital: inbound web/marketing. Referidos: recomendación de cliente existente.,Directo
+ventas_semana,vendedor,VARCHAR,Nombre completo,10 vendedores activos del equipo comercial LATAM,No,No,Nombre completo del asesor comercial responsable de la cuenta.,Ana Martínez
+ventas_semana,region,VARCHAR,Texto,El Salvador | Guatemala | México | Colombia | Costa Rica,No,No,País/región donde opera el cliente y donde se entregará el servicio.,El Salvador
+ventas_semana,segmento_cliente,VARCHAR,Texto,Enterprise | Mid Market | SMB | Gobierno,No,No,Segmento de mercado del cliente. Enterprise: >500 empleados o >$50M revenue. Mid Market: 100-500 empleados. SMB: <100 empleados. Gobierno: entidades públicas.,Enterprise
+ventas_semana,nombre_cliente,VARCHAR,Texto,40 clientes activos en CRM,No,Foránea (CRM),Razón social o nombre comercial del cliente.,Banco Central LATAM
+ventas_semana,unidades,INTEGER,Número entero,1 a 10,No,No,Cantidad de instancias o licencias del servicio contratadas en esta transacción.,3
+ventas_semana,precio_unitario,"DECIMAL(10,2)",USD sin símbolo,850.00 a 18500.00,No,No,Precio de venta por unidad del servicio en dólares. Puede diferir del precio de lista por descuentos negociados.,12500.00
+ventas_semana,ventas_semana_actual,"DECIMAL(10,2)",USD sin símbolo,> 0,No,No,Total facturado en esta transacción durante la semana en curso. Fórmula: precio_unitario × unidades.,37500.00
+ventas_semana,costo_total,"DECIMAL(10,2)",USD sin símbolo,> 0,No,No,"Costo directo de entrega del servicio (horas de consultor, licencias, infraestructura). No incluye gastos de ventas ni G&A.",14250.00
+ventas_semana,margen_bruto,"DECIMAL(10,2)",USD sin símbolo,Puede ser negativo en proyectos con sobrecosto,No,No,Ganancia bruta de la transacción. Fórmula: ventas_semana_actual - costo_total.,23250.00
+ventas_semana,margen_bruto_pct,"DECIMAL(5,2)",Porcentaje sin símbolo %,-100 a 100,No,No,Margen bruto expresado como porcentaje de las ventas. Fórmula: (margen_bruto / ventas_semana_actual) × 100.,62.00
+ventas_semana,ventas_semana_anterior,"DECIMAL(10,2)",USD sin símbolo,> 0,No,No,Monto de ventas del mismo tipo de transacción en la semana inmediatamente anterior. Usado para cálculo de variación semanal.,34800.00
+ventas_semana,variacion_pct,"DECIMAL(5,2)",Porcentaje sin símbolo % (puede ser negativo),-100 a 200,No,No,Variación porcentual de ventas respecto a la semana anterior. Fórmula: ((ventas_semana_actual - ventas_semana_anterior) / ventas_semana_anterior) × 100. Negativo indica caída.,7.76

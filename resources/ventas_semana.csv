@@ -1,0 +1,581 @@
+fecha,id_transaccion,dia_semana,categoria_servicio,producto_servicio,canal_venta,vendedor,region,segmento_cliente,nombre_cliente,unidades,precio_unitario,ventas_semana_actual,costo_total,margen_bruto,margen_bruto_pct,ventas_semana_anterior,variacion_pct
+2025-04-21,TC-2025-10001,Monday,Análisis Predictivo,Modelo de Churn Prediction,Digital,Carlos Rodríguez,El Salvador,Enterprise,Logística Global Pac,6,15098.65,90591.9,32181.9,58410.0,64.48,75229.25,20.42
+2025-04-24,TC-2025-10002,Thursday,Análisis Predictivo,Modelo de Churn Prediction,Partner,Valentina Torres,Colombia,SMB,Panadería Industrial GT,2,16842.44,33684.88,10684.06,23000.82,68.28,30724.45,9.64
+2025-04-24,TC-2025-10003,Thursday,Capacitación Tech,Workshop SQL Avanzado,Directo,Carlos Rodríguez,El Salvador,SMB,Boutique Moda Latina,1,1777.85,1777.85,526.52,1251.33,70.38,1763.78,0.8
+2025-04-27,TC-2025-10004,Sunday,Consultoría de Datos,Arquitectura de Datos,Partner,Camila Jiménez,Costa Rica,Mid Market,Manufactura Tica,3,9689.49,29068.47,11153.49,17914.98,61.63,24959.37,16.46
+2025-04-24,TC-2025-10005,Thursday,Implementación BI,Looker Studio Pro,Referidos,Valentina Torres,Colombia,SMB,Transporte Rápido,2,10216.76,20433.52,8205.48,12228.04,59.84,23065.81,-11.41
+2025-04-24,TC-2025-10006,Thursday,Capacitación Tech,Workshop Power BI Avanzado,Partner,Sofía Hernández,El Salvador,SMB,Eventos Premium CO,2,2589.09,5178.18,1329.12,3849.06,74.33,5386.97,-3.88
+2025-04-22,TC-2025-10007,Tuesday,Capacitación Tech,Workshop Power BI Avanzado,Directo,María Pérez,El Salvador,Mid Market,Clínica Santa Rosa,3,2076.33,6228.99,1949.76,4279.23,68.7,6816.89,-8.62
+2025-04-24,TC-2025-10008,Thursday,Análisis Predictivo,Forecasting de Ventas ML,Directo,María Pérez,El Salvador,Mid Market,Fintech Innova,4,13346.09,53384.36,22455.12,30929.24,57.94,43734.93,22.06
+2025-04-21,TC-2025-10009,Monday,Análisis Predictivo,Modelo de Churn Prediction,Referidos,Valentina Torres,El Salvador,Enterprise,Supermercados Unidos,5,14917.29,74586.45,31302.0,43284.45,58.03,65159.91,14.47
+2025-04-21,TC-2025-10010,Monday,Soporte & Mantenimiento,SLA Premium 24/7,Digital,María Pérez,El Salvador,SMB,Consultora Local MX,2,3536.5,7073.0,2382.22,4690.78,66.32,7365.61,-3.97
+2025-04-27,TC-2025-10011,Sunday,Soporte & Mantenimiento,Dashboard Maintenance,Referidos,Carlos Rodríguez,Colombia,Mid Market,Manufactura Tica,2,1388.78,2777.56,1062.84,1714.72,61.73,2713.65,2.36
+2025-04-27,TC-2025-10012,Sunday,Capacitación Tech,Certificación BI Analista,Referidos,Carlos Rodríguez,México,Mid Market,Cooperativa Agrícola Sur,3,3045.87,9137.61,2760.6,6377.01,69.79,9521.74,-4.03
+2025-04-26,TC-2025-10013,Saturday,Consultoría de Datos,Arquitectura de Datos,Digital,Sofía Hernández,Costa Rica,Mid Market,Educativa Futuro,4,10709.3,42837.2,13628.44,29208.76,68.19,39839.7,7.52
+2025-04-26,TC-2025-10014,Saturday,Análisis Predictivo,Forecasting de Ventas ML,Referidos,María Pérez,Colombia,SMB,Tienda Electrónica SV,2,13654.31,27308.62,10429.24,16879.38,61.81,22306.65,22.42
+2025-04-26,TC-2025-10015,Saturday,Implementación BI,Looker Studio Pro,Directo,Ana Martínez,México,Mid Market,Clínica Santa Rosa,1,10435.51,10435.51,4472.44,5963.07,57.14,12127.46,-13.95
+2025-04-24,TC-2025-10016,Thursday,Consultoría de Datos,Data Governance Assessment,Directo,Roberto Morales,México,Mid Market,Fintech Innova,2,6915.39,13830.78,4406.64,9424.14,68.14,12171.93,13.63
+2025-04-21,TC-2025-10017,Monday,Consultoría de Datos,Arquitectura de Datos,Directo,Ana Martínez,Guatemala,SMB,Boutique Moda Latina,2,10105.87,20211.74,7546.28,12665.46,62.66,17544.6,15.2
+2025-04-24,TC-2025-10018,Thursday,Consultoría de Datos,Data Maturity Assessment,Partner,Diego López,Guatemala,Enterprise,Grupo Financiero Pacífico,8,5122.82,40982.56,12903.04,28079.52,68.52,35218.22,16.37
+2025-04-24,TC-2025-10019,Thursday,Soporte & Mantenimiento,SLA Premium 24/7,Referidos,Sofía Hernández,Costa Rica,SMB,Tienda Electrónica SV,2,3304.43,6608.86,2362.0,4246.86,64.26,5963.26,10.83
+2025-04-26,TC-2025-10020,Saturday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Valentina Torres,Colombia,Mid Market,Agroexport SA,4,8152.66,32610.64,11996.68,20613.96,63.21,38523.33,-15.35
+2025-04-27,TC-2025-10021,Sunday,Análisis Predictivo,Detección de Anomalías,Directo,Luis Ramírez,Guatemala,Enterprise,Logística Global Pac,6,10663.14,63978.84,28346.34,35632.5,55.69,51896.18,23.28
+2025-04-25,TC-2025-10022,Friday,Consultoría de Datos,Data Maturity Assessment,Directo,Roberto Morales,Colombia,Mid Market,Agencia Digital Norte,1,4796.17,4796.17,1579.32,3216.85,67.07,4500.35,6.57
+2025-04-26,TC-2025-10023,Saturday,Análisis Predictivo,Segmentación de Clientes IA,Directo,Valentina Torres,Colombia,Enterprise,Telecomunicaciones del Sur,7,11639.99,81479.93,31252.97,50226.96,61.64,73707.33,10.55
+2025-04-25,TC-2025-10024,Friday,Consultoría de Datos,Arquitectura de Datos,Partner,Camila Jiménez,México,Enterprise,Corporación Retail Max,4,8461.58,33846.32,14052.12,19794.2,58.48,29176.99,16.0
+2025-04-21,TC-2025-10025,Monday,Implementación BI,Looker Studio Pro,Directo,Roberto Morales,Colombia,SMB,Academia Digital SV,2,12754.79,25509.58,7867.22,17642.36,69.16,29728.48,-14.19
+2025-04-22,TC-2025-10026,Tuesday,Implementación BI,Power BI Enterprise,Digital,Diego López,El Salvador,Enterprise,Energía Renovable SA,7,13378.39,93648.73,32331.18,61317.55,65.48,102721.86,-8.83
+2025-04-27,TC-2025-10027,Sunday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Ana Martínez,Guatemala,Enterprise,Energía Renovable SA,3,3748.97,11246.91,3462.9,7784.01,69.21,11340.78,-0.83
+2025-04-21,TC-2025-10028,Monday,Análisis Predictivo,Scoring de Crédito,Partner,Sofía Hernández,El Salvador,Gobierno,INSAFORP El Salvador,2,17403.42,34806.84,12079.3,22727.54,65.3,28462.65,22.29
+2025-04-27,TC-2025-10029,Sunday,Implementación BI,Power BI Enterprise,Referidos,Carlos Rodríguez,El Salvador,Enterprise,Energía Renovable SA,6,14315.51,85893.06,28368.6,57524.46,66.97,96210.22,-10.72
+2025-04-22,TC-2025-10030,Tuesday,Consultoría de Datos,Data Governance Assessment,Referidos,Valentina Torres,Costa Rica,SMB,Restaurantes La Plaza,2,6911.24,13822.48,4140.68,9681.8,70.04,13146.52,5.14
+2025-04-22,TC-2025-10031,Tuesday,Capacitación Tech,Workshop Python Analytics,Directo,Ana Martínez,Colombia,Enterprise,Constructora Progreso,3,2812.44,8437.32,2235.72,6201.6,73.5,8427.15,0.12
+2025-04-27,TC-2025-10032,Sunday,Capacitación Tech,Workshop Python Analytics,Directo,María Pérez,México,Mid Market,Clínica Santa Rosa,3,2463.36,7390.08,2253.39,5136.69,69.51,7837.47,-5.71
+2025-04-23,TC-2025-10033,Wednesday,Soporte & Mantenimiento,Dashboard Maintenance,Referidos,Sofía Hernández,El Salvador,Gobierno,Ministerio de Educación GT,1,1368.78,1368.78,504.66,864.12,63.13,1377.51,-0.63
+2025-04-21,TC-2025-10034,Monday,Implementación BI,Data Warehouse Setup,Referidos,Diego López,El Salvador,SMB,Transporte Rápido,2,16289.39,32578.78,15380.52,17198.26,52.79,36021.12,-9.56
+2025-04-23,TC-2025-10035,Wednesday,Capacitación Tech,Workshop Python Analytics,Directo,Andrés García,El Salvador,SMB,PyME Tech,1,2739.82,2739.82,726.04,2013.78,73.5,2738.37,0.05
+2025-04-25,TC-2025-10036,Friday,Implementación BI,Dashboard Ejecutivo Custom,Digital,Valentina Torres,México,Enterprise,Telecomunicaciones del Sur,6,8538.51,51231.06,18742.68,32488.38,63.42,51797.7,-1.09
+2025-04-26,TC-2025-10037,Saturday,Implementación BI,Dashboard Ejecutivo Custom,Digital,Luis Ramírez,México,Mid Market,Importadora Centroam,2,9093.5,18187.0,6491.38,11695.62,64.31,21456.13,-15.24
+2025-04-26,TC-2025-10038,Saturday,Capacitación Tech,Workshop Power BI Avanzado,Directo,Carlos Rodríguez,México,Mid Market,Agencia Digital Norte,3,2084.26,6252.78,1856.13,4396.65,70.32,5955.66,4.99
+2025-04-26,TC-2025-10039,Saturday,Implementación BI,Dashboard Ejecutivo Custom,Partner,Roberto Morales,Colombia,Mid Market,Agencia Digital Norte,4,9049.16,36196.64,11892.08,24304.56,67.15,40769.72,-11.22
+2025-04-21,TC-2025-10040,Monday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Camila Jiménez,El Salvador,SMB,Eventos Premium CO,1,9819.55,9819.55,3006.14,6813.41,69.39,8558.78,14.73
+2025-04-27,TC-2025-10041,Sunday,Análisis Predictivo,Detección de Anomalías,Referidos,Luis Ramírez,México,Gobierno,Ministerio de Educación GT,3,13197.47,39592.41,13045.29,26547.12,67.05,36669.35,7.97
+2025-04-27,TC-2025-10042,Sunday,Implementación BI,Tableau Implementation,Digital,Diego López,México,Enterprise,Aseguradora Continental,8,14716.74,117733.92,44892.32,72841.6,61.87,124712.0,-5.6
+2025-04-22,TC-2025-10043,Tuesday,Consultoría de Datos,Data Quality Framework,Directo,Carlos Rodríguez,Guatemala,SMB,Servicios Técnicos CR,1,5770.48,5770.48,1841.68,3928.8,68.08,5098.5,13.18
+2025-04-27,TC-2025-10044,Sunday,Implementación BI,Looker Studio Pro,Partner,Valentina Torres,Guatemala,Enterprise,Farmacéutica Centroam,6,12802.0,76812.0,23262.78,53549.22,69.71,89549.71,-14.22
+2025-04-26,TC-2025-10045,Saturday,Análisis Predictivo,Scoring de Crédito,Directo,Valentina Torres,Guatemala,SMB,Academia Digital SV,1,16936.74,16936.74,6167.49,10769.25,63.59,14693.77,15.26
+2025-04-21,TC-2025-10046,Monday,Implementación BI,Dashboard Ejecutivo Custom,Digital,Roberto Morales,Colombia,Gobierno,INSAFORP El Salvador,2,9306.6,18613.2,6361.7,12251.5,65.82,19092.47,-2.51
+2025-04-23,TC-2025-10047,Wednesday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Luis Ramírez,Guatemala,Mid Market,Cooperativa Agrícola Sur,4,8478.6,33914.4,13295.2,20619.2,60.8,36800.86,-7.84
+2025-04-26,TC-2025-10048,Saturday,Soporte & Mantenimiento,Licencias Power BI Pro,Directo,Andrés García,México,Gobierno,Alcaldía de San Salvador,1,947.21,947.21,696.51,250.7,26.47,957.03,-1.03
+2025-04-25,TC-2025-10049,Friday,Soporte & Mantenimiento,SLA Estándar,Digital,Luis Ramírez,México,Enterprise,Grupo Financiero Pacífico,3,1835.12,5505.36,1787.46,3717.9,67.53,5232.89,5.21
+2025-04-23,TC-2025-10050,Wednesday,Análisis Predictivo,Modelo de Churn Prediction,Digital,Roberto Morales,El Salvador,Mid Market,Distribuidora El Pino,4,14984.94,59939.76,23998.12,35941.64,59.96,48585.58,23.37
+2025-04-27,TC-2025-10051,Sunday,Capacitación Tech,Workshop Python Analytics,Directo,Roberto Morales,Colombia,SMB,Boutique Moda Latina,1,2460.4,2460.4,741.41,1718.99,69.87,2483.97,-0.95
+2025-04-26,TC-2025-10052,Saturday,Análisis Predictivo,Segmentación de Clientes IA,Directo,Valentina Torres,Guatemala,Mid Market,Cooperativa Agrícola Sur,4,13106.31,52425.24,18210.08,34215.16,65.26,47292.46,10.85
+2025-04-27,TC-2025-10053,Sunday,Soporte & Mantenimiento,Dashboard Maintenance,Partner,Luis Ramírez,Costa Rica,SMB,Tienda Electrónica SV,2,1465.04,2930.08,978.46,1951.62,66.61,3042.56,-3.7
+2025-04-21,TC-2025-10054,Monday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Valentina Torres,México,Mid Market,Cooperativa Agrícola Sur,4,9990.52,39962.08,11768.76,28193.32,70.55,41891.64,-4.61
+2025-04-25,TC-2025-10055,Friday,Capacitación Tech,Workshop SQL Avanzado,Directo,Camila Jiménez,México,SMB,Restaurantes La Plaza,1,1630.23,1630.23,559.01,1071.22,65.71,1677.58,-2.82
+2025-04-22,TC-2025-10056,Tuesday,Capacitación Tech,Bootcamp Data Science,Partner,Carlos Rodríguez,México,SMB,Transporte Rápido,2,4893.91,9787.82,2616.28,7171.54,73.27,10222.21,-4.25
+2025-04-23,TC-2025-10057,Wednesday,Análisis Predictivo,Detección de Anomalías,Directo,Andrés García,Costa Rica,Mid Market,Importadora Centroam,3,10987.34,32962.02,12398.82,20563.2,62.38,27252.81,20.95
+2025-04-26,TC-2025-10058,Saturday,Consultoría de Datos,Data Maturity Assessment,Referidos,Luis Ramírez,México,Enterprise,Aseguradora Continental,6,5278.42,31670.52,9637.86,22032.66,69.57,28306.4,11.88
+2025-04-23,TC-2025-10059,Wednesday,Consultoría de Datos,Data Governance Assessment,Directo,Camila Jiménez,Guatemala,Mid Market,Educativa Futuro,1,7268.19,7268.19,2117.93,5150.26,70.86,6942.38,4.69
+2025-04-23,TC-2025-10060,Wednesday,Consultoría de Datos,Arquitectura de Datos,Directo,Luis Ramírez,El Salvador,Enterprise,Constructora Progreso,3,10760.77,32282.31,10372.29,21910.02,67.87,31620.99,2.09
+2025-04-22,TC-2025-10061,Tuesday,Consultoría de Datos,Data Strategy & Roadmap,Partner,Ana Martínez,El Salvador,Mid Market,Educativa Futuro,3,7697.21,23091.63,9213.21,13878.42,60.1,21579.81,7.01
+2025-04-23,TC-2025-10062,Wednesday,Implementación BI,Data Warehouse Setup,Digital,Luis Ramírez,El Salvador,Mid Market,Importadora Centroam,4,17974.86,71899.44,29357.68,42541.76,59.17,80396.29,-10.57
+2025-04-25,TC-2025-10063,Friday,Capacitación Tech,Workshop Python Analytics,Partner,Diego López,Guatemala,Enterprise,Telecomunicaciones del Sur,2,2317.4,4634.8,1478.04,3156.76,68.11,4922.92,-5.85
+2025-04-26,TC-2025-10064,Saturday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Luis Ramírez,Colombia,SMB,Boutique Moda Latina,1,17357.6,17357.6,6067.1,11290.5,65.05,15395.58,12.74
+2025-04-21,TC-2025-10065,Monday,Análisis Predictivo,Forecasting de Ventas ML,Partner,María Pérez,México,Mid Market,Educativa Futuro,1,12551.99,12551.99,5039.93,7512.06,59.85,11349.54,10.59
+2025-04-25,TC-2025-10066,Friday,Análisis Predictivo,Segmentación de Clientes IA,Partner,Valentina Torres,México,Mid Market,Manufactura Tica,4,12135.93,48543.72,18688.6,29855.12,61.5,44842.06,8.25
+2025-04-21,TC-2025-10067,Monday,Capacitación Tech,Certificación BI Analista,Directo,Roberto Morales,El Salvador,Gobierno,Ministerio de Educación GT,3,3604.56,10813.68,2915.13,7898.55,73.04,11617.43,-6.92
+2025-04-26,TC-2025-10068,Saturday,Consultoría de Datos,Data Maturity Assessment,Digital,Roberto Morales,Costa Rica,Enterprise,Farmacéutica Centroam,8,4623.83,36990.64,11962.88,25027.76,67.66,33417.4,10.69
+2025-04-27,TC-2025-10069,Sunday,Implementación BI,Power BI Enterprise,Referidos,María Pérez,Guatemala,SMB,Tienda Electrónica SV,1,12705.6,12705.6,4657.55,8048.05,63.34,13567.4,-6.35
+2025-04-24,TC-2025-10070,Thursday,Soporte & Mantenimiento,Licencias Power BI Pro,Referidos,Camila Jiménez,Colombia,Enterprise,Constructora Progreso,2,795.83,1591.66,1329.92,261.74,16.44,1608.71,-1.06
+2025-04-21,TC-2025-10071,Monday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Luis Ramírez,México,Gobierno,Dirección General de Aduanas,1,17579.16,17579.16,5901.03,11678.13,66.43,14648.6,20.01
+2025-04-21,TC-2025-10072,Monday,Consultoría de Datos,Data Maturity Assessment,Directo,Carlos Rodríguez,Guatemala,Enterprise,Constructora Progreso,7,5083.39,35583.73,11197.06,24386.67,68.53,34089.76,4.38
+2025-04-22,TC-2025-10073,Tuesday,Análisis Predictivo,Segmentación de Clientes IA,Partner,Luis Ramírez,México,Mid Market,Agroexport SA,4,11246.2,44984.8,18692.56,26292.24,58.45,40658.7,10.64
+2025-04-27,TC-2025-10074,Sunday,Consultoría de Datos,Data Strategy & Roadmap,Directo,Camila Jiménez,Colombia,Mid Market,Manufactura Tica,1,8201.24,8201.24,3096.86,5104.38,62.24,7699.37,6.52
+2025-04-27,TC-2025-10075,Sunday,Soporte & Mantenimiento,Licencias Power BI Pro,Referidos,Andrés García,Guatemala,Mid Market,Agroexport SA,4,864.11,3456.44,2642.44,814.0,23.55,3188.6,8.4
+2025-04-26,TC-2025-10076,Saturday,Capacitación Tech,Certificación BI Analista,Directo,Andrés García,Colombia,Mid Market,Importadora Centroam,4,3186.64,12746.56,3940.56,8806.0,69.09,13815.16,-7.73
+2025-04-27,TC-2025-10077,Sunday,Soporte & Mantenimiento,Licencias Power BI Pro,Referidos,Andrés García,El Salvador,Gobierno,SIECA Guatemala,2,773.43,1546.86,1449.32,97.54,6.31,1385.35,11.66
+2025-04-26,TC-2025-10078,Saturday,Consultoría de Datos,Data Governance Assessment,Directo,Roberto Morales,Colombia,Enterprise,Farmacéutica Centroam,2,7040.28,14080.56,4436.78,9643.78,68.49,13787.15,2.13
+2025-04-25,TC-2025-10079,Friday,Implementación BI,Looker Studio Pro,Partner,Camila Jiménez,Costa Rica,Mid Market,Distribuidora El Pino,1,10454.74,10454.74,4323.92,6130.82,58.64,11097.89,-5.8
+2025-04-22,TC-2025-10080,Tuesday,Implementación BI,Power BI Enterprise,Partner,Carlos Rodríguez,El Salvador,Mid Market,Importadora Centroam,3,14387.84,43163.52,13353.96,29809.56,69.06,49679.93,-13.12
+2025-04-22,TC-2025-10081,Tuesday,Implementación BI,Looker Studio Pro,Partner,Sofía Hernández,El Salvador,Mid Market,Educativa Futuro,1,11691.32,11691.32,4121.07,7570.25,64.75,13224.06,-11.59
+2025-04-27,TC-2025-10082,Sunday,Análisis Predictivo,Detección de Anomalías,Directo,María Pérez,México,Enterprise,Banco Central LATAM,5,13229.17,66145.85,22625.2,43520.65,65.79,54370.51,21.66
+2025-04-27,TC-2025-10083,Sunday,Implementación BI,Looker Studio Pro,Referidos,María Pérez,Guatemala,Gobierno,Dirección General de Aduanas,2,10337.42,20674.84,8245.02,12429.82,60.12,22658.56,-8.75
+2025-04-23,TC-2025-10084,Wednesday,Implementación BI,Data Warehouse Setup,Directo,Ana Martínez,Guatemala,SMB,Tienda Electrónica SV,1,19420.91,19420.91,7414.04,12006.87,61.82,22177.12,-12.43
+2025-04-27,TC-2025-10085,Sunday,Consultoría de Datos,Data Maturity Assessment,Digital,Diego López,Colombia,Gobierno,Ministerio de Educación GT,2,4255.66,8511.32,3041.34,5469.98,64.27,7566.41,12.49
+2025-04-21,TC-2025-10086,Monday,Capacitación Tech,Workshop Python Analytics,Partner,María Pérez,Costa Rica,Mid Market,Importadora Centroam,3,2749.27,8247.81,2102.46,6145.35,74.51,8224.15,0.29
+2025-04-25,TC-2025-10087,Friday,Capacitación Tech,Workshop Python Analytics,Directo,Andrés García,Colombia,SMB,Academia Digital SV,2,2822.85,5645.7,1441.68,4204.02,74.46,6122.68,-7.79
+2025-04-27,TC-2025-10088,Sunday,Análisis Predictivo,Segmentación de Clientes IA,Digital,Carlos Rodríguez,Guatemala,Enterprise,Telecomunicaciones del Sur,3,13656.51,40969.53,14295.06,26674.47,65.11,38361.4,6.8
+2025-04-24,TC-2025-10089,Thursday,Soporte & Mantenimiento,Soporte Técnico On-site,Directo,Camila Jiménez,Colombia,Enterprise,Grupo Financiero Pacífico,4,3029.18,12116.72,4028.08,8088.64,66.76,11922.97,1.63
+2025-04-25,TC-2025-10090,Friday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,Camila Jiménez,El Salvador,Enterprise,Energía Renovable SA,3,1611.44,4834.32,1563.15,3271.17,67.67,4666.68,3.59
+2025-04-21,TC-2025-10091,Monday,Capacitación Tech,Bootcamp Data Science,Directo,Luis Ramírez,El Salvador,Enterprise,Grupo Financiero Pacífico,3,5157.8,15473.4,3813.9,11659.5,75.35,15833.64,-2.28
+2025-04-27,TC-2025-10092,Sunday,Capacitación Tech,Certificación BI Analista,Partner,Valentina Torres,Colombia,Enterprise,Grupo Financiero Pacífico,5,3407.03,17035.15,5137.2,11897.95,69.84,16943.1,0.54
+2025-04-25,TC-2025-10093,Friday,Capacitación Tech,Workshop Python Analytics,Partner,Carlos Rodríguez,Costa Rica,SMB,Consultora Local MX,2,2245.41,4490.82,1446.22,3044.6,67.8,4976.54,-9.76
+2025-04-27,TC-2025-10094,Sunday,Soporte & Mantenimiento,Licencias Power BI Pro,Directo,Ana Martínez,El Salvador,Mid Market,Distribuidora El Pino,3,810.11,2430.33,1917.9,512.43,21.08,2383.92,1.95
+2025-04-27,TC-2025-10095,Sunday,Consultoría de Datos,Data Maturity Assessment,Directo,Andrés García,El Salvador,SMB,Servicios Técnicos CR,1,4334.32,4334.32,1723.91,2610.41,60.23,4326.31,0.19
+2025-04-25,TC-2025-10096,Friday,Análisis Predictivo,Forecasting de Ventas ML,Directo,Andrés García,Colombia,Enterprise,Corporación Retail Max,4,11943.91,47775.64,20019.16,27756.48,58.1,39063.08,22.3
+2025-04-21,TC-2025-10097,Monday,Implementación BI,Power BI Enterprise,Digital,Camila Jiménez,México,SMB,PyME Tech,2,12889.4,25778.8,10284.16,15494.64,60.11,26258.64,-1.83
+2025-04-24,TC-2025-10098,Thursday,Capacitación Tech,Certificación BI Analista,Directo,Luis Ramírez,México,Enterprise,Farmacéutica Centroam,7,2919.64,20437.48,6948.34,13489.14,66.0,20879.31,-2.12
+2025-04-26,TC-2025-10099,Saturday,Soporte & Mantenimiento,Dashboard Maintenance,Partner,Roberto Morales,El Salvador,Enterprise,Logística Global Pac,4,1491.41,5965.64,2071.8,3893.84,65.27,5601.81,6.49
+2025-04-24,TC-2025-10100,Thursday,Análisis Predictivo,Scoring de Crédito,Directo,Camila Jiménez,Colombia,SMB,Panadería Industrial GT,2,18916.05,37832.1,12623.5,25208.6,66.63,34620.88,9.28
+2025-04-21,TC-2025-10101,Monday,Implementación BI,Power BI Enterprise,Directo,Sofía Hernández,Guatemala,Enterprise,Constructora Progreso,2,14119.14,28238.28,8975.2,19263.08,68.22,29028.03,-2.72
+2025-04-24,TC-2025-10102,Thursday,Capacitación Tech,Workshop Python Analytics,Partner,Andrés García,México,Mid Market,Clínica Santa Rosa,3,2855.21,8565.63,2408.82,6156.81,71.88,8721.66,-1.79
+2025-04-22,TC-2025-10103,Tuesday,Soporte & Mantenimiento,SLA Premium 24/7,Referidos,Roberto Morales,México,Mid Market,Agroexport SA,2,3769.57,7539.14,2294.12,5245.02,69.57,6860.73,9.89
+2025-04-27,TC-2025-10104,Sunday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,Valentina Torres,Guatemala,Enterprise,Logística Global Pac,8,1599.78,12798.24,4194.24,8604.0,67.23,12538.28,2.07
+2025-04-21,TC-2025-10105,Monday,Análisis Predictivo,Segmentación de Clientes IA,Directo,Andrés García,Guatemala,SMB,Consultora Local MX,1,13691.51,13691.51,4648.81,9042.7,66.05,11716.66,16.86
+2025-04-22,TC-2025-10106,Tuesday,Consultoría de Datos,Data Strategy & Roadmap,Directo,Luis Ramírez,México,Mid Market,Cooperativa Agrícola Sur,3,8274.68,24824.04,9330.24,15493.8,62.41,24608.56,0.88
+2025-04-24,TC-2025-10107,Thursday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Carlos Rodríguez,Colombia,Enterprise,Aseguradora Continental,7,15108.07,105756.49,41295.59,64460.9,60.95,90699.47,16.6
+2025-04-25,TC-2025-10108,Friday,Implementación BI,Data Warehouse Setup,Directo,Roberto Morales,Guatemala,Enterprise,Constructora Progreso,7,17991.73,125942.11,48146.28,77795.83,61.77,149125.33,-15.55
+2025-04-23,TC-2025-10109,Wednesday,Consultoría de Datos,Data Governance Assessment,Directo,María Pérez,El Salvador,Enterprise,Aseguradora Continental,2,5470.38,10940.76,4366.0,6574.76,60.09,9604.68,13.91
+2025-04-27,TC-2025-10110,Sunday,Implementación BI,Tableau Implementation,Partner,Carlos Rodríguez,Colombia,SMB,Tienda Electrónica SV,1,14354.3,14354.3,5464.58,8889.72,61.93,14708.55,-2.41
+2025-04-21,TC-2025-10111,Monday,Implementación BI,Dashboard Ejecutivo Custom,Partner,Carlos Rodríguez,Colombia,Mid Market,Hotel Cadena Pacífico,3,8197.75,24593.25,9966.06,14627.19,59.48,26853.0,-8.42
+2025-04-25,TC-2025-10112,Friday,Capacitación Tech,Workshop SQL Avanzado,Directo,Roberto Morales,Colombia,Enterprise,Farmacéutica Centroam,2,1797.71,3595.42,1047.22,2548.2,70.87,3611.44,-0.44
+2025-04-23,TC-2025-10113,Wednesday,Implementación BI,Tableau Implementation,Directo,Diego López,México,Mid Market,Cooperativa Agrícola Sur,2,13502.51,27005.02,10377.74,16627.28,61.57,28238.45,-4.37
+2025-04-24,TC-2025-10114,Thursday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Roberto Morales,Colombia,Mid Market,Fintech Innova,3,17089.11,51267.33,17754.18,33513.15,65.37,42090.62,21.8
+2025-04-21,TC-2025-10115,Monday,Consultoría de Datos,Arquitectura de Datos,Partner,Andrés García,Colombia,Mid Market,Agroexport SA,3,9370.41,28111.23,10000.98,18110.25,64.42,25482.26,10.32
+2025-04-24,TC-2025-10116,Thursday,Implementación BI,Power BI Enterprise,Partner,Camila Jiménez,México,Mid Market,Distribuidora El Pino,2,12205.73,24411.46,9562.56,14848.9,60.83,25327.23,-3.62
+2025-04-26,TC-2025-10117,Saturday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Carlos Rodríguez,Colombia,Gobierno,INSAFORP El Salvador,1,7579.81,7579.81,3306.3,4273.51,56.38,7569.69,0.13
+2025-04-26,TC-2025-10118,Saturday,Análisis Predictivo,Detección de Anomalías,Directo,Valentina Torres,Guatemala,Enterprise,Energía Renovable SA,6,10300.66,61803.96,26952.84,34851.12,56.39,52320.75,18.13
+2025-04-23,TC-2025-10119,Wednesday,Implementación BI,Data Warehouse Setup,Digital,Roberto Morales,Guatemala,SMB,Servicios Técnicos CR,1,19514.2,19514.2,6786.93,12727.27,65.22,20928.9,-6.76
+2025-04-26,TC-2025-10120,Saturday,Soporte & Mantenimiento,Licencias Power BI Pro,Directo,Camila Jiménez,Colombia,Enterprise,Farmacéutica Centroam,8,831.76,6654.08,5116.0,1538.08,23.11,6669.93,-0.24
+2025-04-23,TC-2025-10121,Wednesday,Soporte & Mantenimiento,Soporte Técnico On-site,Directo,Ana Martínez,México,Mid Market,Cooperativa Agrícola Sur,2,3262.98,6525.96,1910.36,4615.6,70.73,6605.7,-1.21
+2025-04-27,TC-2025-10122,Sunday,Consultoría de Datos,Data Governance Assessment,Directo,Camila Jiménez,Guatemala,SMB,Academia Digital SV,1,6687.19,6687.19,2226.47,4460.72,66.71,6308.78,6.0
+2025-04-21,TC-2025-10123,Monday,Análisis Predictivo,Forecasting de Ventas ML,Directo,Sofía Hernández,Colombia,SMB,Eventos Premium CO,2,13355.41,26710.82,10765.4,15945.42,59.7,24971.93,6.96
+2025-04-23,TC-2025-10124,Wednesday,Análisis Predictivo,Scoring de Crédito,Directo,Luis Ramírez,El Salvador,Gobierno,Alcaldía de San Salvador,3,19208.29,57624.87,20688.21,36936.66,64.1,49801.36,15.71
+2025-04-22,TC-2025-10125,Tuesday,Implementación BI,Dashboard Ejecutivo Custom,Partner,Diego López,Guatemala,Enterprise,Supermercados Unidos,8,8404.01,67232.08,25360.16,41871.92,62.28,78303.85,-14.14
+2025-04-23,TC-2025-10126,Wednesday,Análisis Predictivo,Modelo de Churn Prediction,Digital,Carlos Rodríguez,México,Enterprise,Telecomunicaciones del Sur,5,17273.88,86369.4,27363.7,59005.7,68.32,74352.46,16.16
+2025-04-24,TC-2025-10127,Thursday,Soporte & Mantenimiento,SLA Estándar,Digital,Valentina Torres,Costa Rica,Gobierno,Ministerio de Hacienda SV,3,1785.94,5357.82,1826.13,3531.69,65.92,4853.54,10.39
+2025-04-21,TC-2025-10128,Monday,Implementación BI,Looker Studio Pro,Referidos,Sofía Hernández,Colombia,Mid Market,Educativa Futuro,3,12707.41,38122.23,12544.47,25577.76,67.09,44111.93,-13.58
+2025-04-27,TC-2025-10129,Sunday,Capacitación Tech,Bootcamp Data Science,Partner,María Pérez,El Salvador,Enterprise,Corporación Retail Max,3,4700.89,14102.67,4197.24,9905.43,70.24,14603.44,-3.43
+2025-04-21,TC-2025-10130,Monday,Consultoría de Datos,Data Quality Framework,Directo,Roberto Morales,El Salvador,Enterprise,Constructora Progreso,2,6559.84,13119.68,3899.9,9219.78,70.27,12217.93,7.38
+2025-04-22,TC-2025-10131,Tuesday,Análisis Predictivo,Detección de Anomalías,Directo,Roberto Morales,El Salvador,Mid Market,Cooperativa Agrícola Sur,4,10766.23,43064.92,18073.68,24991.24,58.03,37588.47,14.57
+2025-04-27,TC-2025-10132,Sunday,Implementación BI,Data Warehouse Setup,Partner,Ana Martínez,Colombia,Mid Market,Hotel Cadena Pacífico,4,16521.62,66086.48,28278.76,37807.72,57.21,71150.33,-7.12
+2025-04-26,TC-2025-10133,Saturday,Capacitación Tech,Workshop SQL Avanzado,Digital,Carlos Rodríguez,Guatemala,SMB,PyME Tech,2,1656.04,3312.08,1054.48,2257.6,68.16,3326.31,-0.43
+2025-04-26,TC-2025-10134,Saturday,Análisis Predictivo,Scoring de Crédito,Referidos,Sofía Hernández,México,Enterprise,Grupo Financiero Pacífico,8,19190.85,153526.8,47406.96,106119.84,69.12,127127.47,20.77
+2025-04-23,TC-2025-10135,Wednesday,Capacitación Tech,Workshop Power BI Avanzado,Directo,Camila Jiménez,Guatemala,Mid Market,Importadora Centroam,1,2433.17,2433.17,617.87,1815.3,74.61,2451.02,-0.73
+2025-04-24,TC-2025-10136,Thursday,Capacitación Tech,Workshop SQL Avanzado,Directo,Valentina Torres,Colombia,Mid Market,Importadora Centroam,3,2109.81,6329.43,1619.01,4710.42,74.42,6522.6,-2.96
+2025-04-27,TC-2025-10137,Sunday,Soporte & Mantenimiento,Soporte Técnico On-site,Directo,Valentina Torres,El Salvador,Mid Market,Fintech Innova,2,2922.2,5844.4,1903.94,3940.46,67.42,5292.93,10.42
+2025-04-24,TC-2025-10138,Thursday,Análisis Predictivo,Segmentación de Clientes IA,Partner,Luis Ramírez,Colombia,Enterprise,Energía Renovable SA,2,13176.53,26353.06,9805.88,16547.18,62.79,23336.81,12.92
+2025-04-22,TC-2025-10139,Tuesday,Implementación BI,Power BI Enterprise,Directo,Sofía Hernández,México,Mid Market,Distribuidora El Pino,4,11130.5,44522.0,17870.56,26651.44,59.86,51105.51,-12.88
+2025-04-23,TC-2025-10140,Wednesday,Implementación BI,Dashboard Ejecutivo Custom,Referidos,Luis Ramírez,El Salvador,Enterprise,Energía Renovable SA,5,9758.54,48792.7,15683.35,33109.35,67.86,53871.09,-9.43
+2025-04-24,TC-2025-10141,Thursday,Implementación BI,Looker Studio Pro,Directo,Luis Ramírez,El Salvador,SMB,Academia Digital SV,1,10543.86,10543.86,4038.91,6504.95,61.69,11487.06,-8.21
+2025-04-24,TC-2025-10142,Thursday,Soporte & Mantenimiento,Dashboard Maintenance,Digital,Sofía Hernández,Costa Rica,Enterprise,Grupo Financiero Pacífico,3,1724.41,5173.23,1516.56,3656.67,70.68,4691.3,10.27
+2025-04-27,TC-2025-10143,Sunday,Capacitación Tech,Workshop SQL Avanzado,Digital,María Pérez,Colombia,Mid Market,Manufactura Tica,2,1968.38,3936.76,1153.84,2782.92,70.69,4147.93,-5.09
+2025-04-21,TC-2025-10144,Monday,Capacitación Tech,Certificación BI Analista,Directo,Diego López,Costa Rica,SMB,Eventos Premium CO,2,3347.86,6695.72,1879.72,4816.0,71.93,7238.18,-7.49
+2025-04-24,TC-2025-10145,Thursday,Análisis Predictivo,Detección de Anomalías,Referidos,Luis Ramírez,El Salvador,Mid Market,Agroexport SA,4,12960.52,51842.08,16399.68,35442.4,68.37,48487.26,6.92
+2025-04-22,TC-2025-10146,Tuesday,Análisis Predictivo,Scoring de Crédito,Partner,Camila Jiménez,México,Enterprise,Supermercados Unidos,8,19303.01,154424.08,50648.0,103776.08,67.2,143106.0,7.91
+2025-04-25,TC-2025-10147,Friday,Consultoría de Datos,Data Strategy & Roadmap,Partner,Diego López,Guatemala,Enterprise,Energía Renovable SA,4,9637.13,38548.52,12289.24,26259.28,68.12,36464.37,5.72
+2025-04-25,TC-2025-10148,Friday,Análisis Predictivo,Forecasting de Ventas ML,Partner,Sofía Hernández,México,Enterprise,Supermercados Unidos,3,12573.36,37720.08,15910.71,21809.37,57.82,34909.77,8.05
+2025-04-26,TC-2025-10149,Saturday,Implementación BI,Data Warehouse Setup,Directo,Roberto Morales,Colombia,Enterprise,Aseguradora Continental,3,20536.62,61609.86,21311.73,40298.13,65.41,69208.77,-10.98
+2025-04-24,TC-2025-10150,Thursday,Análisis Predictivo,Detección de Anomalías,Directo,Valentina Torres,Costa Rica,Mid Market,Manufactura Tica,1,12495.72,12495.72,4159.29,8336.43,66.71,10719.15,16.57
+2025-04-22,TC-2025-10151,Tuesday,Análisis Predictivo,Segmentación de Clientes IA,Partner,Andrés García,Guatemala,SMB,Tienda Electrónica SV,2,12413.93,24827.86,8620.3,16207.56,65.28,20697.33,19.96
+2025-04-24,TC-2025-10152,Thursday,Consultoría de Datos,Arquitectura de Datos,Directo,Valentina Torres,El Salvador,Enterprise,Supermercados Unidos,3,10753.01,32259.03,11495.19,20763.84,64.37,31367.62,2.84
+2025-04-23,TC-2025-10153,Wednesday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,Luis Ramírez,El Salvador,Gobierno,Dirección General de Aduanas,2,1330.43,2660.86,1092.66,1568.2,58.94,2585.61,2.91
+2025-04-23,TC-2025-10154,Wednesday,Soporte & Mantenimiento,SLA Estándar,Partner,Roberto Morales,El Salvador,Enterprise,Constructora Progreso,6,1588.42,9530.52,3486.36,6044.16,63.42,8710.98,9.41
+2025-04-22,TC-2025-10155,Tuesday,Implementación BI,Looker Studio Pro,Digital,Roberto Morales,Guatemala,Mid Market,Agroexport SA,3,11505.64,34516.92,11740.23,22776.69,65.99,37956.51,-9.06
+2025-04-24,TC-2025-10156,Thursday,Capacitación Tech,Workshop SQL Avanzado,Digital,Sofía Hernández,México,Mid Market,Clínica Santa Rosa,3,2013.24,6039.72,1578.3,4461.42,73.87,6663.81,-9.37
+2025-04-26,TC-2025-10157,Saturday,Capacitación Tech,Workshop Python Analytics,Partner,Ana Martínez,Guatemala,Enterprise,Telecomunicaciones del Sur,4,2802.97,11211.88,3009.28,8202.6,73.16,10909.4,2.77
+2025-04-25,TC-2025-10158,Friday,Soporte & Mantenimiento,SLA Estándar,Directo,Roberto Morales,México,Enterprise,Aseguradora Continental,4,1857.95,7431.8,2483.84,4947.96,66.58,7203.62,3.17
+2025-04-23,TC-2025-10159,Wednesday,Análisis Predictivo,Scoring de Crédito,Digital,Valentina Torres,Guatemala,SMB,PyME Tech,1,17474.7,17474.7,6159.9,11314.8,64.75,15573.67,12.21
+2025-04-26,TC-2025-10160,Saturday,Soporte & Mantenimiento,Soporte Técnico On-site,Partner,Sofía Hernández,Colombia,Mid Market,Agroexport SA,4,2588.13,10352.52,4033.36,6319.16,61.04,9297.68,11.35
+2025-04-24,TC-2025-10161,Thursday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Valentina Torres,Guatemala,Mid Market,Agencia Digital Norte,4,3996.46,15985.84,4981.12,11004.72,68.84,14433.27,10.76
+2025-04-22,TC-2025-10162,Tuesday,Consultoría de Datos,Data Governance Assessment,Partner,Valentina Torres,Costa Rica,Mid Market,Cooperativa Agrícola Sur,4,7152.55,28610.2,8188.08,20422.12,71.38,25873.31,10.58
+2025-04-22,TC-2025-10163,Tuesday,Capacitación Tech,Workshop SQL Avanzado,Partner,Camila Jiménez,El Salvador,Enterprise,Aseguradora Continental,4,2000.43,8001.72,2230.8,5770.92,72.12,8500.29,-5.87
+2025-04-21,TC-2025-10164,Monday,Análisis Predictivo,Scoring de Crédito,Directo,María Pérez,Costa Rica,SMB,Transporte Rápido,2,18954.01,37908.02,12584.0,25324.02,66.8,32146.71,17.92
+2025-04-26,TC-2025-10165,Saturday,Capacitación Tech,Workshop Python Analytics,Directo,Andrés García,Guatemala,SMB,Eventos Premium CO,2,2760.5,5521.0,1431.36,4089.64,74.07,5990.41,-7.84
+2025-04-22,TC-2025-10166,Tuesday,Implementación BI,Data Warehouse Setup,Digital,Roberto Morales,El Salvador,Mid Market,Agencia Digital Norte,1,19997.58,19997.58,7235.76,12761.82,63.82,22460.38,-10.97
+2025-04-25,TC-2025-10167,Friday,Consultoría de Datos,Arquitectura de Datos,Directo,Sofía Hernández,México,SMB,Restaurantes La Plaza,1,9219.06,9219.06,3850.58,5368.48,58.23,9052.98,1.83
+2025-04-26,TC-2025-10168,Saturday,Análisis Predictivo,Forecasting de Ventas ML,Digital,Ana Martínez,Guatemala,Enterprise,Grupo Financiero Pacífico,6,12820.49,76922.94,32391.54,44531.4,57.89,70638.89,8.9
+2025-04-27,TC-2025-10169,Sunday,Consultoría de Datos,Data Governance Assessment,Partner,Ana Martínez,Colombia,Gobierno,Banco de Desarrollo CO,2,5802.54,11605.08,4367.34,7237.74,62.37,11385.51,1.93
+2025-04-24,TC-2025-10170,Thursday,Implementación BI,Power BI Enterprise,Directo,Andrés García,México,Enterprise,Aseguradora Continental,7,13037.38,91261.66,33567.24,57694.42,63.22,107324.68,-14.97
+2025-04-26,TC-2025-10171,Saturday,Soporte & Mantenimiento,Licencias Power BI Pro,Directo,Luis Ramírez,Colombia,Mid Market,Manufactura Tica,2,751.59,1503.18,1324.56,178.62,11.88,1411.54,6.49
+2025-04-23,TC-2025-10172,Wednesday,Capacitación Tech,Workshop Python Analytics,Directo,Valentina Torres,Colombia,SMB,Academia Digital SV,1,2500.62,2500.62,701.45,1799.17,71.95,2776.64,-9.94
+2025-04-23,TC-2025-10173,Wednesday,Análisis Predictivo,Forecasting de Ventas ML,Directo,María Pérez,Guatemala,Mid Market,Cooperativa Agrícola Sur,1,12939.29,12939.29,5083.15,7856.14,60.72,10776.84,20.07
+2025-04-26,TC-2025-10174,Saturday,Análisis Predictivo,Scoring de Crédito,Directo,María Pérez,Guatemala,Mid Market,Clínica Santa Rosa,3,16339.34,49018.02,18342.45,30675.57,62.58,45743.52,7.16
+2025-04-27,TC-2025-10175,Sunday,Análisis Predictivo,Scoring de Crédito,Digital,Camila Jiménez,México,Mid Market,Importadora Centroam,2,18291.21,36582.42,13169.34,23413.08,64.0,32298.47,13.26
+2025-04-21,TC-2025-10176,Monday,Capacitación Tech,Certificación BI Analista,Partner,Roberto Morales,Colombia,Enterprise,Grupo Financiero Pacífico,8,3341.74,26733.92,7686.72,19047.2,71.25,27881.34,-4.12
+2025-04-21,TC-2025-10177,Monday,Consultoría de Datos,Data Quality Framework,Referidos,Roberto Morales,Guatemala,SMB,Eventos Premium CO,2,6511.12,13022.24,3870.94,9151.3,70.27,12083.19,7.77
+2025-04-23,TC-2025-10178,Wednesday,Análisis Predictivo,Modelo de Churn Prediction,Partner,Ana Martínez,México,Mid Market,Hotel Cadena Pacífico,1,16556.12,16556.12,5872.67,10683.45,64.53,13349.22,24.02
+2025-04-23,TC-2025-10179,Wednesday,Implementación BI,Power BI Enterprise,Partner,Luis Ramírez,El Salvador,SMB,Restaurantes La Plaza,2,11674.93,23349.86,9040.02,14309.84,61.28,26240.21,-11.01
+2025-04-21,TC-2025-10180,Monday,Capacitación Tech,Bootcamp Data Science,Directo,Valentina Torres,Costa Rica,Mid Market,Hotel Cadena Pacífico,2,4842.27,9684.54,2634.24,7050.3,72.8,9470.44,2.26
+2025-04-24,TC-2025-10181,Thursday,Análisis Predictivo,Detección de Anomalías,Directo,Ana Martínez,Costa Rica,SMB,Transporte Rápido,2,11955.17,23910.34,9255.3,14655.04,61.29,19951.66,19.84
+2025-04-25,TC-2025-10182,Friday,Implementación BI,Looker Studio Pro,Directo,Ana Martínez,Colombia,SMB,Tienda Electrónica SV,1,10474.2,10474.2,3909.22,6564.98,62.68,11683.12,-10.35
+2025-04-27,TC-2025-10183,Sunday,Implementación BI,Power BI Enterprise,Directo,Camila Jiménez,El Salvador,Mid Market,Agencia Digital Norte,1,11525.51,11525.51,5179.0,6346.51,55.06,12126.68,-4.96
+2025-04-23,TC-2025-10184,Wednesday,Soporte & Mantenimiento,Soporte Técnico On-site,Directo,Andrés García,México,SMB,Panadería Industrial GT,1,3291.98,3291.98,983.33,2308.65,70.13,3151.89,4.44
+2025-04-24,TC-2025-10185,Thursday,Implementación BI,Data Warehouse Setup,Referidos,Valentina Torres,Colombia,Gobierno,INSAFORP El Salvador,1,21676.21,21676.21,7708.71,13967.5,64.44,24473.03,-11.43
+2025-04-24,TC-2025-10186,Thursday,Capacitación Tech,Workshop SQL Avanzado,Digital,Sofía Hernández,Guatemala,Enterprise,Logística Global Pac,3,2042.64,6127.92,1568.34,4559.58,74.41,6527.26,-6.12
+2025-04-22,TC-2025-10187,Tuesday,Capacitación Tech,Workshop Power BI Avanzado,Partner,Sofía Hernández,Costa Rica,Mid Market,Hotel Cadena Pacífico,3,2070.2,6210.6,1995.78,4214.82,67.86,6835.22,-9.14
+2025-04-25,TC-2025-10188,Friday,Soporte & Mantenimiento,SLA Premium 24/7,Partner,Valentina Torres,Colombia,Enterprise,Supermercados Unidos,2,3997.3,7994.6,2280.26,5714.34,71.48,8086.74,-1.14
+2025-04-22,TC-2025-10189,Tuesday,Capacitación Tech,Certificación BI Analista,Directo,María Pérez,El Salvador,Gobierno,Ministerio de Hacienda SV,1,3739.59,3739.59,901.22,2838.37,75.9,4163.4,-10.18
+2025-04-23,TC-2025-10190,Wednesday,Análisis Predictivo,Forecasting de Ventas ML,Digital,Diego López,Colombia,Mid Market,Agroexport SA,3,13421.68,40265.04,15684.0,24581.04,61.05,34224.64,17.65
+2025-04-22,TC-2025-10191,Tuesday,Implementación BI,Data Warehouse Setup,Referidos,Luis Ramírez,México,SMB,Consultora Local MX,2,18016.72,36033.44,13353.32,22680.12,62.94,41903.86,-14.01
+2025-04-22,TC-2025-10192,Tuesday,Capacitación Tech,Workshop Power BI Avanzado,Directo,Valentina Torres,Costa Rica,Mid Market,Manufactura Tica,2,2153.71,4307.42,1275.0,3032.42,70.4,4677.49,-7.91
+2025-04-22,TC-2025-10193,Tuesday,Análisis Predictivo,Segmentación de Clientes IA,Directo,Luis Ramírez,Colombia,Gobierno,Dirección General de Aduanas,3,13421.91,40265.73,13069.74,27195.99,67.54,36247.92,11.08
+2025-04-27,TC-2025-10194,Sunday,Análisis Predictivo,Detección de Anomalías,Referidos,Carlos Rodríguez,Costa Rica,Mid Market,Distribuidora El Pino,1,11542.75,11542.75,4641.15,6901.6,59.79,9605.87,20.16
+2025-04-26,TC-2025-10195,Saturday,Capacitación Tech,Workshop Power BI Avanzado,Directo,Roberto Morales,México,Enterprise,Constructora Progreso,5,1946.38,9731.9,3266.75,6465.15,66.43,9890.56,-1.6
+2025-04-21,TC-2025-10196,Monday,Consultoría de Datos,Data Quality Framework,Partner,Valentina Torres,Guatemala,Mid Market,Educativa Futuro,1,6016.43,6016.43,1869.18,4147.25,68.93,5677.53,5.97
+2025-04-25,TC-2025-10197,Friday,Implementación BI,Looker Studio Pro,Directo,Valentina Torres,Guatemala,Mid Market,Importadora Centroam,2,12947.77,25895.54,8031.56,17863.98,68.98,29294.59,-11.6
+2025-04-26,TC-2025-10198,Saturday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Ana Martínez,Guatemala,Mid Market,Distribuidora El Pino,2,3166.82,6333.64,2532.6,3801.04,60.01,6291.73,0.67
+2025-04-23,TC-2025-10199,Wednesday,Implementación BI,Power BI Enterprise,Referidos,Roberto Morales,Costa Rica,Enterprise,Constructora Progreso,2,14465.6,28931.2,9883.28,19047.92,65.84,30675.33,-5.69
+2025-04-22,TC-2025-10200,Tuesday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Diego López,Colombia,Enterprise,Supermercados Unidos,8,16893.11,135144.88,48782.4,86362.48,63.9,125581.32,7.62
+2025-04-24,TC-2025-10201,Thursday,Implementación BI,Data Warehouse Setup,Directo,Camila Jiménez,Colombia,Mid Market,Cooperativa Agrícola Sur,2,20667.26,41334.52,14836.18,26498.34,64.11,42358.73,-2.42
+2025-04-27,TC-2025-10202,Sunday,Capacitación Tech,Workshop SQL Avanzado,Directo,Andrés García,Guatemala,SMB,PyME Tech,2,2107.22,4214.44,1050.0,3164.44,75.09,4438.02,-5.04
+2025-04-26,TC-2025-10203,Saturday,Capacitación Tech,Bootcamp Data Science,Partner,Valentina Torres,Guatemala,Gobierno,Instituto Nacional MX,3,4851.91,14555.73,3781.53,10774.2,74.02,15290.7,-4.81
+2025-04-23,TC-2025-10204,Wednesday,Capacitación Tech,Workshop Power BI Avanzado,Directo,Sofía Hernández,El Salvador,SMB,Tienda Electrónica SV,2,2006.32,4012.64,1197.08,2815.56,70.17,4009.84,0.07
+2025-04-25,TC-2025-10205,Friday,Implementación BI,Looker Studio Pro,Directo,Camila Jiménez,El Salvador,Mid Market,Agroexport SA,4,10020.87,40083.48,15696.88,24386.6,60.84,44429.9,-9.78
+2025-04-22,TC-2025-10206,Tuesday,Análisis Predictivo,Segmentación de Clientes IA,Referidos,Carlos Rodríguez,El Salvador,Mid Market,Agroexport SA,2,13027.14,26054.28,8713.5,17340.78,66.56,21818.24,19.42
+2025-04-23,TC-2025-10207,Wednesday,Implementación BI,Tableau Implementation,Directo,Luis Ramírez,Guatemala,Mid Market,Clínica Santa Rosa,3,16518.39,49555.17,17083.17,32472.0,65.53,54419.66,-8.94
+2025-04-24,TC-2025-10208,Thursday,Análisis Predictivo,Scoring de Crédito,Directo,Andrés García,Guatemala,Gobierno,Ministerio de Educación GT,2,16699.1,33398.2,12657.9,20740.3,62.1,30545.29,9.34
+2025-04-23,TC-2025-10209,Wednesday,Análisis Predictivo,Detección de Anomalías,Directo,Diego López,Guatemala,Gobierno,Dirección General de Aduanas,1,13447.78,13447.78,4729.98,8717.8,64.83,11303.52,18.97
+2025-04-23,TC-2025-10210,Wednesday,Capacitación Tech,Bootcamp Data Science,Referidos,María Pérez,Colombia,Mid Market,Hotel Cadena Pacífico,1,5218.29,5218.29,1285.16,3933.13,75.37,5807.7,-10.15
+2025-04-27,TC-2025-10211,Sunday,Consultoría de Datos,Data Maturity Assessment,Directo,Diego López,Colombia,Gobierno,Dirección General de Aduanas,2,5082.23,10164.46,2979.4,7185.06,70.69,9935.25,2.31
+2025-04-27,TC-2025-10212,Sunday,Capacitación Tech,Bootcamp Data Science,Directo,Sofía Hernández,Guatemala,Enterprise,Farmacéutica Centroam,5,4059.85,20299.25,7279.95,13019.3,64.14,20857.53,-2.68
+2025-04-26,TC-2025-10213,Saturday,Implementación BI,Data Warehouse Setup,Referidos,Ana Martínez,Colombia,Mid Market,Cooperativa Agrícola Sur,1,16887.0,16887.0,6909.96,9977.04,59.08,19046.14,-11.34
+2025-04-27,TC-2025-10214,Sunday,Consultoría de Datos,Data Maturity Assessment,Directo,Valentina Torres,Costa Rica,SMB,Consultora Local MX,2,4103.03,8206.06,2994.48,5211.58,63.51,7260.24,13.03
+2025-04-27,TC-2025-10215,Sunday,Capacitación Tech,Certificación BI Analista,Partner,Valentina Torres,México,Mid Market,Importadora Centroam,2,3147.17,6294.34,1773.94,4520.4,71.82,6078.44,3.55
+2025-04-24,TC-2025-10216,Thursday,Implementación BI,Power BI Enterprise,Directo,María Pérez,Costa Rica,Enterprise,Energía Renovable SA,8,11775.75,94206.0,38295.12,55910.88,59.35,103128.24,-8.65
+2025-04-27,TC-2025-10217,Sunday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Carlos Rodríguez,Guatemala,SMB,Restaurantes La Plaza,2,9454.64,18909.28,6375.72,12533.56,66.28,19663.5,-3.84
+2025-04-22,TC-2025-10218,Tuesday,Soporte & Mantenimiento,SLA Estándar,Partner,Valentina Torres,México,Mid Market,Importadora Centroam,4,1924.07,7696.28,2355.56,5340.72,69.39,7660.18,0.47
+2025-04-22,TC-2025-10219,Tuesday,Implementación BI,Data Warehouse Setup,Referidos,Ana Martínez,Guatemala,Mid Market,Agencia Digital Norte,3,20455.41,61366.23,22666.98,38699.25,63.06,62715.63,-2.15
+2025-04-25,TC-2025-10220,Friday,Consultoría de Datos,Data Maturity Assessment,Directo,María Pérez,Guatemala,Mid Market,Importadora Centroam,3,4765.91,14297.73,4885.47,9412.26,65.83,13422.93,6.52
+2025-04-25,TC-2025-10221,Friday,Implementación BI,Dashboard Ejecutivo Custom,Partner,María Pérez,Colombia,SMB,PyME Tech,1,9518.37,9518.37,3007.34,6511.03,68.4,10022.23,-5.03
+2025-04-24,TC-2025-10222,Thursday,Consultoría de Datos,Data Quality Framework,Digital,Sofía Hernández,México,Mid Market,Fintech Innova,4,5427.21,21708.84,7969.12,13739.72,63.29,20722.88,4.76
+2025-04-25,TC-2025-10223,Friday,Análisis Predictivo,Forecasting de Ventas ML,Partner,Andrés García,México,Enterprise,Constructora Progreso,2,15385.37,30770.74,11151.86,19618.88,63.76,26691.27,15.28
+2025-04-26,TC-2025-10224,Saturday,Consultoría de Datos,Arquitectura de Datos,Referidos,Luis Ramírez,México,Mid Market,Hotel Cadena Pacífico,4,9444.81,37779.24,13438.48,24340.76,64.43,32355.04,16.76
+2025-04-26,TC-2025-10225,Saturday,Capacitación Tech,Workshop SQL Avanzado,Directo,Luis Ramírez,El Salvador,Enterprise,Supermercados Unidos,8,1997.6,15980.8,4354.4,11626.4,72.75,15455.47,3.4
+2025-04-25,TC-2025-10226,Friday,Consultoría de Datos,Data Maturity Assessment,Digital,Ana Martínez,Guatemala,SMB,Eventos Premium CO,1,5296.2,5296.2,1498.22,3797.98,71.71,5162.87,2.58
+2025-04-27,TC-2025-10227,Sunday,Capacitación Tech,Workshop SQL Avanzado,Referidos,Carlos Rodríguez,El Salvador,Enterprise,Constructora Progreso,2,2002.84,4005.68,1034.54,2971.14,74.17,4334.86,-7.59
+2025-04-27,TC-2025-10228,Sunday,Análisis Predictivo,Segmentación de Clientes IA,Referidos,Roberto Morales,México,Mid Market,Educativa Futuro,2,13488.71,26977.42,9649.6,17327.82,64.23,23721.64,13.72
+2025-04-23,TC-2025-10229,Wednesday,Análisis Predictivo,Detección de Anomalías,Partner,María Pérez,Guatemala,SMB,PyME Tech,1,10587.78,10587.78,4576.07,6011.71,56.78,9076.54,16.65
+2025-04-26,TC-2025-10230,Saturday,Consultoría de Datos,Data Quality Framework,Referidos,Diego López,El Salvador,SMB,Servicios Técnicos CR,2,6545.56,13091.12,4063.16,9027.96,68.96,12463.2,5.04
+2025-04-24,TC-2025-10231,Thursday,Análisis Predictivo,Detección de Anomalías,Partner,Carlos Rodríguez,México,Mid Market,Clínica Santa Rosa,3,12516.73,37550.19,13996.89,23553.3,62.72,32415.65,15.84
+2025-04-27,TC-2025-10232,Sunday,Análisis Predictivo,Detección de Anomalías,Directo,Luis Ramírez,Colombia,SMB,Consultora Local MX,1,12865.09,12865.09,4327.99,8537.1,66.36,12024.95,6.99
+2025-04-25,TC-2025-10233,Friday,Soporte & Mantenimiento,Licencias Power BI Pro,Directo,Roberto Morales,Colombia,Mid Market,Educativa Futuro,4,949.02,3796.08,2891.52,904.56,23.83,3840.16,-1.15
+2025-04-24,TC-2025-10234,Thursday,Consultoría de Datos,Arquitectura de Datos,Directo,Luis Ramírez,Costa Rica,Enterprise,Banco Central LATAM,3,10844.12,32532.36,11507.46,21024.9,64.63,31964.36,1.78
+2025-04-24,TC-2025-10235,Thursday,Implementación BI,Looker Studio Pro,Directo,Sofía Hernández,Guatemala,Enterprise,Banco Central LATAM,7,10688.18,74817.26,30338.14,44479.12,59.45,78719.52,-4.96
+2025-04-26,TC-2025-10236,Saturday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Diego López,México,Enterprise,Logística Global Pac,5,13241.79,66208.95,29907.55,36301.4,54.83,60494.11,9.45
+2025-04-21,TC-2025-10237,Monday,Soporte & Mantenimiento,Licencias Power BI Pro,Digital,Carlos Rodríguez,México,Enterprise,Grupo Financiero Pacífico,4,841.73,3366.92,2632.64,734.28,21.81,3207.52,4.97
+2025-04-25,TC-2025-10238,Friday,Capacitación Tech,Workshop Python Analytics,Partner,Roberto Morales,México,Enterprise,Banco Central LATAM,7,2323.09,16261.63,5124.98,11136.65,68.48,15994.89,1.67
+2025-04-27,TC-2025-10239,Sunday,Capacitación Tech,Bootcamp Data Science,Partner,Carlos Rodríguez,Guatemala,Enterprise,Telecomunicaciones del Sur,2,4755.92,9511.84,2649.9,6861.94,72.14,10532.84,-9.69
+2025-04-26,TC-2025-10240,Saturday,Implementación BI,Tableau Implementation,Directo,Roberto Morales,México,Enterprise,Supermercados Unidos,6,13709.76,82258.56,35329.98,46928.58,57.05,83550.46,-1.55
+2025-04-26,TC-2025-10241,Saturday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,Valentina Torres,México,Enterprise,Aseguradora Continental,2,1672.71,3345.42,1067.94,2277.48,68.08,3112.52,7.48
+2025-04-23,TC-2025-10242,Wednesday,Implementación BI,Tableau Implementation,Partner,Ana Martínez,México,Mid Market,Cooperativa Agrícola Sur,2,14143.93,28287.86,11596.6,16691.26,59.01,30691.96,-7.83
+2025-04-21,TC-2025-10243,Monday,Análisis Predictivo,Forecasting de Ventas ML,Digital,Ana Martínez,Costa Rica,SMB,PyME Tech,1,12941.85,12941.85,4817.14,8124.71,62.78,10462.36,23.7
+2025-04-21,TC-2025-10244,Monday,Capacitación Tech,Certificación BI Analista,Directo,Valentina Torres,Colombia,SMB,Tienda Electrónica SV,1,3082.37,3082.37,930.8,2151.57,69.8,3183.45,-3.18
+2025-04-26,TC-2025-10245,Saturday,Implementación BI,Tableau Implementation,Partner,Carlos Rodríguez,Guatemala,Mid Market,Manufactura Tica,4,15605.62,62422.48,23219.56,39202.92,62.8,63743.98,-2.07
+2025-04-21,TC-2025-10246,Monday,Consultoría de Datos,Arquitectura de Datos,Directo,Sofía Hernández,México,Enterprise,Grupo Financiero Pacífico,7,8474.7,59322.9,23229.78,36093.12,60.84,54897.09,8.06
+2025-04-26,TC-2025-10247,Saturday,Implementación BI,Data Warehouse Setup,Digital,Sofía Hernández,Colombia,Enterprise,Aseguradora Continental,2,20561.44,41122.88,13315.64,27807.24,67.62,47410.49,-13.26
+2025-04-25,TC-2025-10248,Friday,Implementación BI,Power BI Enterprise,Directo,Luis Ramírez,Costa Rica,Mid Market,Importadora Centroam,3,11207.9,33623.7,15227.97,18395.73,54.71,34979.77,-3.88
+2025-04-21,TC-2025-10249,Monday,Consultoría de Datos,Data Strategy & Roadmap,Referidos,Camila Jiménez,México,Enterprise,Banco Central LATAM,8,9680.47,77443.76,24553.68,52890.08,68.29,71383.24,8.49
+2025-04-23,TC-2025-10250,Wednesday,Implementación BI,Tableau Implementation,Directo,Valentina Torres,Costa Rica,Enterprise,Corporación Retail Max,3,14269.25,42807.75,17081.55,25726.2,60.1,45319.83,-5.54
+2025-04-21,TC-2025-10251,Monday,Consultoría de Datos,Data Quality Framework,Directo,Diego López,México,Enterprise,Logística Global Pac,5,5223.93,26119.65,9695.55,16424.1,62.88,23342.48,11.9
+2025-04-27,TC-2025-10252,Sunday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,María Pérez,México,Mid Market,Fintech Innova,3,1652.81,4958.43,1466.97,3491.46,70.41,4712.55,5.22
+2025-04-24,TC-2025-10253,Thursday,Soporte & Mantenimiento,SLA Estándar,Digital,Sofía Hernández,México,SMB,Restaurantes La Plaza,1,1709.82,1709.82,604.77,1105.05,64.63,1750.21,-2.31
+2025-04-22,TC-2025-10254,Tuesday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,María Pérez,México,SMB,Boutique Moda Latina,1,1508.92,1508.92,547.63,961.29,63.71,1575.74,-4.24
+2025-04-26,TC-2025-10255,Saturday,Consultoría de Datos,Data Quality Framework,Directo,Camila Jiménez,Costa Rica,SMB,Tienda Electrónica SV,2,5901.72,11803.44,4054.68,7748.76,65.65,11070.35,6.62
+2025-04-23,TC-2025-10256,Wednesday,Análisis Predictivo,Scoring de Crédito,Directo,Sofía Hernández,México,Mid Market,Agencia Digital Norte,3,18732.02,56196.06,20508.81,35687.25,63.5,48029.18,17.0
+2025-04-27,TC-2025-10257,Sunday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,Diego López,Guatemala,Enterprise,Telecomunicaciones del Sur,8,1583.12,12664.96,3855.04,8809.92,69.56,11635.78,8.84
+2025-04-24,TC-2025-10258,Thursday,Análisis Predictivo,Scoring de Crédito,Directo,Luis Ramírez,Guatemala,SMB,Transporte Rápido,2,18739.79,37479.58,11961.18,25518.4,68.09,34194.92,9.61
+2025-04-23,TC-2025-10259,Wednesday,Implementación BI,Data Warehouse Setup,Directo,Carlos Rodríguez,Colombia,Mid Market,Agencia Digital Norte,4,19129.7,76518.8,29616.48,46902.32,61.3,80859.91,-5.37
+2025-04-21,TC-2025-10260,Monday,Soporte & Mantenimiento,SLA Premium 24/7,Referidos,Camila Jiménez,Colombia,Mid Market,Agencia Digital Norte,4,3187.0,12748.0,5025.64,7722.36,60.58,11627.07,9.64
+2025-04-25,TC-2025-10261,Friday,Consultoría de Datos,Data Governance Assessment,Directo,Carlos Rodríguez,Colombia,Mid Market,Fintech Innova,3,7162.42,21487.26,5871.6,15615.66,72.67,21478.22,0.04
+2025-04-21,TC-2025-10262,Monday,Consultoría de Datos,Arquitectura de Datos,Digital,Andrés García,El Salvador,SMB,Boutique Moda Latina,2,8235.76,16471.52,7688.6,8782.92,53.32,15088.29,9.17
+2025-04-23,TC-2025-10263,Wednesday,Capacitación Tech,Bootcamp Data Science,Directo,Diego López,México,Enterprise,Telecomunicaciones del Sur,4,4562.12,18248.48,5096.4,13152.08,72.07,19156.33,-4.74
+2025-04-24,TC-2025-10264,Thursday,Análisis Predictivo,Segmentación de Clientes IA,Partner,Carlos Rodríguez,Costa Rica,Mid Market,Manufactura Tica,2,12069.25,24138.5,9409.98,14728.52,61.02,21988.11,9.78
+2025-04-25,TC-2025-10265,Friday,Implementación BI,Data Warehouse Setup,Digital,Andrés García,Costa Rica,SMB,Eventos Premium CO,2,18189.39,36378.78,14551.26,21827.52,60.0,38835.62,-6.33
+2025-04-27,TC-2025-10266,Sunday,Implementación BI,Power BI Enterprise,Directo,María Pérez,El Salvador,SMB,Restaurantes La Plaza,2,12985.37,25970.74,10009.86,15960.88,61.46,30820.62,-15.74
+2025-04-25,TC-2025-10267,Friday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Ana Martínez,El Salvador,Mid Market,Agencia Digital Norte,4,3452.54,13810.16,5060.52,8749.64,63.36,14148.51,-2.39
+2025-04-26,TC-2025-10268,Saturday,Consultoría de Datos,Data Maturity Assessment,Directo,Roberto Morales,Colombia,Mid Market,Distribuidora El Pino,3,5239.2,15717.6,4848.84,10868.76,69.15,14700.28,6.92
+2025-04-25,TC-2025-10269,Friday,Consultoría de Datos,Arquitectura de Datos,Partner,Ana Martínez,El Salvador,Enterprise,Corporación Retail Max,3,8151.0,24453.0,10761.96,13691.04,55.99,22032.1,10.99
+2025-04-21,TC-2025-10270,Monday,Análisis Predictivo,Forecasting de Ventas ML,Directo,Andrés García,El Salvador,SMB,Restaurantes La Plaza,1,14255.77,14255.77,5547.13,8708.64,61.09,12940.5,10.16
+2025-04-21,TC-2025-10271,Monday,Soporte & Mantenimiento,Dashboard Maintenance,Referidos,Valentina Torres,Guatemala,Gobierno,Ministerio de Educación GT,2,1455.79,2911.58,960.66,1950.92,67.01,2671.87,8.97
+2025-04-22,TC-2025-10272,Tuesday,Soporte & Mantenimiento,Licencias Power BI Pro,Partner,Roberto Morales,El Salvador,Gobierno,CEPAL Regional,3,898.18,2694.54,1934.04,760.5,28.22,2535.2,6.29
+2025-04-27,TC-2025-10273,Sunday,Capacitación Tech,Workshop Python Analytics,Directo,Roberto Morales,El Salvador,SMB,Tienda Electrónica SV,1,2336.56,2336.56,728.19,1608.37,68.83,2527.84,-7.57
+2025-04-23,TC-2025-10274,Wednesday,Análisis Predictivo,Detección de Anomalías,Directo,Carlos Rodríguez,México,Mid Market,Agencia Digital Norte,3,10699.21,32097.63,14013.81,18083.82,56.34,26074.33,23.1
+2025-04-23,TC-2025-10275,Wednesday,Capacitación Tech,Workshop SQL Avanzado,Partner,Carlos Rodríguez,Guatemala,Enterprise,Energía Renovable SA,8,1642.34,13138.72,3975.28,9163.44,69.74,13297.87,-1.2
+2025-04-21,TC-2025-10276,Monday,Capacitación Tech,Workshop Python Analytics,Referidos,Camila Jiménez,México,Mid Market,Hotel Cadena Pacífico,4,2791.55,11166.2,3037.48,8128.72,72.8,11987.19,-6.85
+2025-04-21,TC-2025-10277,Monday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Andrés García,Colombia,Enterprise,Aseguradora Continental,2,8646.37,17292.74,6584.82,10707.92,61.92,17972.0,-3.78
+2025-04-26,TC-2025-10278,Saturday,Consultoría de Datos,Data Strategy & Roadmap,Directo,Ana Martínez,Costa Rica,SMB,Tienda Electrónica SV,1,9028.66,9028.66,3166.31,5862.35,64.93,7762.72,16.31
+2025-04-26,TC-2025-10279,Saturday,Implementación BI,Tableau Implementation,Partner,Camila Jiménez,México,Gobierno,Secretaría de Salud CO,2,13762.93,27525.86,10288.82,17237.04,62.62,29729.88,-7.41
+2025-04-24,TC-2025-10280,Thursday,Análisis Predictivo,Scoring de Crédito,Directo,María Pérez,Guatemala,Mid Market,Fintech Innova,2,15000.09,30000.18,12199.84,17800.34,59.33,26663.91,12.51
+2025-04-21,TC-2025-10281,Monday,Soporte & Mantenimiento,Licencias Power BI Pro,Digital,Luis Ramírez,Guatemala,Mid Market,Manufactura Tica,4,795.14,3180.56,2887.76,292.8,9.21,3023.4,5.2
+2025-04-22,TC-2025-10282,Tuesday,Implementación BI,Looker Studio Pro,Partner,Roberto Morales,Guatemala,SMB,Restaurantes La Plaza,1,9962.83,9962.83,4095.03,5867.8,58.9,11020.77,-9.6
+2025-04-25,TC-2025-10283,Friday,Soporte & Mantenimiento,Soporte Técnico On-site,Directo,Camila Jiménez,El Salvador,Mid Market,Hotel Cadena Pacífico,4,2945.08,11780.32,3754.2,8026.12,68.13,11069.11,6.43
+2025-04-21,TC-2025-10284,Monday,Implementación BI,Power BI Enterprise,Partner,Roberto Morales,Costa Rica,SMB,Servicios Técnicos CR,2,11648.3,23296.6,10343.98,12952.62,55.6,27534.7,-15.39
+2025-04-27,TC-2025-10285,Sunday,Capacitación Tech,Workshop Python Analytics,Directo,Diego López,El Salvador,SMB,Servicios Técnicos CR,2,2439.81,4879.62,1554.5,3325.12,68.14,5277.91,-7.55
+2025-04-27,TC-2025-10286,Sunday,Consultoría de Datos,Data Maturity Assessment,Directo,Luis Ramírez,Guatemala,Enterprise,Banco Central LATAM,7,4801.13,33607.91,11240.46,22367.45,66.55,30718.1,9.41
+2025-04-25,TC-2025-10287,Friday,Implementación BI,Tableau Implementation,Partner,Carlos Rodríguez,México,Gobierno,SIECA Guatemala,1,15843.28,15843.28,5823.38,10019.9,63.24,18469.12,-14.22
+2025-04-23,TC-2025-10288,Wednesday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,Ana Martínez,México,Mid Market,Educativa Futuro,4,1384.73,5538.92,2075.48,3463.44,62.53,5544.22,-0.1
+2025-04-21,TC-2025-10289,Monday,Consultoría de Datos,Data Quality Framework,Digital,María Pérez,El Salvador,Mid Market,Cooperativa Agrícola Sur,3,6526.25,19578.75,5665.65,13913.1,71.06,17491.36,11.93
+2025-04-23,TC-2025-10290,Wednesday,Análisis Predictivo,Modelo de Churn Prediction,Referidos,Luis Ramírez,El Salvador,Mid Market,Cooperativa Agrícola Sur,4,15922.41,63689.64,21675.44,42014.2,65.97,54865.84,16.08
+2025-04-27,TC-2025-10291,Sunday,Soporte & Mantenimiento,Licencias Power BI Pro,Digital,Ana Martínez,Colombia,SMB,Academia Digital SV,1,764.73,764.73,702.8,61.93,8.1,730.98,4.62
+2025-04-22,TC-2025-10292,Tuesday,Capacitación Tech,Certificación BI Analista,Referidos,Diego López,El Salvador,Enterprise,Banco Central LATAM,2,3254.19,6508.38,2048.42,4459.96,68.53,6929.35,-6.08
+2025-04-23,TC-2025-10293,Wednesday,Implementación BI,Dashboard Ejecutivo Custom,Partner,Ana Martínez,México,Enterprise,Corporación Retail Max,5,9312.28,46561.4,14700.4,31861.0,68.43,54199.36,-14.09
+2025-04-21,TC-2025-10294,Monday,Análisis Predictivo,Segmentación de Clientes IA,Directo,Carlos Rodríguez,Colombia,Enterprise,Aseguradora Continental,5,10738.74,53693.7,24302.05,29391.65,54.74,48780.62,10.07
+2025-04-21,TC-2025-10295,Monday,Implementación BI,Tableau Implementation,Partner,Valentina Torres,México,Enterprise,Logística Global Pac,8,15820.09,126560.72,45883.68,80677.04,63.75,128149.5,-1.24
+2025-04-24,TC-2025-10296,Thursday,Soporte & Mantenimiento,SLA Estándar,Partner,María Pérez,El Salvador,Enterprise,Aseguradora Continental,5,2043.86,10219.3,3079.65,7139.65,69.86,9474.32,7.86
+2025-04-25,TC-2025-10297,Friday,Implementación BI,Data Warehouse Setup,Digital,Camila Jiménez,Guatemala,Enterprise,Energía Renovable SA,7,19575.44,137028.08,48647.48,88380.6,64.5,155023.35,-11.61
+2025-04-22,TC-2025-10298,Tuesday,Análisis Predictivo,Segmentación de Clientes IA,Referidos,María Pérez,México,SMB,Transporte Rápido,1,12422.26,12422.26,4408.86,8013.4,64.51,10035.93,23.78
+2025-04-23,TC-2025-10299,Wednesday,Soporte & Mantenimiento,Soporte Técnico On-site,Partner,Ana Martínez,Guatemala,Enterprise,Constructora Progreso,4,3225.81,12903.24,3860.16,9043.08,70.08,13001.92,-0.76
+2025-04-26,TC-2025-10300,Saturday,Análisis Predictivo,Detección de Anomalías,Digital,Camila Jiménez,Guatemala,SMB,Eventos Premium CO,2,11870.24,23740.48,9286.36,14454.12,60.88,21769.03,9.06
+2025-04-26,TC-2025-10301,Saturday,Soporte & Mantenimiento,SLA Estándar,Directo,Camila Jiménez,México,SMB,Servicios Técnicos CR,2,1937.39,3874.78,1184.9,2689.88,69.42,3595.39,7.77
+2025-04-27,TC-2025-10302,Sunday,Soporte & Mantenimiento,Licencias Power BI Pro,Digital,María Pérez,Guatemala,Enterprise,Constructora Progreso,2,867.99,1735.98,1439.72,296.26,17.07,1707.95,1.64
+2025-04-23,TC-2025-10303,Wednesday,Soporte & Mantenimiento,SLA Premium 24/7,Partner,Valentina Torres,El Salvador,Enterprise,Logística Global Pac,5,3136.77,15683.85,6340.05,9343.8,59.58,14343.54,9.34
+2025-04-27,TC-2025-10304,Sunday,Implementación BI,Dashboard Ejecutivo Custom,Referidos,Sofía Hernández,Costa Rica,Gobierno,CEPAL Regional,3,8220.14,24660.42,8676.24,15984.18,64.82,26373.66,-6.5
+2025-04-27,TC-2025-10305,Sunday,Soporte & Mantenimiento,Dashboard Maintenance,Partner,Sofía Hernández,El Salvador,Enterprise,Supermercados Unidos,3,1540.31,4620.93,1594.53,3026.4,65.49,4190.63,10.27
+2025-04-22,TC-2025-10306,Tuesday,Análisis Predictivo,Scoring de Crédito,Partner,Ana Martínez,Costa Rica,Mid Market,Agroexport SA,3,19222.84,57668.52,20404.23,37264.29,64.62,52207.34,10.46
+2025-04-22,TC-2025-10307,Tuesday,Análisis Predictivo,Modelo de Churn Prediction,Digital,Andrés García,México,Enterprise,Aseguradora Continental,2,14925.98,29851.96,11764.58,18087.38,60.59,24575.26,21.47
+2025-04-24,TC-2025-10308,Thursday,Soporte & Mantenimiento,Dashboard Maintenance,Referidos,Camila Jiménez,México,Mid Market,Cooperativa Agrícola Sur,2,1474.23,2948.46,1085.5,1862.96,63.18,2798.12,5.37
+2025-04-25,TC-2025-10309,Friday,Consultoría de Datos,Arquitectura de Datos,Directo,Diego López,El Salvador,Gobierno,Ministerio de Hacienda SV,3,8562.4,25687.2,10569.48,15117.72,58.85,24357.33,5.46
+2025-04-26,TC-2025-10310,Saturday,Consultoría de Datos,Data Quality Framework,Digital,Ana Martínez,México,Mid Market,Clínica Santa Rosa,1,5187.93,5187.93,1830.13,3357.8,64.72,4760.84,8.97
+2025-04-24,TC-2025-10311,Thursday,Consultoría de Datos,Data Quality Framework,Partner,Ana Martínez,El Salvador,SMB,Transporte Rápido,1,6256.72,6256.72,1878.23,4378.49,69.98,5891.17,6.21
+2025-04-22,TC-2025-10312,Tuesday,Consultoría de Datos,Data Strategy & Roadmap,Partner,Carlos Rodríguez,México,Enterprise,Constructora Progreso,6,7989.36,47936.16,18471.9,29464.26,61.47,44549.71,7.6
+2025-04-23,TC-2025-10313,Wednesday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Diego López,El Salvador,Mid Market,Importadora Centroam,2,7751.23,15502.46,6370.26,9132.2,58.91,18144.71,-14.56
+2025-04-26,TC-2025-10314,Saturday,Soporte & Mantenimiento,Licencias Power BI Pro,Directo,Carlos Rodríguez,El Salvador,Mid Market,Manufactura Tica,2,864.47,1728.94,1463.86,265.08,15.33,1615.23,7.04
+2025-04-26,TC-2025-10315,Saturday,Consultoría de Datos,Data Governance Assessment,Referidos,Andrés García,Colombia,Mid Market,Hotel Cadena Pacífico,1,5632.7,5632.7,2186.76,3445.94,61.18,4836.52,16.46
+2025-04-23,TC-2025-10316,Wednesday,Soporte & Mantenimiento,SLA Estándar,Directo,María Pérez,Costa Rica,Gobierno,SIECA Guatemala,2,1682.75,3365.5,1220.32,2145.18,63.74,3509.17,-4.09
+2025-04-22,TC-2025-10317,Tuesday,Implementación BI,Dashboard Ejecutivo Custom,Digital,Sofía Hernández,México,Mid Market,Clínica Santa Rosa,1,10335.34,10335.34,3270.8,7064.54,68.35,10637.38,-2.84
+2025-04-25,TC-2025-10318,Friday,Soporte & Mantenimiento,Licencias Power BI Pro,Digital,Valentina Torres,México,Enterprise,Energía Renovable SA,2,967.96,1935.92,1442.68,493.24,25.48,1947.88,-0.61
+2025-04-23,TC-2025-10319,Wednesday,Soporte & Mantenimiento,Licencias Power BI Pro,Referidos,Ana Martínez,El Salvador,Mid Market,Clínica Santa Rosa,3,751.15,2253.45,2160.21,93.24,4.14,2196.5,2.59
+2025-04-26,TC-2025-10320,Saturday,Capacitación Tech,Certificación BI Analista,Directo,Camila Jiménez,Costa Rica,SMB,Academia Digital SV,1,3231.53,3231.53,994.81,2236.72,69.22,3321.84,-2.72
+2025-04-21,TC-2025-10321,Monday,Análisis Predictivo,Scoring de Crédito,Directo,Roberto Morales,Colombia,SMB,Restaurantes La Plaza,1,17022.56,17022.56,6368.55,10654.01,62.59,14792.36,15.08
+2025-04-25,TC-2025-10322,Friday,Consultoría de Datos,Arquitectura de Datos,Directo,Camila Jiménez,Guatemala,Enterprise,Corporación Retail Max,7,9141.04,63987.28,26478.55,37508.73,58.62,55254.97,15.8
+2025-04-26,TC-2025-10323,Saturday,Implementación BI,Data Warehouse Setup,Partner,Carlos Rodríguez,Colombia,Mid Market,Importadora Centroam,1,16849.67,16849.67,7099.01,9750.66,57.87,18685.38,-9.82
+2025-04-22,TC-2025-10324,Tuesday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Camila Jiménez,Costa Rica,Mid Market,Agroexport SA,4,9903.41,39613.64,12520.12,27093.52,68.39,34063.48,16.29
+2025-04-21,TC-2025-10325,Monday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Andrés García,Colombia,Mid Market,Importadora Centroam,1,9748.6,9748.6,2961.99,6786.61,69.62,10440.83,-6.63
+2025-04-22,TC-2025-10326,Tuesday,Soporte & Mantenimiento,Dashboard Maintenance,Partner,Sofía Hernández,Guatemala,Enterprise,Constructora Progreso,8,1642.59,13140.72,4224.64,8916.08,67.85,11955.68,9.91
+2025-04-21,TC-2025-10327,Monday,Análisis Predictivo,Forecasting de Ventas ML,Directo,Diego López,Colombia,Enterprise,Energía Renovable SA,8,13558.6,108468.8,44439.6,64029.2,59.03,99413.5,9.11
+2025-04-25,TC-2025-10328,Friday,Análisis Predictivo,Scoring de Crédito,Partner,Luis Ramírez,México,Mid Market,Distribuidora El Pino,1,17258.47,17258.47,6331.2,10927.27,63.32,15211.76,13.45
+2025-04-26,TC-2025-10329,Saturday,Soporte & Mantenimiento,SLA Estándar,Digital,Carlos Rodríguez,El Salvador,SMB,Tienda Electrónica SV,2,1856.22,3712.44,1217.12,2495.32,67.22,3880.83,-4.34
+2025-04-22,TC-2025-10330,Tuesday,Soporte & Mantenimiento,SLA Estándar,Directo,Luis Ramírez,Costa Rica,Gobierno,Instituto Nacional MX,2,1909.36,3818.72,1316.66,2502.06,65.52,3714.79,2.8
+2025-04-22,TC-2025-10331,Tuesday,Soporte & Mantenimiento,Soporte Técnico On-site,Referidos,Diego López,Colombia,Gobierno,Alcaldía de San Salvador,3,3064.08,9192.24,3027.78,6164.46,67.06,9525.93,-3.5
+2025-04-25,TC-2025-10332,Friday,Consultoría de Datos,Data Governance Assessment,Partner,Carlos Rodríguez,México,Mid Market,Cooperativa Agrícola Sur,4,6540.02,26160.08,8994.96,17165.12,65.62,25036.64,4.49
+2025-04-21,TC-2025-10333,Monday,Capacitación Tech,Certificación BI Analista,Directo,Camila Jiménez,Colombia,SMB,Boutique Moda Latina,2,2955.51,5911.02,1972.3,3938.72,66.63,5801.24,1.89
+2025-04-22,TC-2025-10334,Tuesday,Capacitación Tech,Workshop Python Analytics,Referidos,Ana Martínez,México,Enterprise,Aseguradora Continental,8,2605.88,20847.04,5864.32,14982.72,71.87,21328.78,-2.26
+2025-04-27,TC-2025-10335,Sunday,Análisis Predictivo,Detección de Anomalías,Referidos,Diego López,Colombia,Mid Market,Agroexport SA,3,12510.63,37531.89,12243.21,25288.68,67.38,32018.07,17.22
+2025-04-27,TC-2025-10336,Sunday,Implementación BI,Looker Studio Pro,Referidos,Diego López,El Salvador,SMB,PyME Tech,2,12418.95,24837.9,8953.04,15884.86,63.95,28188.03,-11.88
+2025-04-24,TC-2025-10337,Thursday,Análisis Predictivo,Detección de Anomalías,Partner,Diego López,México,SMB,Transporte Rápido,1,13512.91,13512.91,4100.43,9412.48,69.66,12619.84,7.08
+2025-04-25,TC-2025-10338,Friday,Capacitación Tech,Workshop Power BI Avanzado,Directo,Sofía Hernández,Guatemala,Mid Market,Educativa Futuro,3,1939.73,5819.19,1939.5,3879.69,66.67,6419.1,-9.35
+2025-04-27,TC-2025-10339,Sunday,Consultoría de Datos,Data Quality Framework,Partner,María Pérez,Colombia,Mid Market,Importadora Centroam,3,5230.81,15692.43,6044.4,9648.03,61.48,14589.07,7.56
+2025-04-21,TC-2025-10340,Monday,Soporte & Mantenimiento,Soporte Técnico On-site,Directo,Camila Jiménez,México,Mid Market,Hotel Cadena Pacífico,3,2649.81,7949.43,2805.15,5144.28,64.71,7510.29,5.85
+2025-04-21,TC-2025-10341,Monday,Implementación BI,Tableau Implementation,Referidos,Camila Jiménez,México,Mid Market,Distribuidora El Pino,3,14394.54,43183.62,17567.88,25615.74,59.32,48317.83,-10.63
+2025-04-23,TC-2025-10342,Wednesday,Análisis Predictivo,Modelo de Churn Prediction,Digital,Carlos Rodríguez,Guatemala,Gobierno,Banco de Desarrollo CO,3,16457.89,49373.67,16076.79,33296.88,67.44,43049.5,14.69
+2025-04-25,TC-2025-10343,Friday,Capacitación Tech,Certificación BI Analista,Digital,Diego López,Guatemala,Enterprise,Energía Renovable SA,2,3726.28,7452.56,1817.82,5634.74,75.61,8243.95,-9.6
+2025-04-27,TC-2025-10344,Sunday,Análisis Predictivo,Modelo de Churn Prediction,Partner,Diego López,El Salvador,Mid Market,Hotel Cadena Pacífico,1,14125.11,14125.11,6105.08,8020.03,56.78,13026.81,8.43
+2025-04-24,TC-2025-10345,Thursday,Capacitación Tech,Bootcamp Data Science,Partner,Sofía Hernández,Costa Rica,SMB,Restaurantes La Plaza,2,4011.15,8022.3,2515.64,5506.66,68.64,7844.31,2.27
+2025-04-26,TC-2025-10346,Saturday,Implementación BI,Power BI Enterprise,Partner,Valentina Torres,El Salvador,Enterprise,Constructora Progreso,5,12623.84,63119.2,22144.85,40974.35,64.92,71285.01,-11.46
+2025-04-25,TC-2025-10347,Friday,Análisis Predictivo,Detección de Anomalías,Directo,Carlos Rodríguez,Colombia,Enterprise,Energía Renovable SA,2,11119.94,22239.88,9061.72,13178.16,59.25,19668.77,13.07
+2025-04-22,TC-2025-10348,Tuesday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Sofía Hernández,Colombia,Enterprise,Logística Global Pac,3,9715.43,29146.29,9741.6,19404.69,66.58,33819.78,-13.82
+2025-04-25,TC-2025-10349,Friday,Implementación BI,Tableau Implementation,Directo,Andrés García,Costa Rica,Gobierno,Ministerio de Hacienda SV,3,13098.25,39294.75,15290.28,24004.47,61.09,43683.45,-10.05
+2025-04-24,TC-2025-10350,Thursday,Implementación BI,Data Warehouse Setup,Referidos,Andrés García,Guatemala,SMB,Panadería Industrial GT,1,17173.3,17173.3,6878.35,10294.95,59.95,19882.52,-13.63
+2025-04-26,TC-2025-10351,Saturday,Consultoría de Datos,Data Governance Assessment,Digital,Camila Jiménez,México,Enterprise,Constructora Progreso,6,5592.05,33552.3,12946.14,20606.16,61.42,29827.68,12.49
+2025-04-23,TC-2025-10352,Wednesday,Consultoría de Datos,Data Maturity Assessment,Partner,Diego López,Guatemala,Enterprise,Grupo Financiero Pacífico,6,4054.24,24325.44,9129.24,15196.2,62.47,22472.6,8.24
+2025-04-22,TC-2025-10353,Tuesday,Implementación BI,Looker Studio Pro,Digital,Andrés García,El Salvador,Mid Market,Hotel Cadena Pacífico,1,10713.61,10713.61,4391.96,6321.65,59.01,12172.92,-11.99
+2025-04-24,TC-2025-10354,Thursday,Análisis Predictivo,Segmentación de Clientes IA,Digital,Luis Ramírez,El Salvador,SMB,Eventos Premium CO,2,13349.16,26698.32,9180.82,17517.5,65.61,21762.92,22.68
+2025-04-23,TC-2025-10355,Wednesday,Análisis Predictivo,Modelo de Churn Prediction,Digital,Camila Jiménez,Colombia,Enterprise,Corporación Retail Max,7,17188.51,120319.57,37848.72,82470.85,68.54,97517.86,23.38
+2025-04-21,TC-2025-10356,Monday,Consultoría de Datos,Data Maturity Assessment,Partner,Roberto Morales,Colombia,Mid Market,Agencia Digital Norte,3,4693.68,14081.04,5183.01,8898.03,63.19,12979.81,8.48
+2025-04-24,TC-2025-10357,Thursday,Capacitación Tech,Workshop SQL Avanzado,Directo,María Pérez,Costa Rica,Mid Market,Educativa Futuro,1,1798.26,1798.26,540.19,1258.07,69.96,1902.13,-5.46
+2025-04-25,TC-2025-10358,Friday,Soporte & Mantenimiento,Soporte Técnico On-site,Digital,Sofía Hernández,Colombia,Enterprise,Telecomunicaciones del Sur,6,3017.91,18107.46,6320.04,11787.42,65.1,18243.66,-0.75
+2025-04-22,TC-2025-10359,Tuesday,Análisis Predictivo,Segmentación de Clientes IA,Directo,María Pérez,Colombia,Enterprise,Energía Renovable SA,2,12966.91,25933.82,9226.32,16707.5,64.42,23602.79,9.88
+2025-04-26,TC-2025-10360,Saturday,Implementación BI,Dashboard Ejecutivo Custom,Referidos,Carlos Rodríguez,El Salvador,Mid Market,Agroexport SA,3,9948.06,29844.18,8947.8,20896.38,70.02,33028.52,-9.64
+2025-04-24,TC-2025-10361,Thursday,Consultoría de Datos,Arquitectura de Datos,Directo,Camila Jiménez,México,SMB,Transporte Rápido,1,9521.19,9521.19,3515.27,6005.92,63.08,9334.6,2.0
+2025-04-22,TC-2025-10362,Tuesday,Análisis Predictivo,Scoring de Crédito,Referidos,Luis Ramírez,El Salvador,SMB,Servicios Técnicos CR,1,17066.98,17066.98,6175.55,10891.43,63.82,14010.34,21.82
+2025-04-24,TC-2025-10363,Thursday,Consultoría de Datos,Data Maturity Assessment,Digital,Andrés García,El Salvador,Enterprise,Grupo Financiero Pacífico,7,4606.4,32244.8,10681.58,21563.22,66.87,28238.07,14.19
+2025-04-21,TC-2025-10364,Monday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Sofía Hernández,El Salvador,Mid Market,Agroexport SA,2,3138.71,6277.42,2307.18,3970.24,63.25,5782.58,8.56
+2025-04-22,TC-2025-10365,Tuesday,Soporte & Mantenimiento,Soporte Técnico On-site,Referidos,María Pérez,México,SMB,Boutique Moda Latina,2,2973.48,5946.96,1951.04,3995.92,67.19,5756.81,3.3
+2025-04-26,TC-2025-10366,Saturday,Implementación BI,Dashboard Ejecutivo Custom,Partner,Sofía Hernández,Colombia,SMB,PyME Tech,2,8186.79,16373.58,6384.1,9989.48,61.01,19208.84,-14.76
+2025-04-27,TC-2025-10367,Sunday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Diego López,Guatemala,Enterprise,Logística Global Pac,6,16279.66,97677.96,36618.06,61059.9,62.51,86371.25,13.09
+2025-04-24,TC-2025-10368,Thursday,Consultoría de Datos,Data Maturity Assessment,Partner,Carlos Rodríguez,Colombia,Mid Market,Clínica Santa Rosa,2,5177.68,10355.36,3220.12,7135.24,68.9,8823.07,17.37
+2025-04-22,TC-2025-10369,Tuesday,Soporte & Mantenimiento,Licencias Power BI Pro,Partner,Camila Jiménez,Guatemala,Enterprise,Farmacéutica Centroam,8,870.94,6967.52,5673.84,1293.68,18.57,6602.79,5.52
+2025-04-23,TC-2025-10370,Wednesday,Capacitación Tech,Certificación BI Analista,Directo,Diego López,El Salvador,Mid Market,Clínica Santa Rosa,4,3063.49,12253.96,3536.16,8717.8,71.14,13125.42,-6.64
+2025-04-23,TC-2025-10371,Wednesday,Consultoría de Datos,Data Maturity Assessment,Directo,Andrés García,El Salvador,SMB,Tienda Electrónica SV,1,4168.95,4168.95,1638.8,2530.15,60.69,3707.98,12.43
+2025-04-24,TC-2025-10372,Thursday,Soporte & Mantenimiento,Licencias Power BI Pro,Partner,Valentina Torres,México,Gobierno,Alcaldía de San Salvador,3,947.87,2843.61,2034.27,809.34,28.46,2703.46,5.18
+2025-04-27,TC-2025-10373,Sunday,Análisis Predictivo,Segmentación de Clientes IA,Referidos,Valentina Torres,México,SMB,Servicios Técnicos CR,1,13252.13,13252.13,4560.69,8691.44,65.59,11891.08,11.45
+2025-04-22,TC-2025-10374,Tuesday,Consultoría de Datos,Data Governance Assessment,Partner,Roberto Morales,Colombia,SMB,Restaurantes La Plaza,2,7250.1,14500.2,3867.56,10632.64,73.33,12547.7,15.56
+2025-04-21,TC-2025-10375,Monday,Consultoría de Datos,Data Maturity Assessment,Partner,Carlos Rodríguez,El Salvador,Enterprise,Supermercados Unidos,7,4478.84,31351.88,12068.14,19283.74,61.51,29558.86,6.07
+2025-04-21,TC-2025-10376,Monday,Análisis Predictivo,Detección de Anomalías,Directo,Luis Ramírez,Colombia,Enterprise,Constructora Progreso,3,13054.46,39163.38,14109.75,25053.63,63.97,34154.03,14.67
+2025-04-22,TC-2025-10377,Tuesday,Consultoría de Datos,Data Maturity Assessment,Partner,Ana Martínez,México,Mid Market,Cooperativa Agrícola Sur,1,5277.12,5277.12,1494.23,3782.89,71.68,4711.05,12.02
+2025-04-25,TC-2025-10378,Friday,Implementación BI,Dashboard Ejecutivo Custom,Partner,Carlos Rodríguez,El Salvador,Enterprise,Grupo Financiero Pacífico,4,9661.01,38644.04,12517.28,26126.76,67.61,43029.47,-10.19
+2025-04-21,TC-2025-10379,Monday,Implementación BI,Looker Studio Pro,Directo,Valentina Torres,Costa Rica,Mid Market,Fintech Innova,3,10257.61,30772.83,12612.57,18160.26,59.01,34133.52,-9.85
+2025-04-23,TC-2025-10380,Wednesday,Análisis Predictivo,Segmentación de Clientes IA,Referidos,Camila Jiménez,Colombia,Gobierno,Ministerio de Educación GT,3,12153.97,36461.91,13528.59,22933.32,62.9,31622.96,15.3
+2025-04-24,TC-2025-10381,Thursday,Implementación BI,Looker Studio Pro,Referidos,Roberto Morales,México,Mid Market,Distribuidora El Pino,1,10530.81,10530.81,4121.16,6409.65,60.87,12106.79,-13.02
+2025-04-26,TC-2025-10382,Saturday,Implementación BI,Tableau Implementation,Digital,Camila Jiménez,Guatemala,Mid Market,Distribuidora El Pino,3,13553.58,40660.74,15425.55,25235.19,62.06,45923.92,-11.46
+2025-04-23,TC-2025-10383,Wednesday,Soporte & Mantenimiento,SLA Premium 24/7,Partner,Diego López,El Salvador,Mid Market,Fintech Innova,2,4074.47,8148.94,2470.32,5678.62,69.69,8430.5,-3.34
+2025-04-27,TC-2025-10384,Sunday,Análisis Predictivo,Forecasting de Ventas ML,Directo,Diego López,El Salvador,Enterprise,Corporación Retail Max,3,15267.16,45801.48,15240.63,30560.85,66.72,41604.88,10.09
+2025-04-27,TC-2025-10385,Sunday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Camila Jiménez,México,Mid Market,Distribuidora El Pino,4,8426.55,33706.2,12421.96,21284.24,63.15,33197.47,1.53
+2025-04-24,TC-2025-10386,Thursday,Soporte & Mantenimiento,Soporte Técnico On-site,Referidos,Camila Jiménez,México,Gobierno,Secretaría de Salud CO,1,3094.14,3094.14,921.71,2172.43,70.21,3016.39,2.58
+2025-04-21,TC-2025-10387,Monday,Implementación BI,Data Warehouse Setup,Directo,Sofía Hernández,Guatemala,SMB,Eventos Premium CO,2,18031.86,36063.72,13267.4,22796.32,63.21,40734.43,-11.47
+2025-04-22,TC-2025-10388,Tuesday,Implementación BI,Power BI Enterprise,Directo,Camila Jiménez,México,Enterprise,Aseguradora Continental,4,12767.55,51070.2,19547.4,31522.8,61.72,54917.18,-7.01
+2025-04-24,TC-2025-10389,Thursday,Análisis Predictivo,Forecasting de Ventas ML,Partner,Valentina Torres,Colombia,Mid Market,Manufactura Tica,2,14194.21,28388.42,11197.5,17190.92,60.56,25420.27,11.68
+2025-04-27,TC-2025-10390,Sunday,Capacitación Tech,Workshop SQL Avanzado,Digital,Diego López,México,SMB,Servicios Técnicos CR,1,1839.41,1839.41,497.64,1341.77,72.95,1872.49,-1.77
+2025-04-27,TC-2025-10391,Sunday,Consultoría de Datos,Data Maturity Assessment,Partner,María Pérez,Guatemala,Mid Market,Agroexport SA,1,4497.84,4497.84,1648.78,2849.06,63.34,3871.5,16.18
+2025-04-23,TC-2025-10392,Wednesday,Capacitación Tech,Bootcamp Data Science,Digital,María Pérez,El Salvador,SMB,Consultora Local MX,2,4424.59,8849.18,2661.88,6187.3,69.92,8905.51,-0.63
+2025-04-23,TC-2025-10393,Wednesday,Capacitación Tech,Certificación BI Analista,Directo,Sofía Hernández,México,Mid Market,Manufactura Tica,3,3462.27,10386.81,2874.24,7512.57,72.33,11113.29,-6.54
+2025-04-24,TC-2025-10394,Thursday,Soporte & Mantenimiento,Licencias Power BI Pro,Partner,Sofía Hernández,México,Gobierno,CEPAL Regional,3,904.14,2712.42,2008.92,703.5,25.94,2804.94,-3.3
+2025-04-26,TC-2025-10395,Saturday,Consultoría de Datos,Data Quality Framework,Directo,María Pérez,Guatemala,Enterprise,Supermercados Unidos,5,5575.97,27879.85,9664.05,18215.8,65.34,27313.19,2.07
+2025-04-26,TC-2025-10396,Saturday,Implementación BI,Data Warehouse Setup,Partner,Ana Martínez,México,Enterprise,Telecomunicaciones del Sur,3,19954.23,59862.69,23122.14,36740.55,61.37,67895.57,-11.83
+2025-04-21,TC-2025-10397,Monday,Consultoría de Datos,Data Governance Assessment,Directo,Luis Ramírez,El Salvador,Gobierno,INSAFORP El Salvador,1,6889.94,6889.94,2108.06,4781.88,69.4,6885.87,0.06
+2025-04-22,TC-2025-10398,Tuesday,Consultoría de Datos,Data Maturity Assessment,Directo,María Pérez,México,SMB,Panadería Industrial GT,2,4558.27,9116.54,3008.72,6107.82,67.0,8477.36,7.54
+2025-04-27,TC-2025-10399,Sunday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Luis Ramírez,Colombia,Mid Market,Importadora Centroam,3,8878.79,26636.37,9039.54,17596.83,66.06,26433.09,0.77
+2025-04-25,TC-2025-10400,Friday,Análisis Predictivo,Detección de Anomalías,Partner,Roberto Morales,México,Mid Market,Hotel Cadena Pacífico,3,13255.78,39767.34,13161.24,26606.1,66.9,33070.54,20.25
+2025-04-27,TC-2025-10401,Sunday,Consultoría de Datos,Data Quality Framework,Directo,Ana Martínez,Guatemala,Mid Market,Agroexport SA,2,5702.36,11404.72,3880.78,7523.94,65.97,9729.18,17.22
+2025-04-27,TC-2025-10402,Sunday,Soporte & Mantenimiento,Licencias Power BI Pro,Directo,Roberto Morales,Colombia,SMB,Panadería Industrial GT,1,887.79,887.79,646.12,241.67,27.22,914.64,-2.94
+2025-04-23,TC-2025-10403,Wednesday,Implementación BI,Tableau Implementation,Directo,Valentina Torres,Colombia,Mid Market,Agencia Digital Norte,1,14294.74,14294.74,5270.81,9023.93,63.13,16373.39,-12.7
+2025-04-27,TC-2025-10404,Sunday,Soporte & Mantenimiento,Dashboard Maintenance,Directo,Valentina Torres,Colombia,SMB,Panadería Industrial GT,1,1402.08,1402.08,492.83,909.25,64.85,1391.06,0.79
+2025-04-25,TC-2025-10405,Friday,Análisis Predictivo,Segmentación de Clientes IA,Digital,Sofía Hernández,México,Mid Market,Distribuidora El Pino,1,11229.38,11229.38,4307.27,6922.11,61.64,9404.08,19.41
+2025-04-23,TC-2025-10406,Wednesday,Capacitación Tech,Workshop Power BI Avanzado,Directo,Andrés García,El Salvador,Mid Market,Hotel Cadena Pacífico,4,2594.66,10378.64,2584.88,7793.76,75.09,11198.53,-7.32
+2025-04-22,TC-2025-10407,Tuesday,Implementación BI,Tableau Implementation,Directo,Luis Ramírez,Colombia,Enterprise,Telecomunicaciones del Sur,8,13561.34,108490.72,43166.32,65324.4,60.21,109923.57,-1.3
+2025-04-24,TC-2025-10408,Thursday,Soporte & Mantenimiento,SLA Estándar,Directo,Ana Martínez,Costa Rica,Enterprise,Corporación Retail Max,7,2000.34,14002.38,4354.7,9647.68,68.9,14643.21,-4.38
+2025-04-21,TC-2025-10409,Monday,Análisis Predictivo,Segmentación de Clientes IA,Referidos,Camila Jiménez,El Salvador,SMB,Academia Digital SV,2,12292.43,24584.86,8903.86,15681.0,63.78,20900.73,17.63
+2025-04-27,TC-2025-10410,Sunday,Consultoría de Datos,Data Governance Assessment,Referidos,Ana Martínez,El Salvador,Mid Market,Educativa Futuro,3,6543.54,19630.62,6194.97,13435.65,68.44,17429.34,12.63
+2025-04-22,TC-2025-10411,Tuesday,Soporte & Mantenimiento,Soporte Técnico On-site,Digital,Andrés García,México,Mid Market,Clínica Santa Rosa,2,2883.93,5767.86,2018.32,3749.54,65.01,5455.09,5.73
+2025-04-24,TC-2025-10412,Thursday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Carlos Rodríguez,México,SMB,Servicios Técnicos CR,1,3412.58,3412.58,1211.2,2201.38,64.51,3389.86,0.67
+2025-04-21,TC-2025-10413,Monday,Implementación BI,Dashboard Ejecutivo Custom,Digital,Sofía Hernández,El Salvador,Mid Market,Manufactura Tica,4,9609.49,38437.96,12517.12,25920.84,67.44,42528.33,-9.62
+2025-04-27,TC-2025-10414,Sunday,Análisis Predictivo,Detección de Anomalías,Directo,María Pérez,Guatemala,SMB,PyME Tech,1,10357.62,10357.62,4157.14,6200.48,59.86,8712.18,18.89
+2025-04-25,TC-2025-10415,Friday,Implementación BI,Looker Studio Pro,Partner,Sofía Hernández,Colombia,Mid Market,Distribuidora El Pino,3,12240.85,36722.55,12073.38,24649.17,67.12,41781.41,-12.11
+2025-04-25,TC-2025-10416,Friday,Análisis Predictivo,Detección de Anomalías,Digital,Camila Jiménez,El Salvador,SMB,Servicios Técnicos CR,2,11232.97,22465.94,8998.4,13467.54,59.95,18318.03,22.64
+2025-04-21,TC-2025-10417,Monday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Ana Martínez,Costa Rica,Enterprise,Corporación Retail Max,5,14062.27,70311.35,26827.65,43483.7,61.84,62526.98,12.45
+2025-04-25,TC-2025-10418,Friday,Implementación BI,Dashboard Ejecutivo Custom,Partner,Andrés García,Colombia,Enterprise,Corporación Retail Max,7,7931.11,55517.77,23193.66,32324.11,58.22,58165.42,-4.55
+2025-04-27,TC-2025-10419,Sunday,Análisis Predictivo,Modelo de Churn Prediction,Partner,Valentina Torres,México,Mid Market,Cooperativa Agrícola Sur,1,16906.39,16906.39,5582.68,11323.71,66.98,13620.74,24.12
+2025-04-25,TC-2025-10420,Friday,Consultoría de Datos,Data Quality Framework,Directo,Carlos Rodríguez,El Salvador,Mid Market,Agencia Digital Norte,4,5433.66,21734.64,7832.68,13901.96,63.96,19315.7,12.52
+2025-04-26,TC-2025-10421,Saturday,Análisis Predictivo,Forecasting de Ventas ML,Partner,Roberto Morales,México,SMB,Consultora Local MX,2,14725.33,29450.66,10278.66,19172.0,65.1,23987.09,22.78
+2025-04-23,TC-2025-10422,Wednesday,Capacitación Tech,Certificación BI Analista,Partner,Roberto Morales,Guatemala,Enterprise,Constructora Progreso,4,3344.08,13376.32,4145.28,9231.04,69.01,14550.91,-8.07
+2025-04-24,TC-2025-10423,Thursday,Implementación BI,Dashboard Ejecutivo Custom,Digital,Camila Jiménez,Guatemala,Enterprise,Corporación Retail Max,8,9196.63,73573.04,25770.48,47802.56,64.97,79038.58,-6.92
+2025-04-22,TC-2025-10424,Tuesday,Análisis Predictivo,Scoring de Crédito,Directo,Ana Martínez,El Salvador,Enterprise,Logística Global Pac,4,14552.52,58210.08,27584.08,30626.0,52.61,48307.87,20.5
+2025-04-21,TC-2025-10425,Monday,Implementación BI,Looker Studio Pro,Referidos,Roberto Morales,México,Mid Market,Educativa Futuro,1,11199.22,11199.22,3968.9,7230.32,64.56,11844.07,-5.44
+2025-04-22,TC-2025-10426,Tuesday,Soporte & Mantenimiento,SLA Estándar,Directo,Valentina Torres,Colombia,Enterprise,Supermercados Unidos,7,1625.69,11379.83,4218.27,7161.56,62.93,11017.5,3.29
+2025-04-24,TC-2025-10427,Thursday,Análisis Predictivo,Detección de Anomalías,Digital,Ana Martínez,El Salvador,Mid Market,Fintech Innova,1,12811.42,12811.42,4697.0,8114.42,63.34,10845.17,18.13
+2025-04-21,TC-2025-10428,Monday,Soporte & Mantenimiento,Licencias Power BI Pro,Partner,Diego López,Colombia,SMB,PyME Tech,2,761.8,1523.6,1365.3,158.3,10.39,1436.46,6.07
+2025-04-27,TC-2025-10429,Sunday,Análisis Predictivo,Segmentación de Clientes IA,Partner,Valentina Torres,El Salvador,Enterprise,Constructora Progreso,6,12630.92,75785.52,25789.8,49995.72,65.97,65182.78,16.27
+2025-04-24,TC-2025-10430,Thursday,Capacitación Tech,Workshop Python Analytics,Directo,Ana Martínez,El Salvador,Mid Market,Agroexport SA,3,2263.81,6791.43,2250.66,4540.77,66.86,7308.22,-7.07
+2025-04-25,TC-2025-10431,Friday,Consultoría de Datos,Data Governance Assessment,Partner,Roberto Morales,El Salvador,Mid Market,Agencia Digital Norte,2,5906.71,11813.42,4042.92,7770.5,65.78,10815.96,9.22
+2025-04-23,TC-2025-10432,Wednesday,Capacitación Tech,Certificación BI Analista,Directo,Andrés García,México,Mid Market,Agencia Digital Norte,3,3386.12,10158.36,2660.76,7497.6,73.81,10145.49,0.13
+2025-04-27,TC-2025-10433,Sunday,Soporte & Mantenimiento,Soporte Técnico On-site,Digital,Luis Ramírez,Colombia,Mid Market,Distribuidora El Pino,2,2631.74,5263.48,1920.44,3343.04,63.51,5320.91,-1.08
+2025-04-21,TC-2025-10434,Monday,Soporte & Mantenimiento,SLA Premium 24/7,Digital,Sofía Hernández,El Salvador,Mid Market,Manufactura Tica,3,3808.48,11425.44,3376.11,8049.33,70.45,11004.03,3.83
+2025-04-24,TC-2025-10435,Thursday,Consultoría de Datos,Data Governance Assessment,Digital,María Pérez,El Salvador,Mid Market,Agroexport SA,2,6748.83,13497.66,4313.08,9184.58,68.05,12251.09,10.18
+2025-04-21,TC-2025-10436,Monday,Soporte & Mantenimiento,Soporte Técnico On-site,Directo,Roberto Morales,El Salvador,Enterprise,Aseguradora Continental,5,3014.0,15070.0,4514.55,10555.45,70.04,14370.39,4.87
+2025-04-24,TC-2025-10437,Thursday,Implementación BI,Looker Studio Pro,Referidos,Valentina Torres,El Salvador,SMB,Panadería Industrial GT,1,12662.78,12662.78,4189.69,8473.09,66.91,14131.34,-10.39
+2025-04-22,TC-2025-10438,Tuesday,Consultoría de Datos,Data Governance Assessment,Partner,Ana Martínez,México,Gobierno,Ministerio de Hacienda SV,3,6023.17,18069.51,6289.86,11779.65,65.19,17385.25,3.94
+2025-04-27,TC-2025-10439,Sunday,Consultoría de Datos,Data Quality Framework,Directo,Camila Jiménez,Guatemala,Gobierno,Secretaría de Salud CO,1,6192.88,6192.88,2068.15,4124.73,66.6,6092.33,1.65
+2025-04-26,TC-2025-10440,Saturday,Capacitación Tech,Workshop Power BI Avanzado,Referidos,Andrés García,Costa Rica,Enterprise,Farmacéutica Centroam,3,1993.94,5981.82,1913.25,4068.57,68.02,6621.3,-9.66
+2025-04-23,TC-2025-10441,Wednesday,Análisis Predictivo,Forecasting de Ventas ML,Partner,María Pérez,México,Mid Market,Fintech Innova,4,14076.05,56304.2,19824.08,36480.12,64.79,46128.92,22.06
+2025-04-24,TC-2025-10442,Thursday,Análisis Predictivo,Forecasting de Ventas ML,Referidos,Camila Jiménez,Guatemala,SMB,Servicios Técnicos CR,1,14537.74,14537.74,5253.95,9283.79,63.86,11949.87,21.66
+2025-04-27,TC-2025-10443,Sunday,Consultoría de Datos,Data Maturity Assessment,Referidos,Sofía Hernández,El Salvador,Mid Market,Distribuidora El Pino,3,5148.18,15444.54,4733.97,10710.57,69.35,14097.44,9.56
+2025-04-25,TC-2025-10444,Friday,Implementación BI,Looker Studio Pro,Directo,Ana Martínez,El Salvador,Enterprise,Supermercados Unidos,4,11678.49,46713.96,17102.04,29611.92,63.39,52125.48,-10.38
+2025-04-24,TC-2025-10445,Thursday,Implementación BI,Power BI Enterprise,Directo,Camila Jiménez,México,Mid Market,Fintech Innova,3,11689.91,35069.73,14140.71,20929.02,59.68,38376.9,-8.62
+2025-04-22,TC-2025-10446,Tuesday,Consultoría de Datos,Data Governance Assessment,Directo,María Pérez,Colombia,Enterprise,Farmacéutica Centroam,7,6704.69,46932.83,14001.05,32931.78,70.17,41402.14,13.36
+2025-04-24,TC-2025-10447,Thursday,Consultoría de Datos,Arquitectura de Datos,Referidos,Luis Ramírez,México,Mid Market,Agencia Digital Norte,4,10238.35,40953.4,14648.68,26304.72,64.23,39887.57,2.67
+2025-04-25,TC-2025-10448,Friday,Capacitación Tech,Bootcamp Data Science,Partner,Camila Jiménez,Colombia,Mid Market,Distribuidora El Pino,1,4569.67,4569.67,1420.63,3149.04,68.91,4366.09,4.66
+2025-04-27,TC-2025-10449,Sunday,Soporte & Mantenimiento,Soporte Técnico On-site,Partner,Valentina Torres,Costa Rica,Enterprise,Logística Global Pac,7,3272.58,22908.06,6519.59,16388.47,71.54,22025.74,4.01
+2025-04-22,TC-2025-10450,Tuesday,Soporte & Mantenimiento,Dashboard Maintenance,Partner,Ana Martínez,Guatemala,Mid Market,Agroexport SA,4,1693.45,6773.8,2024.24,4749.56,70.12,6810.78,-0.54
+2025-04-24,TC-2025-10451,Thursday,Consultoría de Datos,Data Maturity Assessment,Referidos,Valentina Torres,México,Enterprise,Energía Renovable SA,2,4201.49,8402.98,3246.24,5156.74,61.37,8045.24,4.45
+2025-04-21,TC-2025-10452,Monday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Sofía Hernández,Guatemala,Mid Market,Clínica Santa Rosa,1,9608.44,9608.44,3166.5,6441.94,67.04,9858.14,-2.53
+2025-04-23,TC-2025-10453,Wednesday,Capacitación Tech,Certificación BI Analista,Partner,Ana Martínez,El Salvador,Mid Market,Educativa Futuro,2,2971.64,5943.28,1810.82,4132.46,69.53,6390.96,-7.0
+2025-04-22,TC-2025-10454,Tuesday,Consultoría de Datos,Data Quality Framework,Directo,Sofía Hernández,Colombia,Mid Market,Clínica Santa Rosa,2,5110.15,10220.3,4065.6,6154.7,60.22,8724.67,17.14
+2025-04-25,TC-2025-10455,Friday,Análisis Predictivo,Scoring de Crédito,Partner,Diego López,El Salvador,SMB,Panadería Industrial GT,2,16766.01,33532.02,12680.96,20851.06,62.18,29630.49,13.17
+2025-04-22,TC-2025-10456,Tuesday,Consultoría de Datos,Data Maturity Assessment,Directo,Diego López,México,SMB,Restaurantes La Plaza,1,4034.34,4034.34,1561.35,2472.99,61.3,3523.55,14.5
+2025-04-24,TC-2025-10457,Thursday,Consultoría de Datos,Data Maturity Assessment,Digital,Ana Martínez,Guatemala,Gobierno,SIECA Guatemala,1,4177.8,4177.8,1544.8,2633.0,63.02,3967.93,5.29
+2025-04-21,TC-2025-10458,Monday,Capacitación Tech,Certificación BI Analista,Digital,Roberto Morales,El Salvador,Mid Market,Cooperativa Agrícola Sur,1,3553.77,3553.77,932.79,2620.98,73.75,3896.71,-8.8
+2025-04-23,TC-2025-10459,Wednesday,Soporte & Mantenimiento,Licencias Power BI Pro,Digital,Carlos Rodríguez,El Salvador,Mid Market,Manufactura Tica,4,881.78,3527.12,2805.24,721.88,20.47,3485.78,1.19
+2025-04-25,TC-2025-10460,Friday,Consultoría de Datos,Data Maturity Assessment,Referidos,María Pérez,México,SMB,Tienda Electrónica SV,2,4310.54,8621.08,3238.48,5382.6,62.44,8139.89,5.91
+2025-04-25,TC-2025-10461,Friday,Soporte & Mantenimiento,Soporte Técnico On-site,Partner,Luis Ramírez,México,Mid Market,Educativa Futuro,2,3059.21,6118.42,2110.3,4008.12,65.51,5466.5,11.93
+2025-04-21,TC-2025-10462,Monday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Valentina Torres,El Salvador,Mid Market,Hotel Cadena Pacífico,3,8371.61,25114.83,10070.07,15044.76,59.9,22184.16,13.21
+2025-04-27,TC-2025-10463,Sunday,Análisis Predictivo,Segmentación de Clientes IA,Directo,Camila Jiménez,El Salvador,Mid Market,Cooperativa Agrícola Sur,1,10969.81,10969.81,4477.3,6492.51,59.19,9380.31,16.95
+2025-04-27,TC-2025-10464,Sunday,Análisis Predictivo,Modelo de Churn Prediction,Digital,Luis Ramírez,El Salvador,SMB,Eventos Premium CO,1,16105.43,16105.43,5782.83,10322.6,64.09,14289.75,12.71
+2025-04-23,TC-2025-10465,Wednesday,Soporte & Mantenimiento,Soporte Técnico On-site,Referidos,Ana Martínez,México,SMB,Academia Digital SV,2,2930.35,5860.7,1809.08,4051.62,69.13,5760.46,1.74
+2025-04-26,TC-2025-10466,Saturday,Implementación BI,Looker Studio Pro,Directo,Andrés García,El Salvador,SMB,Tienda Electrónica SV,1,11564.24,11564.24,4125.79,7438.45,64.32,12901.51,-10.37
+2025-04-24,TC-2025-10467,Thursday,Soporte & Mantenimiento,Dashboard Maintenance,Digital,Valentina Torres,Guatemala,Enterprise,Grupo Financiero Pacífico,3,1487.21,4461.63,1610.64,2850.99,63.9,4194.89,6.36
+2025-04-25,TC-2025-10468,Friday,Análisis Predictivo,Forecasting de Ventas ML,Directo,Carlos Rodríguez,Colombia,SMB,Eventos Premium CO,1,15116.05,15116.05,5536.92,9579.13,63.37,12416.88,21.74
+2025-04-27,TC-2025-10469,Sunday,Implementación BI,Dashboard Ejecutivo Custom,Digital,Sofía Hernández,México,SMB,Boutique Moda Latina,1,8285.69,8285.69,2870.13,5415.56,65.36,8941.39,-7.33
+2025-04-23,TC-2025-10470,Wednesday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Roberto Morales,Costa Rica,SMB,Boutique Moda Latina,2,4013.65,8027.3,2247.6,5779.7,72.0,8125.41,-1.21
+2025-04-22,TC-2025-10471,Tuesday,Capacitación Tech,Workshop Power BI Avanzado,Partner,Andrés García,Guatemala,SMB,Panadería Industrial GT,2,2118.59,4237.18,1262.38,2974.8,70.21,4327.07,-2.08
+2025-04-21,TC-2025-10472,Monday,Consultoría de Datos,Data Governance Assessment,Directo,Camila Jiménez,El Salvador,Gobierno,INSAFORP El Salvador,1,6465.1,6465.1,2116.59,4348.51,67.26,5766.92,12.11
+2025-04-24,TC-2025-10473,Thursday,Soporte & Mantenimiento,Dashboard Maintenance,Partner,Andrés García,El Salvador,Mid Market,Agroexport SA,1,1378.53,1378.53,507.61,870.92,63.18,1375.96,0.19
+2025-04-25,TC-2025-10474,Friday,Consultoría de Datos,Data Strategy & Roadmap,Directo,Roberto Morales,Guatemala,SMB,Eventos Premium CO,2,8276.72,16553.44,6725.06,9828.38,59.37,15849.36,4.44
+2025-04-21,TC-2025-10475,Monday,Capacitación Tech,Certificación BI Analista,Directo,Roberto Morales,Costa Rica,SMB,Servicios Técnicos CR,2,2909.37,5818.74,1861.76,3956.98,68.0,6137.31,-5.19
+2025-04-23,TC-2025-10476,Wednesday,Capacitación Tech,Bootcamp Data Science,Directo,Roberto Morales,El Salvador,SMB,Transporte Rápido,2,4207.53,8415.06,2880.26,5534.8,65.77,8439.81,-0.29
+2025-04-24,TC-2025-10477,Thursday,Soporte & Mantenimiento,Dashboard Maintenance,Partner,Andrés García,El Salvador,Mid Market,Importadora Centroam,2,1447.02,2894.04,995.3,1898.74,65.61,2843.32,1.78
+2025-04-25,TC-2025-10478,Friday,Análisis Predictivo,Scoring de Crédito,Digital,Carlos Rodríguez,Colombia,Mid Market,Manufactura Tica,4,16504.04,66016.16,25245.44,40770.72,61.76,58515.57,12.82
+2025-04-27,TC-2025-10479,Sunday,Análisis Predictivo,Scoring de Crédito,Directo,Roberto Morales,Guatemala,SMB,Tienda Electrónica SV,2,17327.7,34655.4,12476.82,22178.58,64.0,31071.17,11.54
+2025-04-25,TC-2025-10480,Friday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Carlos Rodríguez,Colombia,SMB,PyME Tech,2,8309.71,16619.42,5988.0,10631.42,63.97,15253.47,8.96
+2025-04-24,TC-2025-10481,Thursday,Implementación BI,Dashboard Ejecutivo Custom,Directo,Valentina Torres,El Salvador,SMB,Consultora Local MX,1,7983.01,7983.01,3257.25,4725.76,59.2,9316.1,-14.31
+2025-04-25,TC-2025-10482,Friday,Soporte & Mantenimiento,SLA Premium 24/7,Digital,María Pérez,México,Mid Market,Hotel Cadena Pacífico,4,3285.45,13141.8,4939.4,8202.4,62.41,12384.62,6.11
+2025-04-25,TC-2025-10483,Friday,Análisis Predictivo,Segmentación de Clientes IA,Referidos,Andrés García,Costa Rica,SMB,Boutique Moda Latina,1,12761.37,12761.37,4607.67,8153.7,63.89,11714.07,8.94
+2025-04-21,TC-2025-10484,Monday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Camila Jiménez,México,Enterprise,Energía Renovable SA,8,3376.32,27010.56,8879.92,18130.64,67.12,25937.34,4.14
+2025-04-24,TC-2025-10485,Thursday,Análisis Predictivo,Segmentación de Clientes IA,Digital,Diego López,Guatemala,Mid Market,Educativa Futuro,2,11237.62,22475.24,9030.12,13445.12,59.82,20871.04,7.69
+2025-04-26,TC-2025-10486,Saturday,Soporte & Mantenimiento,SLA Estándar,Directo,Ana Martínez,Colombia,Enterprise,Grupo Financiero Pacífico,2,1661.76,3323.52,1316.36,2007.16,60.39,3308.25,0.46
+2025-04-24,TC-2025-10487,Thursday,Soporte & Mantenimiento,SLA Estándar,Directo,Luis Ramírez,México,Mid Market,Fintech Innova,2,1829.37,3658.74,1224.94,2433.8,66.52,3734.09,-2.02
+2025-04-23,TC-2025-10488,Wednesday,Implementación BI,Tableau Implementation,Directo,Diego López,México,Mid Market,Agroexport SA,4,16443.16,65772.64,22268.76,43503.88,66.14,66882.38,-1.66
+2025-04-26,TC-2025-10489,Saturday,Consultoría de Datos,Arquitectura de Datos,Digital,Carlos Rodríguez,El Salvador,Mid Market,Educativa Futuro,3,9379.22,28137.66,10071.18,18066.48,64.21,27678.77,1.66
+2025-04-23,TC-2025-10490,Wednesday,Consultoría de Datos,Arquitectura de Datos,Partner,Camila Jiménez,México,SMB,PyME Tech,1,10589.9,10589.9,3620.18,6969.72,65.81,9037.94,17.17
+2025-04-22,TC-2025-10491,Tuesday,Análisis Predictivo,Scoring de Crédito,Partner,María Pérez,Guatemala,Mid Market,Manufactura Tica,1,17960.5,17960.5,6499.98,11460.52,63.81,15128.23,18.72
+2025-04-27,TC-2025-10492,Sunday,Capacitación Tech,Workshop SQL Avanzado,Directo,Ana Martínez,México,Enterprise,Aseguradora Continental,7,1921.13,13447.91,3651.06,9796.85,72.85,12937.74,3.94
+2025-04-26,TC-2025-10493,Saturday,Análisis Predictivo,Segmentación de Clientes IA,Directo,María Pérez,México,Enterprise,Banco Central LATAM,2,12733.76,25467.52,9803.72,15663.8,61.51,22992.4,10.76
+2025-04-27,TC-2025-10494,Sunday,Análisis Predictivo,Segmentación de Clientes IA,Digital,Luis Ramírez,Guatemala,SMB,Servicios Técnicos CR,1,11794.25,11794.25,4294.12,7500.13,63.59,9673.45,21.92
+2025-04-26,TC-2025-10495,Saturday,Soporte & Mantenimiento,SLA Estándar,Digital,Valentina Torres,Colombia,Mid Market,Agencia Digital Norte,4,1976.04,7904.16,2347.96,5556.2,70.29,7769.41,1.73
+2025-04-24,TC-2025-10496,Thursday,Soporte & Mantenimiento,SLA Premium 24/7,Partner,Sofía Hernández,Colombia,Enterprise,Constructora Progreso,5,3396.44,16982.2,6236.3,10745.9,63.28,17153.48,-1.0
+2025-04-21,TC-2025-10497,Monday,Análisis Predictivo,Scoring de Crédito,Digital,Camila Jiménez,Guatemala,Enterprise,Farmacéutica Centroam,4,19109.75,76439.0,25390.36,51048.64,66.78,68366.97,11.81
+2025-04-26,TC-2025-10498,Saturday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Valentina Torres,México,Mid Market,Fintech Innova,3,3431.72,10295.16,3465.84,6829.32,66.34,9352.85,10.08
+2025-04-25,TC-2025-10499,Friday,Análisis Predictivo,Scoring de Crédito,Partner,Roberto Morales,México,Enterprise,Corporación Retail Max,4,17874.7,71498.8,27620.2,43878.6,61.37,60315.34,18.54
+2025-04-23,TC-2025-10500,Wednesday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Carlos Rodríguez,El Salvador,Enterprise,Constructora Progreso,3,9329.39,27988.17,9218.91,18769.26,67.06,23982.93,16.7
+2025-04-26,TC-2025-10501,Saturday,Análisis Predictivo,Modelo de Churn Prediction,Referidos,Roberto Morales,México,SMB,Boutique Moda Latina,1,13588.74,13588.74,5897.15,7691.59,56.6,11581.78,17.33
+2025-04-23,TC-2025-10502,Wednesday,Capacitación Tech,Certificación BI Analista,Digital,Sofía Hernández,El Salvador,Enterprise,Aseguradora Continental,5,3450.06,17250.3,4474.15,12776.15,74.06,17651.34,-2.27
+2025-04-27,TC-2025-10503,Sunday,Soporte & Mantenimiento,Licencias Power BI Pro,Digital,María Pérez,México,SMB,Servicios Técnicos CR,1,818.71,818.71,632.39,186.32,22.76,780.7,4.87
+2025-04-25,TC-2025-10504,Friday,Soporte & Mantenimiento,Dashboard Maintenance,Referidos,Luis Ramírez,Guatemala,Mid Market,Agencia Digital Norte,4,1400.3,5601.2,2037.4,3563.8,63.63,5128.2,9.22
+2025-04-21,TC-2025-10505,Monday,Capacitación Tech,Workshop Python Analytics,Partner,María Pérez,El Salvador,Mid Market,Clínica Santa Rosa,1,2252.81,2252.81,777.31,1475.5,65.5,2425.51,-7.12
+2025-04-22,TC-2025-10506,Tuesday,Consultoría de Datos,Arquitectura de Datos,Directo,Valentina Torres,México,Gobierno,Secretaría de Salud CO,3,9006.33,27018.99,10612.23,16406.76,60.72,23031.0,17.32
+2025-04-22,TC-2025-10507,Tuesday,Capacitación Tech,Bootcamp Data Science,Partner,Carlos Rodríguez,Guatemala,SMB,Academia Digital SV,1,4478.97,4478.97,1390.88,3088.09,68.95,4824.23,-7.16
+2025-04-26,TC-2025-10508,Saturday,Consultoría de Datos,Data Maturity Assessment,Referidos,Valentina Torres,Guatemala,SMB,Restaurantes La Plaza,1,4453.23,4453.23,1690.46,2762.77,62.04,4017.84,10.84
+2025-04-23,TC-2025-10509,Wednesday,Soporte & Mantenimiento,Dashboard Maintenance,Partner,Valentina Torres,El Salvador,Enterprise,Corporación Retail Max,7,1495.55,10468.85,3345.37,7123.48,68.04,10471.03,-0.02
+2025-04-24,TC-2025-10510,Thursday,Análisis Predictivo,Scoring de Crédito,Digital,Roberto Morales,El Salvador,Enterprise,Corporación Retail Max,5,14831.81,74159.05,32207.65,41951.4,56.57,62502.34,18.65
+2025-04-24,TC-2025-10511,Thursday,Análisis Predictivo,Scoring de Crédito,Referidos,Andrés García,El Salvador,Mid Market,Distribuidora El Pino,1,15567.81,15567.81,6557.54,9010.27,57.88,13587.3,14.58
+2025-04-24,TC-2025-10512,Thursday,Soporte & Mantenimiento,Soporte Técnico On-site,Directo,Ana Martínez,México,Gobierno,Instituto Nacional MX,3,2480.01,7440.03,3131.55,4308.48,57.91,7360.14,1.09
+2025-04-25,TC-2025-10513,Friday,Implementación BI,Tableau Implementation,Directo,Carlos Rodríguez,México,Gobierno,Dirección General de Aduanas,1,16054.6,16054.6,5116.28,10938.32,68.13,18538.57,-13.4
+2025-04-27,TC-2025-10514,Sunday,Consultoría de Datos,Data Maturity Assessment,Digital,Valentina Torres,El Salvador,SMB,Consultora Local MX,2,4397.72,8795.44,3443.64,5351.8,60.85,8242.91,6.7
+2025-04-22,TC-2025-10515,Tuesday,Consultoría de Datos,Data Governance Assessment,Digital,Carlos Rodríguez,México,Mid Market,Manufactura Tica,4,5768.57,23074.28,8225.2,14849.08,64.35,20219.93,14.12
+2025-04-27,TC-2025-10516,Sunday,Implementación BI,Data Warehouse Setup,Directo,Roberto Morales,El Salvador,SMB,Tienda Electrónica SV,1,16366.75,16366.75,7184.99,9181.76,56.1,16564.88,-1.2
+2025-04-22,TC-2025-10517,Tuesday,Consultoría de Datos,Data Strategy & Roadmap,Digital,Luis Ramírez,México,Enterprise,Telecomunicaciones del Sur,3,9111.56,27334.68,9635.46,17699.22,64.75,24953.65,9.54
+2025-04-26,TC-2025-10518,Saturday,Soporte & Mantenimiento,Soporte Técnico On-site,Digital,Roberto Morales,México,SMB,Boutique Moda Latina,2,2756.2,5512.4,1804.64,3707.76,67.26,5125.47,7.55
+2025-04-22,TC-2025-10519,Tuesday,Consultoría de Datos,Data Maturity Assessment,Referidos,Camila Jiménez,México,SMB,Academia Digital SV,2,4999.95,9999.9,3281.58,6718.32,67.18,8927.95,12.01
+2025-04-26,TC-2025-10520,Saturday,Consultoría de Datos,Data Governance Assessment,Digital,Sofía Hernández,Costa Rica,Mid Market,Educativa Futuro,1,5556.49,5556.49,2054.37,3502.12,63.03,4905.84,13.26
+2025-04-22,TC-2025-10521,Tuesday,Implementación BI,Data Warehouse Setup,Digital,Ana Martínez,Colombia,Enterprise,Logística Global Pac,3,20639.48,61918.44,21548.37,40370.07,65.2,63862.43,-3.04
+2025-04-27,TC-2025-10522,Sunday,Soporte & Mantenimiento,Licencias Power BI Pro,Partner,Andrés García,Guatemala,Enterprise,Corporación Retail Max,2,831.16,1662.32,1272.54,389.78,23.45,1675.3,-0.77
+2025-04-22,TC-2025-10523,Tuesday,Soporte & Mantenimiento,Licencias Power BI Pro,Referidos,Ana Martínez,El Salvador,Mid Market,Hotel Cadena Pacífico,2,984.61,1969.22,1350.2,619.02,31.43,1877.4,4.89
+2025-04-26,TC-2025-10524,Saturday,Consultoría de Datos,Data Governance Assessment,Partner,Sofía Hernández,Costa Rica,Enterprise,Banco Central LATAM,6,5566.95,33401.7,11867.16,21534.54,64.47,32667.61,2.25
+2025-04-22,TC-2025-10525,Tuesday,Análisis Predictivo,Forecasting de Ventas ML,Digital,Sofía Hernández,El Salvador,Enterprise,Supermercados Unidos,6,15809.05,94854.3,32972.16,61882.14,65.24,77024.65,23.15
+2025-04-21,TC-2025-10526,Monday,Soporte & Mantenimiento,Licencias Power BI Pro,Referidos,Luis Ramírez,El Salvador,Mid Market,Manufactura Tica,4,935.73,3742.92,2609.76,1133.16,30.27,3533.49,5.93
+2025-04-21,TC-2025-10527,Monday,Análisis Predictivo,Detección de Anomalías,Referidos,Valentina Torres,Costa Rica,SMB,Restaurantes La Plaza,2,12650.49,25300.98,8805.94,16495.04,65.2,21739.3,16.38
+2025-04-22,TC-2025-10528,Tuesday,Implementación BI,Power BI Enterprise,Partner,Ana Martínez,El Salvador,Mid Market,Hotel Cadena Pacífico,2,12344.02,24688.04,9199.2,15488.84,62.74,29295.54,-15.73
+2025-04-24,TC-2025-10529,Thursday,Consultoría de Datos,Data Quality Framework,Directo,Roberto Morales,México,Mid Market,Distribuidora El Pino,4,6446.99,25787.96,8267.0,17520.96,67.94,23516.18,9.66
+2025-04-26,TC-2025-10530,Saturday,Capacitación Tech,Workshop SQL Avanzado,Partner,Carlos Rodríguez,Colombia,Enterprise,Farmacéutica Centroam,4,1870.7,7482.8,2089.72,5393.08,72.07,8026.36,-6.77
+2025-04-23,TC-2025-10531,Wednesday,Capacitación Tech,Certificación BI Analista,Partner,Carlos Rodríguez,Colombia,SMB,PyME Tech,1,3310.15,3310.15,1022.98,2287.17,69.1,3338.26,-0.84
+2025-04-26,TC-2025-10532,Saturday,Consultoría de Datos,Arquitectura de Datos,Directo,Sofía Hernández,México,Mid Market,Agroexport SA,1,9643.69,9643.69,3757.58,5886.11,61.04,8412.73,14.63
+2025-04-27,TC-2025-10533,Sunday,Implementación BI,Data Warehouse Setup,Directo,Roberto Morales,México,Gobierno,Alcaldía de San Salvador,3,20502.92,61508.76,20979.51,40529.25,65.89,71895.58,-14.45
+2025-04-25,TC-2025-10534,Friday,Análisis Predictivo,Scoring de Crédito,Directo,Luis Ramírez,El Salvador,Mid Market,Agroexport SA,1,16847.31,16847.31,6432.67,10414.64,61.82,15412.51,9.31
+2025-04-24,TC-2025-10535,Thursday,Soporte & Mantenimiento,Licencias Power BI Pro,Partner,Carlos Rodríguez,Colombia,Gobierno,Alcaldía de San Salvador,1,768.44,768.44,723.3,45.14,5.87,720.8,6.61
+2025-04-25,TC-2025-10536,Friday,Soporte & Mantenimiento,SLA Premium 24/7,Directo,Sofía Hernández,El Salvador,Enterprise,Corporación Retail Max,7,3103.82,21726.74,8287.86,13438.88,61.85,21709.54,0.08
+2025-04-21,TC-2025-10537,Monday,Soporte & Mantenimiento,Licencias Power BI Pro,Directo,María Pérez,Guatemala,Mid Market,Agencia Digital Norte,1,970.31,970.31,650.88,319.43,32.92,1009.49,-3.88
+2025-04-26,TC-2025-10538,Saturday,Análisis Predictivo,Scoring de Crédito,Partner,Luis Ramírez,México,SMB,PyME Tech,2,16787.14,33574.28,12937.74,20636.54,61.47,31055.48,8.11
+2025-04-23,TC-2025-10539,Wednesday,Implementación BI,Looker Studio Pro,Directo,Ana Martínez,Guatemala,Enterprise,Telecomunicaciones del Sur,4,11184.56,44738.24,15903.2,28835.04,64.45,52499.15,-14.78
+2025-04-22,TC-2025-10540,Tuesday,Capacitación Tech,Workshop SQL Avanzado,Directo,Sofía Hernández,El Salvador,SMB,Servicios Técnicos CR,1,1606.22,1606.22,524.16,1082.06,67.37,1556.93,3.17
+2025-04-23,TC-2025-10541,Wednesday,Implementación BI,Tableau Implementation,Directo,Andrés García,Colombia,SMB,Servicios Técnicos CR,2,14795.83,29591.66,10406.18,19185.48,64.83,31485.84,-6.02
+2025-04-21,TC-2025-10542,Monday,Soporte & Mantenimiento,Licencias Power BI Pro,Referidos,Andrés García,Colombia,Gobierno,Instituto Nacional MX,3,887.27,2661.81,2042.43,619.38,23.27,2645.16,0.63
+2025-04-26,TC-2025-10543,Saturday,Implementación BI,Looker Studio Pro,Referidos,Sofía Hernández,Colombia,Gobierno,Ministerio de Educación GT,2,10797.66,21595.32,7878.96,13716.36,63.52,23651.31,-8.69
+2025-04-23,TC-2025-10544,Wednesday,Consultoría de Datos,Data Maturity Assessment,Directo,Diego López,El Salvador,Mid Market,Importadora Centroam,1,4400.59,4400.59,1627.69,2772.9,63.01,3875.88,13.54
+2025-04-24,TC-2025-10545,Thursday,Análisis Predictivo,Segmentación de Clientes IA,Directo,Carlos Rodríguez,El Salvador,SMB,Academia Digital SV,1,12325.68,12325.68,4675.93,7649.75,62.06,10737.8,14.79
+2025-04-21,TC-2025-10546,Monday,Consultoría de Datos,Data Quality Framework,Directo,Valentina Torres,Colombia,Mid Market,Cooperativa Agrícola Sur,3,5704.16,17112.48,5670.36,11442.12,66.86,15706.91,8.95
+2025-04-22,TC-2025-10547,Tuesday,Análisis Predictivo,Forecasting de Ventas ML,Digital,Luis Ramírez,Guatemala,Gobierno,Secretaría de Salud CO,3,15809.96,47429.88,15409.89,32019.99,67.51,43859.38,8.14
+2025-04-21,TC-2025-10548,Monday,Consultoría de Datos,Data Maturity Assessment,Partner,Camila Jiménez,El Salvador,Mid Market,Cooperativa Agrícola Sur,4,4079.41,16317.64,6307.28,10010.36,61.35,16110.73,1.28
+2025-04-27,TC-2025-10549,Sunday,Implementación BI,Data Warehouse Setup,Partner,Diego López,México,Gobierno,Instituto Nacional MX,2,17886.52,35773.04,14378.3,21394.74,59.81,41341.36,-13.47
+2025-04-22,TC-2025-10550,Tuesday,Implementación BI,Data Warehouse Setup,Directo,Ana Martínez,México,Mid Market,Distribuidora El Pino,3,17945.94,53837.82,22085.76,31752.06,58.98,60455.12,-10.95
+2025-04-21,TC-2025-10551,Monday,Consultoría de Datos,Data Quality Framework,Partner,Diego López,México,SMB,Restaurantes La Plaza,2,5961.91,11923.82,4193.68,7730.14,64.83,11215.26,6.32
+2025-04-23,TC-2025-10552,Wednesday,Implementación BI,Dashboard Ejecutivo Custom,Partner,Luis Ramírez,Colombia,Mid Market,Clínica Santa Rosa,1,9975.54,9975.54,2932.77,7042.77,70.6,10187.79,-2.08
+2025-04-23,TC-2025-10553,Wednesday,Implementación BI,Tableau Implementation,Directo,Andrés García,El Salvador,Mid Market,Distribuidora El Pino,3,14752.15,44256.45,17651.88,26604.57,60.11,48741.36,-9.2
+2025-04-27,TC-2025-10554,Sunday,Capacitación Tech,Workshop Python Analytics,Digital,Andrés García,México,Enterprise,Energía Renovable SA,8,2713.73,21709.84,5809.04,15900.8,73.24,23045.35,-5.8
+2025-04-23,TC-2025-10555,Wednesday,Capacitación Tech,Workshop Power BI Avanzado,Partner,Sofía Hernández,Guatemala,Enterprise,Logística Global Pac,4,2450.01,9800.04,2563.4,7236.64,73.84,10783.53,-9.12
+2025-04-26,TC-2025-10556,Saturday,Consultoría de Datos,Data Governance Assessment,Directo,Camila Jiménez,El Salvador,Enterprise,Supermercados Unidos,8,7227.64,57821.12,17730.24,40090.88,69.34,55358.77,4.45
+2025-04-24,TC-2025-10557,Thursday,Capacitación Tech,Workshop Power BI Avanzado,Partner,Sofía Hernández,Costa Rica,Enterprise,Banco Central LATAM,4,2141.64,8566.56,2542.84,6023.72,70.32,9279.49,-7.68
+2025-04-26,TC-2025-10558,Saturday,Soporte & Mantenimiento,Soporte Técnico On-site,Partner,María Pérez,Costa Rica,Enterprise,Banco Central LATAM,8,2563.62,20508.96,7374.24,13134.72,64.04,20530.45,-0.1
+2025-04-21,TC-2025-10559,Monday,Capacitación Tech,Workshop SQL Avanzado,Directo,Carlos Rodríguez,El Salvador,Enterprise,Grupo Financiero Pacífico,8,1845.5,14764.0,4272.48,10491.52,71.06,14481.14,1.95
+2025-04-23,TC-2025-10560,Wednesday,Consultoría de Datos,Data Maturity Assessment,Partner,Ana Martínez,México,Gobierno,SIECA Guatemala,3,3973.87,11921.61,4490.1,7431.51,62.34,10374.09,14.92
+2025-04-27,TC-2025-10561,Sunday,Análisis Predictivo,Detección de Anomalías,Referidos,Carlos Rodríguez,El Salvador,Mid Market,Educativa Futuro,3,13393.33,40179.99,12878.64,27301.35,67.95,33041.55,21.6
+2025-04-25,TC-2025-10562,Friday,Análisis Predictivo,Detección de Anomalías,Directo,Roberto Morales,México,Enterprise,Banco Central LATAM,3,12589.55,37768.65,14180.52,23588.13,62.45,31117.55,21.37
+2025-04-23,TC-2025-10563,Wednesday,Capacitación Tech,Workshop Power BI Avanzado,Referidos,Camila Jiménez,El Salvador,Enterprise,Constructora Progreso,7,2324.99,16274.93,4506.11,11768.82,72.31,18007.11,-9.62
+2025-04-27,TC-2025-10564,Sunday,Consultoría de Datos,Data Quality Framework,Referidos,Valentina Torres,Guatemala,Mid Market,Clínica Santa Rosa,3,5319.09,15957.27,5485.26,10472.01,65.63,13914.53,14.68
+2025-04-23,TC-2025-10565,Wednesday,Capacitación Tech,Workshop SQL Avanzado,Partner,Carlos Rodríguez,El Salvador,Mid Market,Hotel Cadena Pacífico,4,1908.21,7632.84,2095.04,5537.8,72.55,8468.43,-9.87
+2025-04-26,TC-2025-10566,Saturday,Implementación BI,Data Warehouse Setup,Partner,Carlos Rodríguez,Costa Rica,Mid Market,Importadora Centroam,3,17275.1,51825.3,23323.59,28501.71,55.0,56874.78,-8.88
+2025-04-26,TC-2025-10567,Saturday,Consultoría de Datos,Arquitectura de Datos,Partner,Valentina Torres,México,Enterprise,Farmacéutica Centroam,6,10794.1,64764.6,22434.36,42330.24,65.36,63732.47,1.62
+2025-04-22,TC-2025-10568,Tuesday,Consultoría de Datos,Data Quality Framework,Referidos,Valentina Torres,Guatemala,Mid Market,Clínica Santa Rosa,4,6365.85,25463.4,7523.6,17939.8,70.45,24382.6,4.43
+2025-04-26,TC-2025-10569,Saturday,Análisis Predictivo,Segmentación de Clientes IA,Digital,Andrés García,Colombia,Gobierno,Dirección General de Aduanas,3,13980.5,41941.5,14876.46,27065.04,64.53,36537.48,14.79
+2025-04-21,TC-2025-10570,Monday,Consultoría de Datos,Arquitectura de Datos,Directo,Sofía Hernández,Guatemala,Mid Market,Distribuidora El Pino,1,10387.66,10387.66,3598.93,6788.73,65.35,8889.91,16.85
+2025-04-26,TC-2025-10571,Saturday,Consultoría de Datos,Data Maturity Assessment,Digital,Carlos Rodríguez,El Salvador,Mid Market,Clínica Santa Rosa,4,5030.19,20120.76,6094.76,14026.0,69.71,19113.51,5.27
+2025-04-24,TC-2025-10572,Thursday,Análisis Predictivo,Segmentación de Clientes IA,Partner,Ana Martínez,Colombia,Mid Market,Distribuidora El Pino,1,11941.07,11941.07,4463.52,7477.55,62.62,10178.09,17.32
+2025-04-24,TC-2025-10573,Thursday,Análisis Predictivo,Modelo de Churn Prediction,Directo,Sofía Hernández,México,SMB,Eventos Premium CO,1,14606.07,14606.07,5697.07,8909.0,61.0,13237.44,10.34
+2025-04-27,TC-2025-10574,Sunday,Análisis Predictivo,Scoring de Crédito,Digital,Luis Ramírez,México,Mid Market,Agroexport SA,2,17028.09,34056.18,12577.56,21478.62,63.07,29588.91,15.1
+2025-04-25,TC-2025-10575,Friday,Soporte & Mantenimiento,Soporte Técnico On-site,Digital,Ana Martínez,Colombia,Enterprise,Banco Central LATAM,2,2571.69,5143.38,1918.1,3225.28,62.71,5240.9,-1.86
+2025-04-21,TC-2025-10576,Monday,Análisis Predictivo,Segmentación de Clientes IA,Directo,Valentina Torres,Guatemala,Gobierno,CEPAL Regional,3,11439.22,34317.66,13214.04,21103.62,61.49,28944.29,18.56
+2025-04-21,TC-2025-10577,Monday,Consultoría de Datos,Data Strategy & Roadmap,Referidos,Camila Jiménez,El Salvador,Enterprise,Energía Renovable SA,5,9157.31,45786.55,15801.55,29985.0,65.49,42495.07,7.75
+2025-04-24,TC-2025-10578,Thursday,Implementación BI,Power BI Enterprise,Digital,Valentina Torres,México,Gobierno,Ministerio de Educación GT,2,13147.02,26294.04,10073.58,16220.46,61.69,27045.56,-2.78
+2025-04-23,TC-2025-10579,Wednesday,Capacitación Tech,Workshop SQL Avanzado,Partner,Sofía Hernández,Colombia,SMB,PyME Tech,2,2107.49,4214.98,1028.46,3186.52,75.6,4439.51,-5.06
+2025-04-25,TC-2025-10580,Friday,Soporte & Mantenimiento,SLA Premium 24/7,Digital,Ana Martínez,México,Enterprise,Aseguradora Continental,5,3924.83,19624.15,6119.6,13504.55,68.82,20448.57,-4.03

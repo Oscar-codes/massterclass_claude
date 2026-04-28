@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Taller Claude y Agentes IA | Kodigo</title>
+  <meta name="description" content="Guia paso a paso para taller sobre Claude como orquestador de agentes autonomos de IA para el trabajo profesional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top k-navbar" aria-label="Navegacion principal">
+      <div class="container">
+        <a class="navbar-brand text-light fw-bold" href="#inicio">
+          <span class="k-logo-chip">
+            <img src="assets/images/logo-kodigo.png" alt="Kodigo">
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link text-light" href="#ruta">Ruta</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#agenda">Agenda</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#recursos">Recursos</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#practicas">Practicas</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#detalle">Detalle</a></li>
+          </ul>
+          <div class="k-mode-toggle ms-lg-3 mt-3 mt-lg-0" role="group" aria-label="Modo de vista">
+            <button id="modeParticipanteBtn" class="btn btn-sm k-btn-outline" type="button">Participante</button>
+            <button id="modeFacilitadorBtn" class="btn btn-sm k-btn-outline" type="button">Facilitador</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="k-hero">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <h1 class="k-title fade-up" data-delay="2">El futuro del trabajo profesional: <span class="k-title-accent">el uso de agentes autonomos de IA</span></h1>
+            <p class="k-subtitle fade-up" data-delay="3" id="heroSubtitle"></p>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a class="btn k-btn-primary" href="#practicas">Ir a practicas</a>
+              <a class="btn k-btn-outline" href="#recursos">Abrir recursos</a>
+            </div>
+            <p class="small text-secondary mt-3 mb-0" id="activeModeLabel">Modo actual: Participante</p>
+          </div>
+          <div class="col-lg-5">
+            <aside class="k-panel p-3">
+              <div class="row g-2 text-center">
+                <div class="col-6 col-md-3">
+                  <div class="k-stat">
+                    <div class="k-stat-label">Practicas</div>
+                    <div class="k-stat-value" id="practiceCount">0</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="k-stat">
+                    <div class="k-stat-label">Recursos</div>
+                    <div class="k-stat-value" id="resourceCount">0</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="k-stat">
+                    <div class="k-stat-label">Completadas</div>
+                    <div class="k-stat-value" id="completedCount">0</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="k-stat">
+                    <div class="k-stat-label">Duracion</div>
+                    <div class="k-stat-value" id="totalDuration">0</div>
+                  </div>
+                </div>
+              </div>
+              <hr class="border-secondary">
+              <div class="d-flex justify-content-between align-items-center small text-secondary mb-1">
+                <p class="mb-0" id="progressText">Practica 0 de 0</p>
+                <p class="mb-0" id="progressPercent">0%</p>
+              </div>
+              <div class="progress k-progress" role="progressbar" aria-label="Progreso de practicas" aria-valuemin="0" aria-valuemax="100">
+                <div id="progressBar" class="progress-bar" style="width:0%"></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ruta" class="pb-5">
+      <div class="container">
+        <article class="k-content">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <h2 class="h4 mb-0">Ruta recomendada del taller</h2>
+            <span class="badge text-bg-dark border">Haz clic para navegar por bloque</span>
+          </div>
+          <div id="practiceStepper" class="k-stepper" aria-label="Ruta de practicas"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="agenda" class="pb-5">
+      <div class="container">
+        <article class="k-content">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <h2 class="h4 mb-0">Agenda del dia</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-dark table-hover align-middle k-table">
+              <thead>
+                <tr>
+                  <th>Bloque</th>
+                  <th>Actividad</th>
+                  <th>Duracion</th>
+                </tr>
+              </thead>
+              <tbody id="agendaBody"></tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="recursos" class="pb-5">
+      <div class="container">
+        <article class="k-content">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <h2 class="h4 mb-0">Materiales del taller</h2>
+            <a class="btn btn-sm k-btn-outline" href="resources/" target="_blank" rel="noopener">Abrir carpeta</a>
+          </div>
+          <div id="resourcesGrid" class="row g-3"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="practicas" class="pb-5">
+      <div class="container k-main-grid">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <aside class="k-sidebar p-3" aria-label="Indice de practicas">
+              <label for="searchInput" class="form-label small text-secondary">Buscar en la guia</label>
+              <input id="searchInput" class="form-control form-control-sm k-search mb-3" type="search" placeholder="Ej: scheduling, excel, mcp" aria-label="Buscar practicas">
+              <div id="practiceNav" class="list-group mb-3"></div>
+              <section id="miniPromptSection">
+                <p class="small text-secondary mb-2">Prompts rapidos</p>
+                <div id="promptMiniList" class="d-flex flex-column gap-2"></div>
+              </section>
+            </aside>
+          </div>
+          <div class="col-lg-9">
+            <div class="k-content">
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                <h2 class="h4 mb-0">Practicas paso a paso</h2>
+                <span class="badge text-bg-dark border">Secuencia iterativa</span>
+              </div>
+              <div id="practiceCards" class="row g-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="detalle" class="pb-5">
+      <div class="container">
+        <article class="k-content" id="practiceDetail">
+          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+            <div>
+              <h2 id="detailTitle" class="h3 mb-1">Cargando practica...</h2>
+              <p id="detailSummary" class="text-secondary mb-0">Resumen de practica activa</p>
+            </div>
+            <div class="d-flex align-items-center gap-2 flex-wrap justify-content-end">
+              <span class="badge text-bg-secondary" id="detailDuration">0 min</span>
+              <span class="badge text-bg-dark border" id="detailCompletion">Pendiente</span>
+            </div>
+          </div>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <button id="prevPracticeBtn" class="btn btn-sm k-btn-outline" type="button">Anterior</button>
+            <button id="nextPracticeBtn" class="btn btn-sm k-btn-primary" type="button">Siguiente</button>
+          </div>
+          <p id="detailObjective" class="k-note"></p>
+          <hr class="border-secondary">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <h3 class="h5 mb-3">Instrucciones</h3>
+              <div id="detailSteps"></div>
+              <section id="detailPromptSection">
+                <h3 class="h5 mt-4 mb-3">Prompts y archivos a usar</h3>
+                <div id="detailPrompts"></div>
+              </section>
+            </div>
+            <div class="col-lg-5">
+              <h3 class="h5 mb-3">Archivos requeridos del taller</h3>
+              <ul id="detailResources" class="list-group mb-4"></ul>
+              <h3 class="h5 mb-3">Entregables</h3>
+              <ul id="detailChecklist" class="list-group"></ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="k-footer py-4">
+    <div class="container d-flex justify-content-center small">
+      <span class="d-flex align-items-center gap-2">
+        <span class="k-logo-chip k-logo-chip-footer">
+          <img src="assets/images/logo-kodigo.png" alt="Logo Kodigo">
+        </span>
+      </span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/wiki-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
