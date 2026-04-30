@@ -1,5 +1,10 @@
 (function () {
+  const STORAGE_KEY = "kodigo-workshop-progress-v1";
   const MODE_KEY = "kodigo-workshop-mode-v1";
+
+  const state = {
+    checklist: {}
+  };
 
   const refs = {
     title: document.getElementById("practiceTitle"),
@@ -27,6 +32,7 @@
     const practiceIndex = workshopData.practices.findIndex((item) => item.id === practiceId);
     const practice = workshopData.practices[practiceIndex] || workshopData.practices[0];
 
+    loadProgress();
     renderPractice(practice);
     renderNavLinks(practiceIndex);
     setupModeControls();
@@ -55,8 +61,24 @@
       .join("");
 
     refs.deliverables.innerHTML = practice.deliverables
-      .map((item) => `<li class="list-group-item bg-transparent text-light border-secondary-subtle">${item}</li>`)
+      .map((item, index) => {
+        const key = checklistKey(practice.id, index);
+        const checked = state.checklist[key] ? "checked" : "";
+
+        return `
+          <li class="list-group-item bg-transparent border-secondary-subtle">
+            <label class="k-check-item">
+              <input type="checkbox" data-check-key="${key}" ${checked}>
+              <span>${escapeHtml(item)}</span>
+            </label>
+          </li>
+        `;
+      })
       .join("");
+
+    refs.deliverables.querySelectorAll("input[type='checkbox']").forEach((checkbox) => {
+      checkbox.addEventListener("change", onChecklistToggle);
+    });
   }
 
   function renderNavLinks(practiceIndex) {
@@ -108,6 +130,36 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#039;");
+  }
+
+  function checklistKey(practiceId, index) {
+    return `${practiceId}-${index}`;
+  }
+
+  function onChecklistToggle(event) {
+    const key = event.target.getAttribute("data-check-key");
+    state.checklist[key] = event.target.checked;
+    persistProgress();
+  }
+
+  function loadProgress() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        return;
+      }
+
+      const parsed = JSON.parse(raw);
+      if (parsed && typeof parsed === "object") {
+        state.checklist = parsed;
+      }
+    } catch {
+      state.checklist = {};
+    }
+  }
+
+  function persistProgress() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.checklist));
   }
 
   function renderStep(step, index) {
