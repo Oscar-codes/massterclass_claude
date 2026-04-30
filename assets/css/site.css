@@ -113,6 +113,22 @@ body {
   color: var(--k-lime);
 }
 
+.k-adopters-lockup {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  color: var(--k-white);
+  font-size: clamp(1.85rem, 4vw, 3.45rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.k-adopters-accent {
+  color: #00d89f;
+}
+
 .k-subtitle {
   max-width: 58ch;
   color: var(--k-gray);
