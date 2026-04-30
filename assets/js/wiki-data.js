@@ -667,55 +667,361 @@ Al final, dame las 3 reglas mas importantes que debo agregar a la instruccion de
     {
       id: "bloque-4",
       page: "pages/practica-4.html",
-      title: "Practica 4 - Crea un command center profesional",
-      summary: "Integra archivos de proyectos, ventas, benchmarks y pipeline para generar un artefacto HTML con metricas, alertas y proximas acciones.",
+      title: "Practica 4 - Crea tu BI Command Center con Artefactos",
+      summary: "Integra cuatro fuentes de datos de Think Company y genera un dashboard HTML interactivo, offline y listo para presentar como centro de inteligencia de negocio.",
       duration: "45 min",
-      tags: ["MCP", "Artefacto HTML", "Dashboard"],
-      objective: "Al finalizar, tendras un command center simple y funcional que consolida informacion de varias fuentes y propone acciones para decision.",
+      tags: ["Artifacts", "MCP", "Dashboard", "Command Center"],
+      objective: "Al finalizar, tendras un artefacto HTML que consolida metricas de ventas, estado de proyectos, alertas de pipeline y benchmarks del sector en una sola vista descargable y funcional sin internet.",
       instructions: [
-        "Define el objetivo del command center: mostrar en una sola vista el estado del negocio, proyectos activos, alertas y proximas acciones.",
-        "Identifica fuentes. Usa proyectos_activos_q2_2025_think_company.csv para estado operativo, pipeline_oportunidades_think_company.csv para oportunidades, ventas_semana.csv para desempeno y benchmarks_sector_consultoria_bi_latam.csv para contexto externo.",
-        "Si tienes integraciones MCP disponibles, conecta Google Drive, Notion o Microsoft 365. Si no, trabaja con los archivos locales del taller como simulacion de fuentes conectadas.",
-        "Pide a Claude un inventario de fuentes: que contiene cada archivo, campo clave, posible relacion con otros archivos y seccion del dashboard donde deberia aparecer.",
-        "Solicita una estructura de datos consolidada antes del HTML. Debe incluir metricas, proyectos, alertas, pipeline y acciones recomendadas.",
-        "Pide el artefacto HTML de un solo archivo. Debe funcionar offline e incluir tarjetas KPI, tabla filtrable, alertas por prioridad y bloque de proximas acciones.",
-        "Itera el primer resultado con mejoras concretas: colores de alerta, orden por prioridad, boton imprimir, titulos mas claros y texto mas corto.",
-        "Haz una validacion final: abre el HTML, revisa si carga sin internet, confirma que los datos son legibles y prepara una explicacion de 2 minutos."
+        {
+          title: "Entiende que es un Artefacto antes de usarlo",
+          meta: "4 min",
+          summary: "Los Artefactos convierten una respuesta de texto en una herramienta interactiva. En esta practica los usaras para crear un dashboard, iterarlo y descargarlo como HTML.",
+          path: ["Claude.ai", "Proyecto Orquestador IA", "Panel derecho", "Artefacto"],
+          items: [
+            "Abre un chat dentro del proyecto Orquestador IA.",
+            "Identifica donde aparece el panel de artefactos en Claude.ai.",
+            "Recuerda que el artefacto se puede abrir, iterar, descargar y ejecutar fuera de Claude.",
+            "No pidas el HTML final todavia; primero prepara datos y modelo."
+          ],
+          note: "Un artefacto bueno no nace de un prompt generico. Necesita fuentes claras, modelo de datos previo e iteraciones especificas."
+        },
+        {
+          title: "Conecta MCPs o prepara los archivos locales",
+          meta: "5 min",
+          summary: "Si tienes conectores disponibles, usalos. Si no, los archivos del taller simulan las fuentes conectadas y permiten completar la practica.",
+          path: ["Microsoft 365 o archivos locales", "ThinkCompany-Workshop", "recursos del taller"],
+          items: [
+            "Confirma si Microsoft 365 u otro conector quedo disponible desde la Practica 2.",
+            "Verifica que los cuatro archivos esten cargados en el proyecto o accesibles como archivos locales.",
+            "Usa ventas_semana.csv para desempeno comercial.",
+            "Usa proyectos_activos_q2_2025_think_company.csv para estado operativo.",
+            "Usa pipeline_oportunidades_think_company.csv para oportunidades comerciales.",
+            "Usa benchmarks_sector_consultoria_bi_latam.csv para contexto externo."
+          ],
+          note: "El flujo funciona con MCPs o con archivos locales. Lo importante es que Claude pueda leer las cuatro fuentes en el mismo contexto."
+        },
+        {
+          title: "Inventaria las fuentes antes de construir",
+          meta: "5 min",
+          summary: "Antes de generar el dashboard, Claude debe entender que contiene cada archivo, que campos son claves y como se relacionan entre si.",
+          path: ["Proyecto Orquestador IA", "Prompt 1", "Inventario de fuentes"],
+          items: [
+            "Ejecuta el prompt Inventario de fuentes de datos.",
+            "Revisa que Claude identifique campos de cruce entre ventas, proyectos y pipeline.",
+            "Pide correccion si responde con descripciones genericas o no menciona nombres de columnas.",
+            "Usa el inventario como base para el modelo de datos del siguiente paso."
+          ],
+          note: "El error mas comun es pedir el dashboard directamente. El inventario evita tarjetas genericas y fuerza relaciones utiles entre fuentes."
+        },
+        {
+          title: "Consolida el modelo de datos",
+          meta: "6 min",
+          summary: "Construye una estructura tipo JSON antes del HTML para que el dashboard use una fuente unica de verdad.",
+          path: ["Inventario aprobado", "Prompt 2", "Modelo JSON comentado"],
+          items: [
+            "Ejecuta el prompt Modelo de datos consolidado.",
+            "Confirma que incluya metricas_principales, proyectos_activos, alertas, pipeline_critico y contexto_benchmark.",
+            "Verifica que cada metrica tenga valor, fuente, estado y benchmark cuando aplique.",
+            "No avances al HTML hasta que el modelo tenga datos concretos y no placeholders."
+          ],
+          note: "Separar modelo y visualizacion mejora precision. Claude primero procesa datos y despues disena la interfaz."
+        },
+        {
+          title: "Genera el primer Artefacto HTML",
+          meta: "8 min",
+          summary: "Con el modelo listo, Claude debe generar un dashboard HTML de un solo archivo, sin dependencias externas y con datos embebidos.",
+          path: ["Modelo consolidado", "Prompt 3", "Artefacto HTML v1"],
+          items: [
+            "Ejecuta el prompt Generar Artefacto HTML.",
+            "Pide estructura con header ejecutivo, tarjetas KPI, tabla de proyectos, alertas, pipeline y proximas acciones.",
+            "Exige CSS y JavaScript embebido, sin CDN, Google Fonts ni APIs externas.",
+            "Abre el artefacto en pantalla completa y prueba filtros y ordenacion antes de descargar."
+          ],
+          note: "El bloque const DATOS al inicio del script debe quedar claro para poder actualizar el dashboard sin reescribir toda la interfaz."
+        },
+        {
+          title: "Itera con mejoras concretas",
+          meta: "8 min",
+          summary: "La primera version casi siempre necesita ajustes. Itera por usabilidad, benchmarks e interactividad hasta llegar a una version presentable.",
+          path: ["Artefacto v1", "Iteracion A", "Iteracion B", "Iteracion C"],
+          items: [
+            "Ejecuta la iteracion de usabilidad para mejorar header, KPIs, busqueda, alertas y responsive.",
+            "Agrega contexto del sector con benchmarks para comparar Think Company contra la mediana y percentil 75.",
+            "Agrega filtro global por region, modo Ejecutivo vs Operativo y exportacion CSV de la tabla visible.",
+            "Prueba cada mejora dentro del artefacto antes de pasar a la siguiente."
+          ],
+          note: "Iterar con pedidos especificos evita que Claude rehaga todo el dashboard y rompa funciones que ya estaban bien."
+        },
+        {
+          title: "Descarga y valida offline",
+          meta: "5 min",
+          summary: "El dashboard debe funcionar como entregable real, no como demo dependiente de Claude o de internet.",
+          path: ["Panel de artefacto", "Descargar", "ThinkCompany-Workshop/salidas", "Prueba offline"],
+          items: [
+            "Descarga el artefacto desde Claude.ai.",
+            "Renombralo como bi_command_center_think_company_[fecha].html.",
+            "Muevelo a ThinkCompany-Workshop/salidas/.",
+            "Desconectate de internet y abre el HTML en el navegador.",
+            "Verifica KPIs reales, filtros, ordenacion, modo Ejecutivo/Operativo, boton imprimir y responsive.",
+            "Si algo falla, usa el prompt de correccion offline."
+          ],
+          note: "Si el HTML llama a librerias externas, fallara sin internet. La validacion offline es obligatoria."
+        },
+        {
+          title: "Prepara el guion de presentacion de 2 minutos",
+          meta: "4 min",
+          summary: "El dashboard necesita contexto narrativo para convertirse en una herramienta de decision.",
+          path: ["Artefacto final", "Prompt 5", "Guion de 2 minutos"],
+          items: [
+            "Ejecuta el prompt de guion de presentacion.",
+            "Pide que use datos reales del modelo consolidado, no ejemplos.",
+            "Estructura la explicacion en problema, construccion, hallazgos, acciones y siguiente paso.",
+            "Practica el guion leyendo en voz alta y ajusta si supera 2 minutos."
+          ],
+          note: "El cierre debe conectar con el Scheduling de la Practica 2: el dashboard puede actualizarse semanalmente con el flujo automatizado."
+        }
       ],
       prompts: [
         {
-          title: "Inventario de fuentes para el command center",
+          title: "Inventario de fuentes de datos",
           files: ["proyectos_activos_q2_2025_think_company.csv", "pipeline_oportunidades_think_company.csv", "ventas_semana.csv", "benchmarks_sector_consultoria_bi_latam.csv"],
-          prompt: "Revisa estos archivos y crea un inventario de fuentes. Para cada archivo indica: que contiene, campos clave, posibles relaciones con otros archivos, seccion recomendada del command center y riesgos de interpretacion."
+          prompt: `Tengo 4 archivos disponibles para construir un BI Command Center.
+Analizalos y crea un inventario estructurado:
+
+ARCHIVOS:
+1. ventas_semana.csv - transacciones Think Company, semana 21-27 abr 2025.
+2. proyectos_activos_q2_2025_think_company.csv - 48 proyectos activos.
+3. pipeline_oportunidades_think_company.csv - 65 oportunidades en CRM.
+4. benchmarks_sector_consultoria_bi_latam.csv - referencia del sector.
+
+Para cada archivo devuelve una tabla con:
+| Archivo | Que contiene | Campos clave para el dashboard | Relaciones con otros archivos | Seccion del dashboard | Riesgos de interpretacion |
+
+Al finalizar el inventario responde:
+1. Que campo permite cruzar ventas con proyectos? Busca coincidencias por nombre de cliente o categoria.
+2. Que benchmark del sector aplica directamente a los KPIs de ventas?
+3. Que oportunidades del pipeline estan relacionadas con proyectos activos En riesgo?
+
+Se concreto con los nombres de columna de cada archivo.`,
+          why: "Mapear relaciones primero evita dashboards genericos y ayuda a descubrir cruces de valor entre proyectos en riesgo, pipeline y ventas."
         },
         {
           title: "Modelo consolidado de informacion",
           files: ["proyectos_activos_q2_2025_think_company.csv", "pipeline_oportunidades_think_company.csv", "ventas_semana.csv", "benchmarks_sector_consultoria_bi_latam.csv"],
-          prompt: "Consolida la informacion en una estructura para command center con 4 secciones: metricas principales, proyectos activos, alertas y proximas acciones. Para cada item incluye prioridad alta/media/baja, dato que lo respalda y accion sugerida."
+          prompt: `Con base en el inventario anterior, consolida toda la informacion en un modelo de datos para el BI Command Center.
+Estructura la respuesta como JSON comentado con 5 secciones:
+
+SECCION 1 - metricas_principales:
+Extrae estos 6 KPIs calculados de ventas_semana.csv:
+- ventas_totales: SUM(ventas_semana_actual)
+- variacion_semanal: variacion % vs ventas_semana_anterior
+- margen_global: SUM(margen_bruto) / SUM(ventas_semana_actual) * 100
+- ticket_promedio: ventas_totales / COUNT(id_transaccion)
+- pipeline_valor_total: SUM(valor_estimado_usd) de pipeline
+- proyectos_en_riesgo: COUNT donde estado = "En riesgo"
+
+Para cada KPI incluye: valor calculado, variacion, meta Think Company, estado semaforo y benchmark del sector si aplica.
+
+SECCION 2 - proyectos_activos:
+Lista los 10 proyectos mas criticos ordenados por: primero En riesgo, luego por variacion_budget_pct descendente.
+Campos: id_proyecto, nombre_proyecto, cliente, estado, avance_pct, budget_usd, variacion_budget_pct, kpi_satisfaccion_actual, riesgo_identificado, alerta_nivel.
+
+SECCION 3 - alertas:
+Genera alertas cruzando archivos:
+- Proyectos En riesgo con oportunidades activas del mismo cliente.
+- KPIs de ventas por debajo del umbral del glosario.
+- Oportunidades de cierre inminente sin proyecto relacionado activo.
+Para cada alerta incluye: tipo, descripcion, impacto_usd estimado y prioridad.
+
+SECCION 4 - pipeline_critico:
+Top 8 oportunidades con etapa Negociacion o Cierre inminente y fecha_siguiente_accion en los proximos 7 dias.
+Campos: cliente, valor_estimado_usd, probabilidad, dias_hasta_cierre, siguiente_accion, decision_maker.
+
+SECCION 5 - contexto_benchmark:
+Selecciona 4 benchmarks del sector relevantes para los KPIs calculados y explica la comparacion contra Think Company.
+
+No generes HTML todavia. Solo devuelve el modelo consolidado y una breve nota de supuestos.`,
+          why: "El modelo JSON separa procesamiento de visualizacion y deja una fuente unica de verdad para el artefacto."
         },
         {
-          title: "Generar artefacto HTML",
+          title: "Generar Artefacto HTML - version 1",
           files: ["proyectos_activos_q2_2025_think_company.csv", "pipeline_oportunidades_think_company.csv", "ventas_semana.csv"],
-          prompt: "Genera un artefacto HTML interactivo de un solo archivo, sin dependencias externas. Debe incluir tarjetas KPI, tabla filtrable de proyectos, alertas por prioridad, proximas acciones y boton imprimir. Usa estilos sobrios y que funcione offline."
+          prompt: `Con el modelo de datos consolidado en el paso anterior, genera un Artefacto HTML de un solo archivo completamente funcional.
+
+ESTRUCTURA DEL DASHBOARD:
+
+BLOQUE 1 - Header ejecutivo:
+- Logo/nombre: "Think Company - BI Command Center".
+- Fecha de generacion y semana analizada.
+- Badge de estado general del negocio: ESTABLE, ATENCION o ALERTA, calculado segun proporcion de KPIs en rojo.
+
+BLOQUE 2 - Fila de 6 tarjetas KPI:
+- Valor principal grande y legible.
+- Label descriptivo del KPI.
+- Variacion vs periodo anterior con indicador visual.
+- Barra de progreso hacia la meta si aplica.
+- Indicador de benchmark del sector si existe en el modelo.
+
+BLOQUE 3 - Tabla de proyectos activos filtrable:
+- Columnas: Proyecto | Cliente | Estado | Avance % | Budget | Var.Budget | CSAT | Riesgo.
+- Controles: Todos, En riesgo, En curso, Completados.
+- Clic en encabezado ordena la columna.
+- Fila de resumen con totales y promedios.
+- Fila roja si estado = En riesgo, amarilla si variacion_budget > 10%.
+
+BLOQUE 4 - Panel de alertas por prioridad:
+- Orden ALTA, MEDIA, BAJA.
+- Cada alerta: prioridad, titulo, descripcion breve e impacto estimado.
+
+BLOQUE 5 - Pipeline critico:
+- Top 8 oportunidades con cierre inminente.
+- Columnas: Cliente | Valor | Prob.% | Dias | Siguiente accion | Responsable.
+- Barra de probabilidad visual por fila.
+
+BLOQUE 6 - Proximas acciones recomendadas:
+- Maximo 6 acciones ordenadas por prioridad.
+- Cada accion: prioridad, accion especifica, fundamento en datos y fecha sugerida.
+
+ESPECIFICACIONES TECNICAS:
+- HTML autonomo: todo CSS y JavaScript embebido, cero dependencias externas.
+- Funciona offline: no llames CDN, Google Fonts ni APIs externas.
+- Datos embebidos como variable JavaScript constante al inicio del script.
+- Responsive para 1280px y tablet.
+- Paleta: fondo #F8FAFC, primario #6D28D9, verde #059669, rojo #DC2626, amarillo #D97706.
+- Tipografia: stack sans-serif del sistema.
+- Boton "Imprimir / Exportar PDF" fijo en el header con window.print().
+- Footer: "Generado con Claude - Think Company - [fecha]".
+
+Al generar el HTML, declara al inicio del script:
+// DATOS FUENTE - editar aqui para actualizar el dashboard
+const DATOS = { ... }`,
+          why: "Exigir cero dependencias externas garantiza que el dashboard funcione offline y pueda abrirse como archivo local."
         },
         {
-          title: "Iteracion visual y de usabilidad",
+          title: "Iteracion A - usabilidad y legibilidad",
+          files: ["proyectos_activos_q2_2025_think_company.csv"],
+          prompt: `Mejora el artefacto HTML anterior con estos ajustes de usabilidad:
+
+1. HEADER:
+Agrega debajo del badge de estado una linea de resumen:
+"X proyectos activos - $Y en pipeline - Z alertas activas", calculada dinamicamente desde los datos.
+
+2. TARJETAS KPI:
+- Minimo 140px de ancho.
+- Tooltip al pasar el mouse con la formula de calculo.
+
+3. TABLA DE PROYECTOS:
+- Campo de busqueda por texto sobre la tabla.
+- Barra de avance visual para avance_pct.
+- Icono o etiqueta de estado antes del nombre: En riesgo, En curso, Completado.
+
+4. ALERTAS:
+- Alertas ALTA con pulso visual sutil en CSS.
+- Contador "X alertas sin resolver".
+- Boton "Marcar como visto" que cambia la alerta a estilo revisado.
+
+5. RESPONSIVE:
+- En pantallas menores a 768px, tarjetas KPI en 2 columnas.
+- Tabla con scroll horizontal en movil.
+- Boton imprimir siempre visible al hacer scroll.`,
+          why: "La primera version se vuelve presentable cuando mejora lectura, busqueda, estados y comportamiento en pantallas pequenas."
+        },
+        {
+          title: "Iteracion B - benchmarks y contexto del sector",
           files: ["benchmarks_sector_consultoria_bi_latam.csv"],
-          prompt: "Mejora el artefacto HTML anterior. Ajusta titulos para que sean mas claros, agrega colores de alerta consistentes, ordena acciones por prioridad, mejora lectura en movil y agrega una nota de contexto usando benchmarks del sector."
+          prompt: `Agrega al artefacto HTML una seccion de contexto del sector usando benchmarks_sector_consultoria_bi_latam.csv.
+
+Nueva seccion entre Pipeline y Proximas Acciones:
+Titulo: "Posicionamiento vs Sector - Consultoria BI LATAM"
+
+Muestra 4 metricas comparativas en formato de gauge o barra horizontal:
+- Margen bruto: Think Company vs mediana del sector vs percentil 75.
+- Tasa de cierre de oportunidades.
+- CSAT del cliente.
+- Crecimiento semanal vs promedio historico sector.
+
+Para cada metrica incluye:
+- Valor actual Think Company calculado del modelo.
+- Mediana del sector del CSV de benchmarks.
+- Diferencia en puntos porcentuales.
+- Etiqueta: Por encima del sector, En la mediana o Por debajo.
+
+Color de etiqueta: verde si esta por encima de la mediana, amarillo si esta en mediana +/-5%, rojo si esta por debajo.
+
+Debajo de la seccion agrega una nota discreta:
+"Fuente: benchmarks_sector_consultoria_bi_latam.csv - Gartner, IDC, Forrester 2024"`,
+          why: "El benchmark convierte numeros absolutos en contexto competitivo para decision ejecutiva."
+        },
+        {
+          title: "Iteracion C - filtros y exportacion",
+          files: ["proyectos_activos_q2_2025_think_company.csv", "pipeline_oportunidades_think_company.csv"],
+          prompt: `Agrega estas 3 funcionalidades interactivas al artefacto:
+
+1. FILTRO GLOBAL POR REGION:
+En el header agrega un selector con opciones Todas las regiones, El Salvador, Guatemala, Mexico, Colombia y Costa Rica.
+Al seleccionar una region, todas las secciones se filtran y las tarjetas KPI se recalculan.
+
+2. MODO EJECUTIVO vs MODO OPERATIVO:
+Boton toggle en el header: Ejecutivo / Operativo.
+- Modo Ejecutivo: muestra header, KPIs, alertas y acciones. Oculta tablas detalladas.
+- Modo Operativo: muestra todo incluyendo tablas con columnas tecnicas.
+El modo activo por defecto es Ejecutivo.
+
+3. EXPORTAR DATOS COMO CSV:
+Boton "Exportar tabla" debajo de la tabla de proyectos.
+Al hacer clic, descarga proyectos_filtrados.csv con las filas visibles respetando filtros activos.
+Implementar con Blob y URL.createObjectURL, sin librerias externas.`,
+          why: "Un mismo archivo sirve para presentar a directivos y para operar con detalle tecnico."
+        },
+        {
+          title: "Correccion de validacion offline",
+          files: [],
+          prompt: `Al probar el artefacto HTML offline encontre estos problemas:
+[describe exactamente que no funciona y en que seccion]
+
+Corrigelos sin cambiar el diseno visual ni los datos ya embebidos.
+Solo arregla la funcionalidad especifica mencionada.
+Devuelve el artefacto completo actualizado.`,
+          why: "Este prompt limita la correccion para evitar que Claude regenere todo el dashboard y rompa partes que ya funcionaban."
         },
         {
           title: "Guion de presentacion final",
           files: ["proyectos_activos_q2_2025_think_company.csv", "pipeline_oportunidades_think_company.csv"],
-          prompt: "Prepara un guion de 2 minutos para presentar el command center. Estructura: problema que resuelve, fuentes usadas, 3 hallazgos principales, 2 acciones recomendadas y siguiente paso."
+          prompt: `Prepara mi guion de presentacion de exactamente 2 minutos para mostrar el BI Command Center al grupo del taller.
+
+ESTRUCTURA:
+[0:00 - 0:20] PROBLEMA QUE RESUELVE:
+Explica cuantos archivos habia que abrir antes para conocer el estado del negocio y que problema operativo resolvia el dashboard.
+
+[0:20 - 0:45] COMO SE CONSTRUYO:
+Explica brevemente el rol de Claude Artifacts. No digas HTML ni JavaScript; di que es un archivo que funciona sin internet y sin instalar nada.
+
+[0:45 - 1:20] LOS 3 HALLAZGOS PRINCIPALES:
+Usa datos reales del modelo consolidado del Paso 4.
+Formato: "Descubri que [hallazgo]; esto significa [impacto]".
+Cada hallazgo debe referenciar una seccion visible del dashboard.
+
+[1:20 - 1:45] 2 ACCIONES RECOMENDADAS PARA HOY:
+Acciones accionables basadas en alertas del dashboard.
+Deben ser especificas: contactar a [cliente] sobre [proyecto] porque [dato del dashboard].
+
+[1:45 - 2:00] SIGUIENTE PASO:
+Conecta el cierre con el Scheduling configurado en la Practica 2 para actualizar el dashboard semanalmente.
+
+Usa datos reales del modelo consolidado, no ejemplos genericos. El guion debe estar listo para leer en voz alta con fluidez.`,
+          why: "La estructura por tiempo evita improvisacion y conecta el dashboard con el sistema completo construido durante el taller."
         }
       ],
       deliverables: [
-        "Inventario de fuentes generado.",
-        "Modelo consolidado de informacion definido.",
-        "Artefacto HTML creado.",
-        "Mejoras visuales y de usabilidad aplicadas.",
-        "Validacion offline realizada.",
-        "Guion de presentacion final preparado."
+        "MCPs conectados o archivos locales preparados.",
+        "Inventario de las cuatro fuentes generado con campos clave y relaciones.",
+        "Modelo de datos consolidado definido como base del dashboard.",
+        "Artefacto HTML v1 creado con datos embebidos y sin dependencias externas.",
+        "Iteraciones de usabilidad, benchmark e interactividad aplicadas.",
+        "HTML descargado, renombrado y guardado en ThinkCompany-Workshop/salidas/.",
+        "Validacion offline completada con filtros, impresion y responsive revisados.",
+        "Guion de presentacion de 2 minutos preparado con datos reales."
       ],
       resources: [
         "proyectos_activos_q2_2025_think_company.csv",
