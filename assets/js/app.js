@@ -1,6 +1,7 @@
 (function () {
   const STORAGE_KEY = "kodigo-workshop-progress-v1";
   const MODE_KEY = "kodigo-workshop-mode-v1";
+  const ACTIVE_KEY = "kodigo-workshop-active-practice-v1";
 
   const state = {
     activePracticeId: null,
@@ -11,6 +12,9 @@
 
   const refs = {
     heroSubtitle: document.getElementById("heroSubtitle"),
+    continuePracticeLink: document.getElementById("continuePracticeLink"),
+    headerNextTitle: document.getElementById("headerNextTitle"),
+    headerNextMeta: document.getElementById("headerNextMeta"),
     activeModeLabel: document.getElementById("activeModeLabel"),
     modeParticipanteBtn: document.getElementById("modeParticipanteBtn"),
     modeFacilitadorBtn: document.getElementById("modeFacilitadorBtn"),
@@ -29,6 +33,7 @@
     detailPrompts: document.getElementById("detailPrompts"),
     detailResources: document.getElementById("detailResources"),
     detailChecklist: document.getElementById("detailChecklist"),
+    detailPageLink: document.getElementById("detailPageLink"),
     prevPracticeBtn: document.getElementById("prevPracticeBtn"),
     nextPracticeBtn: document.getElementById("nextPracticeBtn"),
     searchInput: document.getElementById("searchInput"),
@@ -46,9 +51,9 @@
       return;
     }
 
-    state.activePracticeId = workshopData.practices[0].id;
     loadProgress();
     loadMode();
+    state.activePracticeId = getInitialPracticeId();
     applyMode();
 
     refs.heroSubtitle.textContent = workshopData.subtitle;
@@ -159,6 +164,7 @@
       button.innerHTML = `
         <span class="k-stepper-order">Bloque ${index + 1}</span>
         <span class="k-stepper-label">${practice.title}</span>
+        <span class="k-stepper-progress">${formatPracticeProgress(practice)}</span>
       `;
 
       if (practice.id === state.activePracticeId) {
@@ -177,7 +183,7 @@
         const pageLink = document.createElement("a");
         pageLink.className = "k-stepper-page-link";
         pageLink.href = practice.page;
-        pageLink.textContent = "Pagina";
+        pageLink.textContent = "Abrir";
         pageLink.addEventListener("click", (event) => event.stopPropagation());
         button.appendChild(pageLink);
       }
@@ -269,6 +275,7 @@
       const col = document.createElement("article");
       col.className = "col-md-6 fade-up";
       col.setAttribute("data-delay", String(index % 4));
+      const progress = getPracticeProgress(practice);
       col.innerHTML = `
         <div class="k-topic-card h-100 p-3">
           <div class="d-flex justify-content-between align-items-start gap-2">
@@ -276,9 +283,11 @@
             <span class="badge text-bg-dark border">${practice.duration}</span>
           </div>
           <p class="text-secondary mb-2 k-card-summary">${practice.summary}</p>
+          <div class="k-card-progress mb-2" aria-hidden="true"><span style="width:${progress.percent}%"></span></div>
+          <p class="small text-secondary mb-2">${progress.completed}/${progress.total} entregables completados</p>
           <div class="mb-3">${practice.tags.map((tag) => `<span class="k-pill">${tag}</span>`).join("")}</div>
           <div class="d-flex gap-2 mt-auto flex-wrap">
-            <button class="btn btn-sm btn-outline-light" data-open-practice="${practice.id}">Ver practica</button>
+            <button class="btn btn-sm btn-outline-light" data-open-practice="${practice.id}">Trabajar aqui</button>
             <a class="btn btn-sm k-btn-outline" href="${practice.page || "#"}" ${practice.page ? "" : "aria-disabled='true'"}>Pagina modular</a>
           </div>
         </div>
@@ -307,8 +316,9 @@
     refs.detailTitle.textContent = practice.title;
     refs.detailSummary.textContent = practice.summary;
     refs.detailDuration.textContent = practice.duration;
-    refs.detailCompletion.textContent = isPracticeCompleted(practice.id) ? "Completada" : "Pendiente";
+    refs.detailCompletion.textContent = isPracticeCompleted(practice.id) ? "Completada" : formatPracticeProgress(practice);
     refs.detailObjective.textContent = `Objetivo: ${practice.objective}`;
+    refs.detailPageLink.href = practice.page || "#";
 
     refs.prevPracticeBtn.disabled = practiceIndex <= 0;
     refs.nextPracticeBtn.disabled = practiceIndex >= workshopData.practices.length - 1;
@@ -336,7 +346,7 @@
           <li class="list-group-item bg-transparent border-secondary-subtle">
             <label class="k-check-item">
               <input type="checkbox" data-check-key="${key}" ${checked}>
-              <span>${item}</span>
+              <span>${escapeHtml(item)}</span>
             </label>
           </li>
         `;
@@ -349,25 +359,32 @@
   }
 
   function updateProgress() {
-    const practices = workshopData.practices;
-    const index = practices.findIndex((practice) => practice.id === state.activePracticeId);
-    const currentStep = index + 1;
-    const percent = Math.round((currentStep / practices.length) * 100);
+    const completedItems = getCompletedDeliverablesCount();
+    const totalItems = getTotalDeliverablesCount();
+    const percent = totalItems ? Math.round((completedItems / totalItems) * 100) : 0;
+    const current = currentPractice();
+    const currentIndex = workshopData.practices.findIndex((practice) => practice.id === current.id) + 1;
+    const currentProgress = getPracticeProgress(current);
 
     refs.progressBar.style.width = `${percent}%`;
     refs.progressBar.setAttribute("aria-valuenow", String(percent));
-    refs.progressText.textContent = `Practica ${currentStep} de ${practices.length}`;
+    refs.progressText.textContent = `${completedItems}/${totalItems} entregables`;
     refs.progressPercent.textContent = `${percent}%`;
+    refs.continuePracticeLink.href = current.page || "#detalle";
+    refs.headerNextTitle.textContent = current.title;
+    refs.headerNextMeta.textContent = `Bloque ${currentIndex} de ${workshopData.practices.length} · ${currentProgress.completed}/${currentProgress.total} entregables`;
   }
 
   function activatePractice(practiceId) {
     state.activePracticeId = practiceId;
+    persistActivePractice();
     syncActiveSidebar();
     syncStepper();
     renderDetail();
     updateHeaderStats();
     updateProgress();
     renderSidebar();
+    renderCards();
   }
 
   function goToPrevPractice() {
@@ -392,10 +409,45 @@
     const key = event.target.getAttribute("data-check-key");
     state.checklist[key] = event.target.checked;
     persistProgress();
-    syncStepper();
+    renderStepper();
     updateHeaderStats();
+    updateProgress();
     renderSidebar();
+    renderCards();
     renderDetail();
+  }
+
+  function getInitialPracticeId() {
+    const saved = localStorage.getItem(ACTIVE_KEY);
+    const savedPractice = workshopData.practices.find((practice) => practice.id === saved);
+    if (savedPractice && !isPracticeCompleted(savedPractice.id)) {
+      return savedPractice.id;
+    }
+
+    const firstIncomplete = workshopData.practices.find((practice) => !isPracticeCompleted(practice.id));
+    return (firstIncomplete || workshopData.practices[0]).id;
+  }
+
+  function persistActivePractice() {
+    localStorage.setItem(ACTIVE_KEY, state.activePracticeId);
+  }
+
+  function getPracticeProgress(practice) {
+    const total = practice.deliverables.length;
+    const completed = practice.deliverables.reduce((count, _, index) => {
+      return state.checklist[checklistKey(practice.id, index)] ? count + 1 : count;
+    }, 0);
+
+    return {
+      completed,
+      total,
+      percent: total ? Math.round((completed / total) * 100) : 0
+    };
+  }
+
+  function formatPracticeProgress(practice) {
+    const progress = getPracticeProgress(practice);
+    return `${progress.completed}/${progress.total} entregables`;
   }
 
   function isPracticeCompleted(practiceId) {

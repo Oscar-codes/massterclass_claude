@@ -156,6 +156,22 @@ body {
   color: var(--k-white);
 }
 
+.k-next-action {
+  border: 1px solid rgba(204, 255, 0, 0.18);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.75rem 0.85rem;
+}
+
+.k-next-action-label,
+.k-progress-label {
+  color: var(--k-lime);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .k-main-grid {
   margin-top: 0.4rem;
 }
@@ -516,6 +532,13 @@ body {
   margin-right: 3.6rem;
 }
 
+.k-stepper-progress {
+  display: block;
+  color: #d4dce8;
+  font-size: 0.72rem;
+  margin-top: 0.3rem;
+}
+
 .k-stepper-page-link {
   position: absolute;
   top: 0.55rem;
@@ -545,6 +568,27 @@ body {
 .k-check-item input[type="checkbox"]:checked + span {
   color: var(--k-lime-soft);
   text-decoration: line-through;
+}
+
+.k-card-progress {
+  height: 0.35rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.k-card-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--k-violet), var(--k-lime));
+}
+
+.k-progress-panel {
+  border: 1px solid rgba(204, 255, 0, 0.2);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.75rem;
 }
 
 .k-progress {

@@ -48,7 +48,7 @@
             <h1 class="k-title fade-up" data-delay="2">El futuro del trabajo profesional: <span class="k-title-accent">el uso de agentes autonomos de IA</span></h1>
             <p class="k-subtitle fade-up" data-delay="3" id="heroSubtitle"></p>
             <div class="d-flex flex-wrap gap-2 mt-3">
-              <a class="btn k-btn-primary" href="#practicas">Ir a practicas</a>
+              <a id="continuePracticeLink" class="btn k-btn-primary" href="#detalle">Continuar practica</a>
               <a class="btn k-btn-outline" href="#recursos">Abrir recursos</a>
             </div>
             <p class="small text-secondary mt-3 mb-0" id="activeModeLabel">Modo actual: Participante</p>
@@ -88,6 +88,11 @@
               </div>
               <div class="progress k-progress" role="progressbar" aria-label="Progreso de practicas" aria-valuemin="0" aria-valuemax="100">
                 <div id="progressBar" class="progress-bar" style="width:0%"></div>
+              </div>
+              <div class="k-next-action mt-3">
+                <p class="k-next-action-label mb-1">Siguiente accion</p>
+                <p class="mb-1 fw-semibold" id="headerNextTitle">Cargando practica...</p>
+                <p class="small text-secondary mb-0" id="headerNextMeta">Selecciona una practica para comenzar.</p>
               </div>
             </aside>
           </div>
@@ -184,6 +189,7 @@
           <div class="d-flex gap-2 flex-wrap mb-3">
             <button id="prevPracticeBtn" class="btn btn-sm k-btn-outline" type="button">Anterior</button>
             <button id="nextPracticeBtn" class="btn btn-sm k-btn-primary" type="button">Siguiente</button>
+            <a id="detailPageLink" class="btn btn-sm k-btn-outline" href="#">Abrir pagina modular</a>
           </div>
           <p id="detailObjective" class="k-note"></p>
           <hr class="border-secondary">

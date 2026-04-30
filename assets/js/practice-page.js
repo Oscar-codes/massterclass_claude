@@ -60,6 +60,9 @@
       .map((resourceFile) => `<li class="list-group-item bg-transparent text-light border-secondary-subtle"><a class="k-resource-link" href="../resources/${resourceFile}" target="_blank" rel="noopener">${resourceFile}</a></li>`)
       .join("");
 
+    ensureDeliverableProgressPanel();
+    updateDeliverableProgress(practice);
+
     refs.deliverables.innerHTML = practice.deliverables
       .map((item, index) => {
         const key = checklistKey(practice.id, index);
@@ -140,6 +143,12 @@
     const key = event.target.getAttribute("data-check-key");
     state.checklist[key] = event.target.checked;
     persistProgress();
+
+    const practiceId = document.body.getAttribute("data-practice-id");
+    const practice = workshopData.practices.find((item) => item.id === practiceId);
+    if (practice) {
+      updateDeliverableProgress(practice);
+    }
   }
 
   function loadProgress() {
@@ -160,6 +169,49 @@
 
   function persistProgress() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.checklist));
+  }
+
+  function ensureDeliverableProgressPanel() {
+    if (document.getElementById("practiceDeliverableProgress")) {
+      return;
+    }
+
+    refs.deliverables.insertAdjacentHTML("beforebegin", `
+      <div id="practiceDeliverableProgress" class="k-progress-panel mb-3">
+        <p class="k-progress-label mb-1">Avance de entregables</p>
+        <p class="mb-2" id="practiceDeliverableProgressText">0/0 completados</p>
+        <div class="progress k-progress" role="progressbar" aria-label="Avance de entregables" aria-valuemin="0" aria-valuemax="100">
+          <div id="practiceDeliverableProgressBar" class="progress-bar" style="width:0%"></div>
+        </div>
+      </div>
+    `);
+  }
+
+  function updateDeliverableProgress(practice) {
+    const progress = getPracticeProgress(practice);
+    const progressText = document.getElementById("practiceDeliverableProgressText");
+    const progressBar = document.getElementById("practiceDeliverableProgressBar");
+
+    if (!progressText || !progressBar) {
+      return;
+    }
+
+    progressText.textContent = `${progress.completed}/${progress.total} completados`;
+    progressBar.style.width = `${progress.percent}%`;
+    progressBar.setAttribute("aria-valuenow", String(progress.percent));
+  }
+
+  function getPracticeProgress(practice) {
+    const total = practice.deliverables.length;
+    const completed = practice.deliverables.reduce((count, _, index) => {
+      return state.checklist[checklistKey(practice.id, index)] ? count + 1 : count;
+    }, 0);
+
+    return {
+      completed,
+      total,
+      percent: total ? Math.round((completed / total) * 100) : 0
+    };
   }
 
   function renderStep(step, index) {
