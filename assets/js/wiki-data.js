@@ -63,44 +63,209 @@ const workshopData = {
       id: "bloque-1",
       page: "pages/practica-1.html",
       title: "Practica 1 - Prepara tu espacio de trabajo en Claude",
-      summary: "Configura un proyecto en Claude con instrucciones, archivos base y pruebas de calibracion para que responda como un asistente profesional.",
+      summary: "Configura Claude como un espacio de trabajo persistente: proyecto, instrucciones, archivos de contexto y pruebas de calibracion para evitar respuestas genericas.",
       duration: "35 min",
-      tags: ["Claude", "Projects", "Instrucciones"],
-      objective: "Al finalizar, tendras un proyecto Orquestador IA con instrucciones claras, archivos cargados y pruebas que validan si Claude entiende el contexto del trabajo.",
+      tags: ["Claude", "Projects", "Skills", "Calibracion"],
+      objective: "Al finalizar, tendras un proyecto Orquestador IA completamente configurado, con instrucciones claras, archivos de Think Company cargados y pruebas que validan que Claude entiende el trabajo real.",
       instructions: [
-        "Abre claude.ai e inicia sesion. Antes de escribir prompts, ubica donde estan Proyectos, adjuntos, historial e integraciones. Esto evita trabajar en un chat suelto sin memoria ni contexto.",
-        "Crea un proyecto con este nombre: Orquestador IA - Tu nombre - Think Company. Usa el proyecto para centralizar instrucciones, documentos y conversaciones del taller.",
-        "Abre las instrucciones del proyecto y pega una primera version de instruccion maestra. Debe incluir rol, contexto de empresa, tipo de tareas, formato esperado y reglas de calidad.",
-        "Carga como conocimiento los archivos glosario_kpis_think_company.csv, diccionario_datos_think_company.csv y plantilla_reporte_think_company.docx. Si tienes poco tiempo, carga primero el glosario y la plantilla.",
-        "Pide a Claude que lea los archivos y te devuelva un inventario breve: que contiene cada archivo, para que sirve y que preguntas puede responder con ese material.",
-        "Ejecuta una prueba de identidad: pregunta que sabe del proyecto, que rol debe asumir y que limites debe respetar. Ajusta instrucciones si responde de forma generica.",
-        "Ejecuta una prueba de tarea real: pide una estructura para reporte semanal usando KPIs del glosario. Verifica que cite campos o conceptos del archivo cargado.",
-        "Cierra la practica con una mejora concreta: agrega una regla nueva a las instrucciones del proyecto segun lo que fallo o falto en las pruebas."
+        {
+          title: "Abre Claude.ai y ubica los elementos clave",
+          meta: "5 min",
+          summary: "Antes de crear nada, identifica donde estan los controles. Trabajar en un chat suelto es el error mas comun porque no conserva instrucciones ni contexto persistente.",
+          items: [
+            "Abre claude.ai en Chrome o Edge e inicia sesion.",
+            "Ubica la seccion Proyectos en el panel lateral.",
+            "Identifica donde se adjuntan archivos, donde queda el historial y donde aparecen integraciones o conectores.",
+            "Confirma que entiendes la diferencia entre un chat suelto y un Proyecto."
+          ],
+          note: "Un Proyecto guarda instrucciones permanentes, archivos de conocimiento e historial de conversaciones. Ese sera el espacio de trabajo profesional de la practica."
+        },
+        {
+          title: "Crea el proyecto Orquestador IA",
+          meta: "4 min",
+          summary: "El proyecto es el contenedor de todo el taller: instrucciones, archivos y conversaciones.",
+          path: ["Claude.ai", "Proyectos", "Nuevo proyecto"],
+          items: [
+            "Haz clic en el signo + junto a Proyectos o en Nuevo proyecto si aparece en pantalla.",
+            "Nombra el proyecto exactamente: Orquestador IA - Tu nombre - Think Company.",
+            "Entra al proyecto y trabaja desde ahi durante toda la practica."
+          ],
+          note: "El nombre del proyecto debe verse en el encabezado del chat antes de ejecutar prompts de validacion."
+        },
+        {
+          title: "Pega la instruccion maestra",
+          meta: "8 min",
+          summary: "La instruccion define quien es Claude en este contexto: rol, empresa, tono, reglas de respuesta y criterios de calidad.",
+          path: ["Proyecto Orquestador IA", "Configuracion", "Instrucciones del proyecto"],
+          items: [
+            "Busca el acceso a instrucciones: icono de engranaje, texto Agregar instrucciones o icono de lapiz junto al nombre del proyecto.",
+            "Pega el prompt Instruccion maestra inicial del proyecto.",
+            "Guarda los cambios y espera la confirmacion visual.",
+            "Si usas el archivo instruccion_maestra_ejemplo_think_company.md, tomalo como base y personalizalo antes de guardar."
+          ],
+          note: "La instruccion queda activa para cada conversacion dentro del proyecto, por eso debe ser precisa antes de cargar trabajo real."
+        },
+        {
+          title: "Carga los archivos de conocimiento",
+          meta: "6 min",
+          summary: "Estos archivos son la memoria factual de Claude. Sin ellos, respondera con generalidades; con ellos, podra citar KPIs, secciones y campos reales.",
+          path: ["Proyecto Orquestador IA", "Agregar contenido", "Subir archivos"],
+          items: [
+            "Carga primero glosario_kpis_think_company.csv.",
+            "Carga plantilla_reporte_think_company.docx.",
+            "Carga diccionario_datos_think_company.csv si tienes tiempo disponible.",
+            "Verifica que cada archivo aparezca listado dentro del proyecto."
+          ],
+          note: "El archivo de instruccion maestra es apoyo para copiar la configuracion; los archivos obligatorios para calibrar son el glosario y la plantilla."
+        },
+        {
+          title: "Genera el inventario de archivos",
+          meta: "4 min",
+          summary: "Esta prueba confirma que Claude puede leer el contenido real de los archivos y explicar para que sirve cada uno.",
+          path: ["Proyecto Orquestador IA", "Nuevo chat dentro del proyecto", "Prompt 1"],
+          items: [
+            "Ejecuta el prompt Inventario de archivos cargados.",
+            "Revisa si Claude menciona los KPIs especificos del glosario y las secciones de la plantilla.",
+            "Si responde de forma vaga, vuelve a cargar los archivos o abre un chat nuevo dentro del proyecto."
+          ],
+          note: "No ejecutes esta prueba en un chat fuera del proyecto: Claude no tendra acceso al conocimiento cargado."
+        },
+        {
+          title: "Haz la prueba de identidad",
+          meta: "3 min",
+          summary: "Esta prueba valida que la instruccion maestra fue leida y asimilada.",
+          path: ["Proyecto Orquestador IA", "Mismo chat o chat nuevo", "Prompt 2"],
+          items: [
+            "Ejecuta el prompt Prueba de calibracion de identidad sin agregar contexto adicional.",
+            "Comprueba que Claude mencione Think Company, su rol de orquestador o analista BI senior y reglas como trazabilidad y supuestos explicitos.",
+            "Si responde como chatbot generico, ajusta la seccion Identidad y rol de las instrucciones."
+          ]
+        },
+        {
+          title: "Haz la prueba de tarea real",
+          meta: "4 min",
+          summary: "Claude debe producir algo util para trabajo real y citar datos concretos de los archivos cargados.",
+          path: ["Proyecto Orquestador IA", "Prompt 3", "Estructura de reporte ejecutivo"],
+          items: [
+            "Pide la estructura del reporte semanal para el comite directivo.",
+            "Verifica que cite KPIs por nombre y respete la estructura de la plantilla.",
+            "Confirma que separe lo que ya puede hacer con los archivos actuales de lo que requiere datos adicionales."
+          ]
+        },
+        {
+          title: "Cierra con una mejora a la instruccion",
+          meta: "5 min",
+          summary: "Una Skill no se configura una sola vez. Cada prueba revela una mejora concreta.",
+          path: ["Configuracion del proyecto", "Instrucciones", "Guardar", "Prompt 4"],
+          items: [
+            "Identifica una respuesta suboptima de los pasos 6 o 7.",
+            "Agrega una regla nueva a las instrucciones para corregirla.",
+            "Ejecuta el prompt Validacion de la mejora aplicada para confirmar que Claude detecta el cambio."
+          ],
+          note: "Ejemplos de reglas: no responder sin citar archivo fuente, separar supuestos de hechos, o pedir datos faltantes antes de calcular."
+        }
       ],
       prompts: [
         {
           title: "Instruccion maestra inicial del proyecto",
           files: ["instruccion_maestra_ejemplo_think_company.md", "glosario_kpis_think_company.csv", "plantilla_reporte_think_company.docx"],
-          prompt: "Actua como mi orquestador de trabajo profesional para Think Company. Tu funcion es ayudarme a convertir informacion dispersa en entregables claros para gerencia. Usa los archivos cargados como contexto base. Responde en espanol, con estructura ejecutiva, pasos accionables y supuestos explicitos. Si falta un dato, dilo antes de inventarlo. Prioriza: claridad, utilidad para decision y trazabilidad hacia los archivos cargados."
+          prompt: `## Identidad y rol
+Actua como mi orquestador de trabajo profesional para Think Company.
+Tu funcion es ayudarme a convertir informacion dispersa en entregables claros para gerencia. Eres un analista BI senior que conoce los archivos, metricas y audiencias de Think Company.
+
+## Contexto de la empresa
+Think Company es una consultora de tecnologia y transformacion digital con operaciones en El Salvador, Guatemala, Mexico, Colombia y Costa Rica.
+Ofrece 5 lineas de servicio: Consultoria de Datos, Implementacion BI, Analisis Predictivo, Capacitacion Tech y Soporte & Mantenimiento.
+
+## Como debes responder
+- Idioma: siempre en espanol.
+- Tono: ejecutivo para gerencia, tecnico para el equipo de datos.
+- Formato: parrafos concisos con tablas cuando haya datos; sin bullets excesivos.
+- Siempre incluye una recomendacion accionable al final de cada analisis.
+- Si falta un dato, dilo explicitamente antes de asumir o inventar.
+
+## Reglas de calidad
+- Trazabilidad: cuando respondas con datos, cita el archivo o KPI fuente.
+- Supuestos explicitos: si asumes algo, declaralo con "Supuesto:" antes de usarlo.
+- Claridad sobre completud: es mejor una respuesta clara y parcial que una respuesta larga e imprecisa.
+- Prioriza utilidad para decision, claridad ejecutiva y trazabilidad hacia los archivos cargados en este proyecto.
+
+## Tareas frecuentes en este taller
+- Analisis de ventas semanales por categoria, canal, region y vendedor.
+- Redaccion de resumenes ejecutivos y reportes para el comite directivo.
+- Limpieza y validacion de datos en el archivo ventas_semana.csv.
+- Generacion de dashboards e insights usando los KPIs del glosario.
+- Preparacion de presentaciones de 6 slides para audiencia directiva.`,
+          why: "Esta estructura define identidad, contexto, formato, reglas de calidad y tareas frecuentes para que Claude no responda como un chat generico."
         },
         {
           title: "Inventario de archivos cargados",
           files: ["glosario_kpis_think_company.csv", "diccionario_datos_think_company.csv", "plantilla_reporte_think_company.docx"],
-          prompt: "Revisa los archivos cargados en este proyecto. Devuelveme una tabla con estas columnas: archivo, que contiene, para que sirve en el taller, preguntas que puede responder y limitaciones. Al final dime cual archivo deberia usar primero para preparar un reporte ejecutivo."
+          prompt: `Revisa los archivos cargados en este proyecto.
+Devuelveme una tabla con estas columnas:
+
+| Archivo | Que contiene | Para que sirve en el taller | Preguntas que puede responder | Limitaciones |
+
+Al final de la tabla, dime:
+1. Cual archivo deberias usar primero para preparar un reporte ejecutivo?
+2. Hay algun dato que esperarias encontrar y no esta en ningun archivo?
+3. Que tipo de analisis NO podrias hacer con solo estos archivos?`,
+          why: "La tabla confirma que Claude leyo el contenido real de cada archivo y que puede identificar brechas antes de analizar."
         },
         {
-          title: "Prueba de calibracion del asistente",
+          title: "Prueba de calibracion de identidad",
           files: ["glosario_kpis_think_company.csv", "plantilla_reporte_think_company.docx"],
-          prompt: "Necesito preparar un reporte semanal para gerencia. Con base en el glosario de KPIs y la plantilla de reporte, propon una estructura de reporte con secciones, objetivo de cada seccion, datos necesarios y una recomendacion de tono para audiencia ejecutiva."
+          prompt: `Sin que yo te de mas informacion, responde estas tres preguntas basandote unicamente en tus instrucciones y los archivos del proyecto:
+
+1. Que rol debes asumir en este proyecto y para que empresa trabajamos?
+2. Cuales son las 3 reglas mas importantes que debes cumplir al responder?
+3. Que tipos de tareas NO deberias hacer o en que situaciones debes pedir mas informacion antes de responder?
+
+Se concreto. Si algo no esta claro en tus instrucciones, dimelo.`,
+          why: "Claude debe mencionar Think Company, su rol de orquestador o analista BI senior, reglas de calidad y situaciones donde debe pedir mas informacion."
+        },
+        {
+          title: "Prueba de tarea real - estructura de reporte ejecutivo",
+          files: ["glosario_kpis_think_company.csv", "plantilla_reporte_think_company.docx"],
+          prompt: `Necesito preparar el reporte semanal para el comite directivo de Think Company. Con base en el glosario de KPIs y la plantilla de reporte cargados en este proyecto, dame lo siguiente:
+
+1. Estructura propuesta del reporte con secciones y subsecciones.
+   - Usa como base las secciones de la plantilla de reporte.
+   - Para cada seccion indica: que datos van, KPIs involucrados citando su nombre exacto del glosario y tono recomendado.
+
+2. Orden de prioridad de las secciones para audiencia directiva.
+   - Explica brevemente por que ese orden.
+
+3. Lista de datos que necesito recopilar antes de redactar.
+   - Que columnas del CSV de ventas son mas relevantes.
+   - Que KPIs requieren comparacion con semana anterior.
+
+Al final, indica que seccion podria estar lista con los archivos actuales del proyecto y cual requiere datos adicionales.
+
+Supuesto explicito: la semana analizada es la semana 21-27 de abril 2025.`,
+          why: "Valida que Claude cite KPIs por nombre, respete la plantilla, use supuestos explicitos y reconozca limites de informacion."
+        },
+        {
+          title: "Validacion de la mejora aplicada",
+          files: ["instruccion_maestra_ejemplo_think_company.md"],
+          prompt: `Acabo de actualizar tus instrucciones con una regla nueva.
+Sin que te la cuente, dime:
+
+1. Ves algun cambio en las instrucciones del proyecto? Si es asi, describelo con tus propias palabras.
+2. Como aplicarias esa nueva regla en la siguiente tarea que te pida?
+
+Si no detectas ningun cambio, avisame. Puede ser que el guardado no se haya aplicado correctamente.`,
+          why: "Confirma que el cambio en instrucciones fue guardado y que el ciclo configuracion, prueba y mejora queda validado."
         }
       ],
       deliverables: [
         "Proyecto Orquestador IA creado.",
-        "Instrucciones del proyecto escritas y guardadas.",
-        "Archivos base cargados como conocimiento.",
+        "Instruccion maestra pegada y guardada.",
+        "Glosario de KPIs y plantilla de reporte cargados como conocimiento.",
         "Inventario de archivos generado por Claude.",
-        "Tres pruebas de calibracion realizadas.",
-        "Una mejora aplicada a la instruccion maestra."
+        "Prueba de identidad aprobada.",
+        "Prueba de tarea real aprobada.",
+        "Una regla nueva agregada a las instrucciones y validada con el Prompt 4."
       ],
       resources: [
         "instruccion_maestra_ejemplo_think_company.md",

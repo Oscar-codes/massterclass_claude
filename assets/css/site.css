@@ -298,6 +298,78 @@ body {
   color: var(--k-white);
 }
 
+.k-step-title {
+  display: block;
+  color: var(--k-white);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.k-step-meta {
+  display: inline-flex;
+  width: max-content;
+  margin: 0.35rem 0 0.45rem;
+  color: var(--k-lime-soft);
+  border: 1px solid rgba(204, 255, 0, 0.24);
+  border-radius: 999px;
+  background: rgba(204, 255, 0, 0.08);
+  padding: 0.12rem 0.55rem;
+  font-size: 0.72rem;
+}
+
+.k-step-body,
+.k-step-list {
+  color: #d7deeb;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.k-step-body {
+  margin: 0.35rem 0 0;
+}
+
+.k-step-list {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.k-step-list li + li {
+  margin-top: 0.28rem;
+}
+
+.k-step-path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.k-step-chip {
+  color: var(--k-white);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  border-radius: 999px;
+  background: rgba(109, 40, 217, 0.24);
+  padding: 0.18rem 0.55rem;
+  font-size: 0.74rem;
+}
+
+.k-step-arrow {
+  color: var(--k-lime-soft);
+  font-size: 0.75rem;
+}
+
+.k-step-note {
+  margin-top: 0.65rem;
+  border: 1px solid rgba(204, 255, 0, 0.2);
+  border-radius: 0.55rem;
+  background: rgba(13, 13, 13, 0.28);
+  color: #e6ecf6;
+  padding: 0.62rem 0.72rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .k-note {
   background: rgba(109, 40, 217, 0.22);
   border: 1px solid rgba(168, 85, 247, 0.45);
@@ -307,6 +379,7 @@ body {
 }
 
 .k-prompt {
+  position: relative;
   background: rgba(26, 26, 46, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 0.65rem;
@@ -320,7 +393,26 @@ body {
 .k-prompt-title {
   color: var(--k-white);
   font-weight: 700;
-  margin-bottom: 0.45rem;
+  margin: 0 4.25rem 0.45rem 0;
+}
+
+.k-prompt-copy {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  border: 1px solid rgba(204, 255, 0, 0.3);
+  border-radius: 999px;
+  background: rgba(204, 255, 0, 0.1);
+  color: var(--k-lime-soft);
+  padding: 0.18rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.k-prompt-copy:hover {
+  background: var(--k-lime);
+  color: #111;
 }
 
 .k-prompt-files {
@@ -354,6 +446,19 @@ body {
   color: #dfe6ff;
   font-size: 0.88rem;
   line-height: 1.5;
+}
+
+.k-prompt-why {
+  margin-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #d7deeb;
+  padding-top: 0.65rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.k-prompt-why strong {
+  color: var(--k-lime-soft);
 }
 
 .k-mini-prompt {
