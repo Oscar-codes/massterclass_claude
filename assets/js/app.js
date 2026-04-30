@@ -70,14 +70,24 @@
   }
 
   function bindEvents() {
-    refs.searchInput.addEventListener("input", onSearch);
-    refs.prevPracticeBtn.addEventListener("click", goToPrevPractice);
-    refs.nextPracticeBtn.addEventListener("click", goToNextPractice);
-    refs.modeParticipanteBtn.addEventListener("click", () => setMode("participante"));
-    refs.modeFacilitadorBtn.addEventListener("click", () => {
-      setMode("facilitador");
-      window.location.href = "pages/facilitador.html";
-    });
+    if (refs.searchInput) {
+      refs.searchInput.addEventListener("input", onSearch);
+    }
+    if (refs.prevPracticeBtn) {
+      refs.prevPracticeBtn.addEventListener("click", goToPrevPractice);
+    }
+    if (refs.nextPracticeBtn) {
+      refs.nextPracticeBtn.addEventListener("click", goToNextPractice);
+    }
+    if (refs.modeParticipanteBtn) {
+      refs.modeParticipanteBtn.addEventListener("click", () => setMode("participante"));
+    }
+    if (refs.modeFacilitadorBtn) {
+      refs.modeFacilitadorBtn.addEventListener("click", () => {
+        setMode("facilitador");
+        window.location.href = "pages/facilitador.html";
+      });
+    }
   }
 
   function onSearch(event) {
@@ -212,7 +222,9 @@
 
       button.addEventListener("click", () => {
         activatePractice(practice.id);
-        document.getElementById("detalle").scrollIntoView({ behavior: "smooth", block: "start" });
+        if (practice.page) {
+          window.location.href = practice.page;
+        }
       });
 
       refs.navList.appendChild(button);
@@ -279,26 +291,24 @@
       col.innerHTML = `
         <div class="k-topic-card h-100 p-3">
           <div class="d-flex justify-content-between align-items-start gap-2">
-            <h3 class="h5 mb-1">${practice.title}</h3>
+            <h3 class="h5 mb-1 k-card-title">${practice.title}</h3>
             <span class="badge text-bg-dark border">${practice.duration}</span>
           </div>
-          <p class="text-secondary mb-2 k-card-summary">${practice.summary}</p>
+          <p class="text-secondary mb-2 k-card-summary">${summarizeText(practice.summary, 170)}</p>
           <div class="k-card-progress mb-2" aria-hidden="true"><span style="width:${progress.percent}%"></span></div>
-          <p class="small text-secondary mb-2">${progress.completed}/${progress.total} entregables completados</p>
-          <div class="mb-3">${practice.tags.map((tag) => `<span class="k-pill">${tag}</span>`).join("")}</div>
+          <p class="small text-secondary mb-2 k-card-meta">${progress.completed}/${progress.total} entregables completados</p>
+          <div class="mb-3 k-card-tags">${practice.tags.map((tag) => `<span class="k-pill">${tag}</span>`).join("")}</div>
           <div class="d-flex gap-2 mt-auto flex-wrap">
-            <button class="btn btn-sm btn-outline-light" data-open-practice="${practice.id}">Trabajar aqui</button>
-            <a class="btn btn-sm k-btn-outline" href="${practice.page || "#"}" ${practice.page ? "" : "aria-disabled='true'"}>Pagina modular</a>
+            <a class="btn btn-sm k-btn-outline w-100" href="${practice.page || "#"}" ${practice.page ? "" : "aria-disabled='true'"}>Abrir pagina modular</a>
           </div>
         </div>
       `;
 
       col.className = state.mode === "facilitador" ? "col-sm-6 col-lg-4 col-xl-3 fade-up" : "col-md-6 fade-up";
 
-      const action = col.querySelector("button[data-open-practice]");
-      action.addEventListener("click", () => {
+      const pageAction = col.querySelector("a");
+      pageAction.addEventListener("click", () => {
         activatePractice(practice.id);
-        document.getElementById("detalle").scrollIntoView({ behavior: "smooth", block: "start" });
       });
 
       refs.cardList.appendChild(col);
@@ -310,6 +320,10 @@
   }
 
   function renderDetail() {
+    if (!refs.detailTitle || !refs.detailSummary || !refs.detailDuration || !refs.detailCompletion || !refs.detailObjective || !refs.detailSteps || !refs.detailPrompts || !refs.detailResources || !refs.detailChecklist) {
+      return;
+    }
+
     const practice = currentPractice();
     const practiceIndex = workshopData.practices.findIndex((item) => item.id === practice.id);
 
@@ -370,7 +384,7 @@
     refs.progressBar.setAttribute("aria-valuenow", String(percent));
     refs.progressText.textContent = `${completedItems}/${totalItems} entregables`;
     refs.progressPercent.textContent = `${percent}%`;
-    refs.continuePracticeLink.href = current.page || "#detalle";
+    refs.continuePracticeLink.href = current.page || "#practicas";
     refs.headerNextTitle.textContent = current.title;
     refs.headerNextMeta.textContent = `Bloque ${currentIndex} de ${workshopData.practices.length} · ${currentProgress.completed}/${currentProgress.total} entregables`;
   }
@@ -558,6 +572,18 @@
       Array.isArray(step.path) ? step.path.join(" ") : "",
       step.note || ""
     ].join(" ");
+  }
+
+  function summarizeText(text, maxLength) {
+    const value = String(text || "").trim();
+    if (value.length <= maxLength) {
+      return escapeHtml(value);
+    }
+
+    const softCut = value.slice(0, maxLength + 1);
+    const lastSpace = softCut.lastIndexOf(" ");
+    const finalText = lastSpace > 80 ? softCut.slice(0, lastSpace) : value.slice(0, maxLength);
+    return `${escapeHtml(finalText)}...`;
   }
 
   function renderStep(step, index) {

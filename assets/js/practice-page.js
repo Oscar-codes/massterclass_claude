@@ -104,7 +104,7 @@
     refs.prevLink.href = prev ? toPageHref(prev.page) : "../index.html#practicas";
     refs.prevLink.textContent = prev ? `Anterior: ${prev.title}` : "Volver a la ruta";
 
-    refs.nextLink.href = next ? toPageHref(next.page) : "../index.html#detalle";
+    refs.nextLink.href = next ? toPageHref(next.page) : "../index.html#practicas";
     refs.nextLink.textContent = next ? `Siguiente: ${next.title}` : "Ir al resumen general";
   }
 
